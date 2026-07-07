@@ -27,7 +27,7 @@ function Dashboard() {
 
           <div className="dashboard-card">
             <h2>Total Messages</h2>
-            <p>58</p>
+            <p>40</p>
           </div>
 
         </div>

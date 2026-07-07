@@ -35,7 +35,7 @@ body{
 .navbar{
   width:100%;
   display:flex;
-  justify-content:space-between;
+  justify-content:flex-start; /* Changed to flex-start to align links to the left */
   align-items:center;
   padding:18px 60px;
   background:rgba(57, 190, 243, 0.96);
@@ -267,8 +267,8 @@ body{
 .contact h1{
   text-align:center;
   font-size:60px;
-  margin-bottom:60px;
-  color:#0f172a;
+  margin-bottom:30px;
+  margin-top: -10px;
   position:relative;
 }
 
@@ -448,6 +448,7 @@ body{
     flex-direction:column;
     gap:20px;
     padding:20px;
+    justify-content:center; /* Let links stack naturally on tablets */
   }
 
   .nav-links{
@@ -527,7 +528,7 @@ body{
   .hero-btn,
   .hero-btn-secondary{
     width:100%;
-    max-width:280px;
+    max-width:200px;
   }
 
   .hero-image img{
