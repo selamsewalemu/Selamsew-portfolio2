@@ -152,7 +152,7 @@ function App() {
       <section id="experience" className="experience">
         <h1>Experience</h1>
         <div className="experience-card">
-          <h2>Systems Administrator, User officer and Junior Full-Stack Developer</h2>
+          <h2>Systems Administrator, User support officer and Junior Full-Stack Developer</h2>
           <p style={{ marginBottom: "15px" }}>
             <strong>• Full-Stack Web Development:</strong> Architected and contributed to end-to-end web applications using modern stacks (React, Node.js, Express, MongoDB), focusing on building responsive user interfaces, modular backend services, and scalable database schemas.
           </p>

@@ -193,7 +193,7 @@ body{
 
 .hero-btn,
 .hero-btn-secondary{
-  padding:16px 36px;
+  padding:16px 20px;
   border:none;
   border-radius:10px;
   font-size:18px;
@@ -254,7 +254,7 @@ body{
 .projects,
 .experience,
 .contact{
-  padding:100px 60px;
+  padding: 25px 60px 60px 60px;
 }
 
 /* TITLES */
@@ -266,10 +266,37 @@ body{
 .experience h1,
 .contact h1{
   text-align:center;
-  font-size:60px;
-  margin-bottom:30px;
-  margin-top: -10px;
+  font-size:42px; /* Slightly scaled down to fit cleanly inside the capsule container */
+  line-height:1.2;
+  margin: 0px auto 25px auto; /* Centered with a small 25px bottom gap to separate cleanly from body cards */
   position:relative;
+  
+  /* Attractive Modern Title Container styling */
+  max-width: fit-content;
+  padding: 10px 45px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+  border-radius: 50px;
+  color: #1e293b;
+}
+
+/* Glowing side indicator accent dots instead of a bulky baseline border */
+.about h1::before,
+.education h1::before,
+.skills h1::before,
+.projects h1::before,
+.experience h1::before,
+.contact h1::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #2563eb;
+  border-radius: 50%;
 }
 
 .about h1::after,
@@ -279,12 +306,16 @@ body{
 .experience h1::after,
 .contact h1::after{
   content:"";
-  width:100px;
-  height:5px;
-  background:#2563eb;
-  display:block;
-  margin:16px auto;
-  border-radius:20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: #2563eb;
+  border-radius: 50%;
+  display: block;
+  margin: 0;
 }
 
 /* BACKGROUND */
@@ -480,7 +511,7 @@ body{
   .projects,
   .experience,
   .contact{
-    padding:80px 20px;
+    padding:15px 20px 40px 20px;
   }
 
   .hero{
@@ -516,7 +547,29 @@ body{
   .projects h1,
   .experience h1,
   .contact h1{
-    font-size:34px;
+    font-size:28px;
+    padding:8px 35px;
+  }
+
+  .about h1::before, .about h1::after,
+  .education h1::before, .education h1::after,
+  .skills h1::before, .skills h1::after,
+  .projects h1::before, .projects h1::after,
+  .experience h1::before, .experience h1::after,
+  .contact h1::before, .contact h1::after {
+    width: 6px;
+    height: 6px;
+    left: 14px;
+  }
+  
+  .about h1::after,
+  .education h1::after,
+  .skills h1::after,
+  .projects h1::after,
+  .experience h1::after,
+  .contact h1::after {
+    right: 14px;
+    left: auto;
   }
 
   .hero-buttons{
