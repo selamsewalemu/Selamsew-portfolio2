@@ -1,14 +1,1 @@
-
-steps:
-    - uses: actions/checkout@v4
-    
-    - name: Use Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-node-version: '20.x'
-        
-    - name: Install and Build Frontend
-      run: |
-        npm install
-        npm run build --if-present
-      working-directory: ./frontend  # <--- Tells GitHub to look inside the frontend folder
+npm install
