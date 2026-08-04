@@ -59,7 +59,7 @@ function App() {
         <h1>About Me</h1>
         <div className="about-container">
           <div className="about-card">
-            <h2>Professional Summary</h2>
+            <h2>Summary</h2>
             <p>
               I am a results-driven Computer Engineer with multifaceted expertise spanning Full-Stack Web Development, ERP System Administration, and IT Infrastructure Support. I bridge the gap between complex engineering hardware/software architectures and real-world business optimization.
             </p>
@@ -81,9 +81,9 @@ function App() {
         <h1>Educational Background</h1>
         <div className="education-card">
           <h2>Debre Markos University</h2>
-          <h3>Bachelor of Science in Electrical & Computer Engineering</h3>
+          <h3>Bachelor of Science in Electrical and Computer Engineering</h3>
           <p className="spec-tag"><strong>Specialization: Computer Engineering</strong></p>
-          <p className="grad-tag"><strong>Graduation: 2024 G.C.</strong></p>
+          <p className="grad-tag"><strong>Graduation: July 05 , 2024 G.C.</strong></p>
           <p>
             Completed a comprehensive curriculum focused on computer architectures, advanced system designs, software engineering principles, and data communications. Actively engaged in collaborative laboratory work, technical research initiatives, and end-to-end software prototyping.
           </p>
@@ -134,7 +134,7 @@ function App() {
   <p>Architected and developed an automated, end-to-end full-stack web application designed to streamline departmental fund allocations and track real-time institutional expenditures. Built using React.js, Node.js, Express, and MongoDB, featuring dynamic data visualization dashboards for analytical budget reporting and secure role-based authentication.</p>
 </div>
           <div className="project-card">
-            <h2>Enterprise Fuel Management System</h2>
+            <h2>Enterprise inventory Management System</h2>
             <p>Architected and developed an end-to-end full-stack software application for auditing fuel purchase lifecycles and tracking dynamic consumption metrics. Built using React.js, Node.js, Express, and MongoDB.</p>
           </div>
           <div className="project-card">
@@ -182,7 +182,7 @@ function App() {
       {/* FOOTER */}
       <footer className="footer">
         <h2>Selamsew Alemu</h2>
-        <p><strong>Electrical & Computer Engineer</strong></p>
+        <p><strong>Electrical and Computer Engineer</strong></p>
         <p>Full-Stack Developer | ERP Systems Administrator</p>
         <p>© 2026 All Rights Reserved</p>
       </footer>
