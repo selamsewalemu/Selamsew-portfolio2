@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import contactRoutes from "./routes/contactRoutes.js";
 
 const app = express();
 
@@ -18,5 +19,7 @@ app.get("/", (req, res) => {
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok", message: "Backend is running" });
 });
+
+app.use("/api/contact", contactRoutes);
 
 export default app;

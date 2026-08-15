@@ -1,18 +1,45 @@
+import { useState } from "react";
 import "./styles/global.css";
 import profileImage from "./assets/selamsew.jpg";
+import api from "./api/axios";
 
 function App() {
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState(null);
+  const [feedback, setFeedback] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({
-      behavior: "smooth",
-    });
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleFormSubmit = (e) => {
+  function handleChange(e) {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  }
+
+  async function handleFormSubmit(e) {
     e.preventDefault();
-    alert("Message sent successfully!");
-  };
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      setStatus("error");
+      setFeedback("All fields are required.");
+      return;
+    }
+    setLoading(true);
+    setStatus(null);
+    try {
+      const { data } = await api.post("/contact", form);
+      setStatus("success");
+      setFeedback(data.message || "Your message has been sent successfully.");
+      setForm({ name: "", email: "", message: "" });
+    } catch (err) {
+      setStatus("error");
+      setFeedback(
+        err.response?.data?.error || "Failed to send your message. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <div>
@@ -171,11 +198,42 @@ function App() {
       {/* CONTACT */}
       <section id="contact" className="contact">
         <h1>Contact Me</h1>
+
+        {status === "success" && (
+          <p className="form-success">{feedback}</p>
+        )}
+        {status === "error" && (
+          <p className="form-error">{feedback}</p>
+        )}
+
         <form className="contact-form" onSubmit={handleFormSubmit}>
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <textarea rows="4" placeholder="Type your message here..." required></textarea>
-          <button type="submit">Submit Message</button>
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            value={form.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            value={form.email}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Type your message here..."
+            value={form.message}
+            onChange={handleChange}
+            required
+          />
+          <button type="submit" disabled={loading}>
+            {loading ? "Sending…" : "Submit Message"}
+          </button>
         </form>
       </section>
 
