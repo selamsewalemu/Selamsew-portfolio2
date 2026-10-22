@@ -1,16 +1,87 @@
-# React + Vite
+# 🎨 Frontend — Selamsew Alemu Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React 19](https://img.shields.io/badge/React-19.2-61DAFB?style=flat&logo=react)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v4.3-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=flat&logo=vite)](https://vitejs.dev/)
 
-Currently, two official plugins are available:
+Modern, component-driven client architecture for **Selamsew Alemu's Engineering Portfolio & Showcase**, engineered with React 19, Tailwind CSS v4, Lucide React icons, and Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Quick Start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Installation
+```bash
+# Navigate to the frontend directory
+cd frontend
 
-## Expanding the ESLint configuration
+# Install dependencies
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Start the Vite development server
+npm run dev
+```
+Open **[http://localhost:5173](http://localhost:5173)** in your browser.
+
+### Production Build
+```bash
+npm run build
+```
+Creates an optimized production bundle in the `dist/` directory.
+
+### Preview Production Build
+```bash
+npm run preview
+```
+
+---
+
+## 📁 Component Structure
+
+```
+frontend/src/
+├── api/
+│   └── axios.js               # Central Axios client with base URL & dev proxy
+├── assets/
+│   └── selamsew.jpg           # Profile photography
+├── components/
+│   ├── Navbar.jsx             # Sticky blurred glass navigation header
+│   ├── Hero.jsx               # Hero banner with role ticker & CV download
+│   ├── About.jsx              # Bio, engineering pillars & quick facts
+│   ├── Languages.jsx          # Dedicated C#, .NET, JS, Python, SQL language cards
+│   ├── Skills.jsx             # Categorized skill discipline cards (.NET, MERN, ERP)
+│   ├── Experience.jsx         # Vertical career timeline with active track
+│   ├── Projects.jsx           # Filterable projects showcase
+│   ├── ProjectModal.jsx       # Interactive case-study dialog
+│   ├── Education.jsx          # Degree details & certification badges
+│   ├── Contact.jsx            # Direct contact cards with copy-buttons & form
+│   ├── Footer.jsx             # Footer navigation & back-to-top button
+│   └── SocialIcons.jsx        # SVG GitHub & LinkedIn icons
+├── context/
+│   └── ThemeContext.jsx       # Dark / Light theme provider (localStorage)
+├── data/
+│   └── portfolioData.js       # Central data store (languages, skills, projects)
+├── i18n/
+│   └── i18n.js                # i18next configuration (English exclusive)
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Services.jsx
+│   ├── Contact.jsx
+│   ├── Dashboard.jsx
+│   └── Login.jsx
+├── routes/
+│   └── AppRoutes.jsx          # React Router v7 routes
+├── styles/
+│   └── global.css             # Comprehensive design system & CSS variables
+├── App.jsx                    # Master portfolio landing layout
+└── main.jsx                   # Application entry point
+```
+
+---
+
+## 🎨 Design System Highlights
+- **Theme Support**: Seamless toggle between Cyber-Slate Dark Mode and Executive Light Mode.
+- **Glassmorphism**: Backdrop blur with translucent borders.
+- **Micro-Animations**: Pulsing online availability indicator, spinning glow rings, and smooth hover elevations.
+- **Accessibility & Responsive**: Full keyboard navigation, standard ARIA labels, and responsive layout scaling.
