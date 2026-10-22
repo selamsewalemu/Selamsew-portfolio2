@@ -1,8 +1,13 @@
 {
-  "welcome": "Welcome to International Website",
+  "welcome": "Welcome to Selamsew Alemu Portfolio",
   "home": "Home",
   "about": "About",
   "services": "Services",
+  "skills": "Skills",
+  "languages": "Languages",
+  "experience": "Experience",
+  "projects": "Projects",
+  "education": "Education",
   "contact": "Contact",
   "login": "Login"
 }
