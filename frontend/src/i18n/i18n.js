@@ -38,7 +38,7 @@ const resources = {
         summaryText1:
           "I am an Electrical and Computer Engineer actively working from March 05, 2025 to Present at Enterprise ERP & Software Solutions. I served for 6 months as Database Associate managing MySQL and MongoDB schemas, query tuning, and automated backups, and currently serve as System Administrator and User Support Officer providing mission-critical enterprise systems and user support.",
         summaryText2:
-          "I also completed a 6-month intensive Full-Stack Software Development training at Addis Ababa University (AAU), where I engineered 'Ekub Circle' — an automated digital community savings platform built with React 19, Node.js, Express, and MongoDB. I hold a B.Sc. in Electrical and Computer Engineering (Specialized in Computer Engineering) from Debre Markos University (July 2024).",
+          "I also completed a 6-month intensive Full-Stack Software Development training at Addis Ababa University (AAU), where I engineered 'Ekub Circle' — an automated digital community savings platform built with JavaScript (ES6+), Node.js, Express, and MongoDB. I hold a B.Sc. in Electrical and Computer Engineering (Specialized in Computer Engineering) from Debre Markos University (July 2024).",
         objectiveTitle: "Career Objective",
         objectiveText:
           "Dedicated Systems Administrator and Full-Stack Software Engineer seeking to implement reliable system architectures, optimize enterprise databases, and develop modern, scalable applications in dynamic, technology-driven organizations.",
@@ -49,7 +49,7 @@ const resources = {
         training: "Addis Ababa University (AAU) — 6-Month Full-Stack Training",
         currentRole: "System Administrator & User Support (March 2025 – Present)",
         location: "Addis Ababa / Debre Markos, Ethiopia",
-        languagesSpoken: "English (Professional Working Proficiency)",
+        languagesSpoken: "English (Professional Working Proficiency), Amharic (Native)",
       },
       languages: {
         title: "Programming Languages",

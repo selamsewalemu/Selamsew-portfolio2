@@ -10,7 +10,7 @@ function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const categories = ["All", "Full Stack", "ERP & Systems", "Computer Eng & IoT"];
+  const categories = ["All", "Full Stack", "ERP & Systems"];
 
   const filteredProjects =
     activeCategory === "All"

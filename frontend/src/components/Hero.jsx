@@ -52,13 +52,17 @@ PROFESSIONAL EXPERIENCE:
 2. Database Associate / Administrator (March 05, 2025 – September 2025 | 6 Months)
    Enterprise ERP & Software Solutions
    - Schema modeling, MySQL/MongoDB administration, query performance tuning, automated backup schedules, data integrity.
-3. Full-Stack Web Developer & Project Lead (Ekub Circle) (2024 – 2025)
+5. Full-Stack Web Developer & Project Lead (Ekub Circle) (2024 – 2025)
    Addis Ababa University (AAU) — 6-Month Intensive Software Training
-   - Architected 'Ekub Circle' (እቁብ Circle) community digital savings platform with React 19, Node.js, Express, MongoDB.
+   - Architected 'Ekub Circle' community digital savings platform with JavaScript (ES6+), Node.js, Express, MongoDB.
 
 EDUCATION & CERTIFICATIONS:
 • Addis Ababa University (AAU) — 6-Month Full-Stack Software Development Intensive (2024 – 2025)
 • Debre Markos University — B.Sc. in Electrical & Computer Engineering (Specialized in Computer Engineering), Graduated July 05, 2024.
+
+SPOKEN LANGUAGES:
+• English (Professional Working Proficiency)
+• Amharic (Native)
 
 KEY SKILLS & TECHNOLOGIES:
 • Languages: C#, .NET / ASP.NET Core, JavaScript (ES6+), TypeScript, Python, C++, Java, SQL, PHP, Bash/Shell, HTML5/CSS3.

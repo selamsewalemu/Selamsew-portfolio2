@@ -61,20 +61,20 @@ Categorized into interactive disciplines:
 ### 🚀 Interactive Featured Projects & Case Studies
 Interactive popup case-study modals with problem descriptions, architectural solutions, feature checkmarks, tech tags, and live demo / code links:
 1. **Ekub Circle — Digital Rotating Savings Platform** *(Addis Ababa University 6-Month Signature Project)*
-   - Tech: React 19, Node.js, Express.js, MongoDB, Tailwind CSS v4, Socket.io, JWT.
+   - Tech: JavaScript (ES6+), Node.js, Express.js, MongoDB, Tailwind CSS v4, Socket.io, JWT.
    - Core Features: Real-time lottery draw engine, digital contribution ledger, and payout schedule management.
 2. **Budget Expense Management System** *(Debre Markos University Final Graduation Project)*
 3. **Enterprise Fuel & Fleet Inventory System** *(Full-Stack Logistics & Consumption Auditing Platform)*
 4. **Global Engineering Showcase Platform** *(High-performance portfolio with glassmorphic UI and theme engine)*
 5. **Corporate ERP User Support & Incident Pipeline** *(Ticketing & database patch tracker)*
-6. **Smart Hardware Health & Sensor Monitor** *(IoT / Microcontroller telemetry)*
-7. **Real-Time Team Collaboration & Task Hub** *(Agile Kanban sync engine)*
+6. **Real-Time Team Collaboration & Task Hub** *(Agile Kanban sync engine)*
 
 ### 🎓 Academic Background & Credentials
 - **Debre Markos University (DMU)** — Bachelor of Science in Electrical and Computer Engineering (Specialization: Computer Engineering) | July 05, 2024.
 - **Addis Ababa University (AAU)** — 6-Month Full-Stack Software Development Intensive Certification (2024 – 2025).
 - **Enterprise Database Administration & Operations (6-Month Role)** — MySQL, MongoDB, backups, and schema optimization.
 - **Certifications**: MERN Stack Specialist, ERP System Administration, Cisco CCNA Networking Essentials, Python for Systems Engineering.
+- **Spoken Languages**: English (Professional Working Proficiency), Amharic (Native).
 
 ### 📬 Direct Contact & Communication
 - Direct email and phone channels with **1-click clipboard copy** feedback.

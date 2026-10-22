@@ -281,11 +281,11 @@ export const experience = [
     badge: "AAU Certified",
     highlights: [
       "Completed rigorous 6-month intensive full-stack software development training at Addis Ababa University (AAU) covering modern engineering practices.",
-      "Architected and deployed the signature capstone project 'Ekub Circle' (እቁብ Circle) — an automated digital community savings and rotating credit platform built with React, Node.js, Express, and MongoDB.",
-      "Engineered real-time lottery draws, member digital ledgers, multilingual UI (English & Amharic), and automated contribution tracking.",
+      "Architected and deployed the signature capstone project 'Ekub Circle' — an automated digital community savings and rotating credit platform built with JavaScript (ES6+), Node.js, Express, and MongoDB.",
+      "Engineered real-time lottery draws, member digital ledgers, and automated contribution tracking.",
       "Graduated with top marks, demonstrating mastery in REST APIs, JWT authentication, responsive Tailwind design, and agile methodologies.",
     ],
-    tech: ["React 19", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Socket.io", "REST APIs", "Git"],
+    tech: ["JavaScript (ES6+)", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Socket.io", "REST APIs", "Git"],
   },
   {
     role: "Full-Stack Web Developer (Freelance / Contract)",
@@ -328,7 +328,7 @@ export const projects = [
     challenge:
       "Traditional manual Ekub operations face trust barriers, delayed member payments, paper ledger errors, manual lottery draw disputes, and lack of real-time member visibility.",
     solution:
-      "Architected an end-to-end MERN application with real-time WebSocket round draws, dynamic ledger balance calculations, proof-of-payment image uploads, SMS/Email contribution reminders, and responsive user interfaces.",
+      "Architected an end-to-end web application with real-time WebSocket round draws, dynamic ledger balance calculations, proof-of-payment image uploads, SMS/Email contribution reminders, and responsive user interfaces.",
     features: [
       "Intuitive member dashboard and transparent round status overview",
       "Transparent automated lottery draw engine with real-time animation for winner selection",
@@ -339,7 +339,6 @@ export const projects = [
     ],
     tech: [
       "JavaScript (ES6+)",
-      "React 19",
       "Node.js",
       "Express.js",
       "MongoDB & Mongoose",
@@ -444,28 +443,6 @@ export const projects = [
     githubUrl: "https://github.com/selamsewalemu/Selamsew-portfolio2",
   },
   {
-    id: "iot-monitor",
-    title: "Smart Hardware Health & Sensor Monitor",
-    subtitle: "Computer Engineering Capstone System Prototype",
-    category: "Computer Eng & IoT",
-    image: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?q=80&w=900",
-    overview:
-      "Hardware-software integrated prototype using microcontrollers and web dashboards to capture ambient temperature, rack status, and telemetry over local area networks.",
-    challenge:
-      "Preventing server overheating and hardware failure in server rooms lacking dedicated industrial cooling systems.",
-    solution:
-      "Programmed C++ firmware on microcontrollers connected to temperature/humidity sensors transmitting telemetry to a local Node.js WebSocket dashboard.",
-    features: [
-      "Low-latency real-time telemetry streaming via WebSockets",
-      "Visual audio/visual threshold alarm triggers for critical heat levels",
-      "Historical data logging with SQLite/MongoDB persistence",
-    ],
-    tech: ["C++", "Arduino / ESP32", "Node.js", "WebSockets", "HTML5 Canvas"],
-    metrics: "Sub-100ms sensor telemetry response across local Ethernet.",
-    demoUrl: "https://selamsew211.github.io/Selamsew211",
-    githubUrl: "https://github.com/selamsewalemu/Selamsew-portfolio2",
-  },
-  {
     id: "collab-hub",
     title: "Real-Time Team Collaboration & Task Hub",
     subtitle: "Agile Task Management & Team Sync Tool",
@@ -514,7 +491,7 @@ export const educationData = {
       title: "6-Month Full-Stack Software Development Intensive",
       issuer: "Addis Ababa University (AAU)",
       date: "2024 – 2025",
-      skills: "Full-Stack Web Engineering, React 19, Node.js, Express, MongoDB, REST APIs, Ekub Circle Capstone",
+      skills: "Full-Stack Web Engineering, JavaScript (ES6+), Node.js, Express, MongoDB, REST APIs, Ekub Circle Capstone",
     },
     {
       title: "Enterprise Database Administration & Operations (6-Month Role)",

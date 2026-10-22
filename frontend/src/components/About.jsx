@@ -107,7 +107,7 @@ function About() {
                 <div>
                   <strong>Spoken Languages</strong>
                   <p>{t("about.languagesSpoken")}</p>
-                  <small className="fact-tag">Multilingual Communication</small>
+                  <small className="fact-tag">English & Amharic</small>
                 </div>
               </div>
 
