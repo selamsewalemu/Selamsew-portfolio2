@@ -40,31 +40,38 @@ Categorized into interactive disciplines:
 5. **Computer Engineering & Networking**: TCP/IP, subnetting, Cisco CCNA switching concepts, hardware diagnostics.
 6. **DevOps & Tooling**: Git, GitHub, Docker, Postman, Linux Bash, Render/Vercel deployment.
 
-### 💼 In-Depth Work Experience Timeline
-- **Systems Administrator, User Support Officer & Junior Full-Stack Developer** (2024 – Present)
-  - 99.8% ERP platform availability maintained across organizational departments.
-  - Built custom internal dashboards (React/Node.js) cutting manual paperwork by 45%.
-  - 150+ monthly user support queries resolved with 98% satisfaction rate.
-- **Full-Stack Web Developer (Freelance / Contract)** (2023 – 2024)
-  - Full-stack MERN client platforms with secure JWT authentication and REST APIs.
-  - Multilingual localization and Google Lighthouse 90+ performance ratings.
-- **Engineering IT Systems Assistant & Academic Laboratory Researcher** (2022 – 2023)
-  - Debre Markos University — College of Technology.
-  - Lab network maintenance, hardware diagnostics, and tutoring 60+ junior students.
+### 💼 In-Depth Work Experience Timeline (Active Track: March 05, 2025 – Present)
+- **System Administrator & User Support Officer** *(September 2025 – Present | Still Now)*
+  - Overseeing enterprise system operations, server stability, network topologies, and Tier-1/2 user support.
+  - Resolving hardware, ERP anomalies, and authentication requests with a 98% resolution satisfaction rate.
+- **Database Associate / Database Administrator** *(March 05, 2025 – September 2025 | 6-Month Specialization)*
+  - Managed core relational (MySQL) and NoSQL (MongoDB) schemas, automated nightly backups, and optimized query performance.
+  - Cross-mapped enterprise modules, cutting reporting query runtimes by 40% with zero data loss.
+- **Full-Stack Software Development Fellow & Project Lead** *(Addis Ababa University - AAU | 6-Month Intensive)*
+  - Completed intensive full-stack engineering program covering MERN, RESTful microservices, and Agile sprints.
+  - Architected and delivered signature project: **Ekub Circle (እቁብ Circle)**.
+- **Full-Stack Web Developer (Freelance / Contract)** *(2024 – 2025)*
+  - Delivered production web applications with role-based JWT authentication and multilingual i18n support.
+- **Engineering IT Systems Assistant & Academic Laboratory Researcher** *(Debre Markos University, 2023 – 2024)*
+  - Supported engineering lab networks, hardware diagnostic workstations, and microcomputer experimentation.
 
 ### 🚀 Interactive Featured Projects & Case Studies
 Interactive popup case-study modals with problem descriptions, architectural solutions, feature checkmarks, tech tags, and live demo / code links:
-1. **Budget Expense Management System** (Debre Markos University Final Graduation Project)
-2. **Enterprise Fuel & Fleet Inventory System** (Full-Stack Auditing Platform)
-3. **Localized International Portfolio Platform** (Trilingual showcase with i18n)
-4. **Corporate ERP User Support & Incident Pipeline** (Ticketing & database patch tracker)
-5. **Smart Hardware Health & Sensor Monitor** (IoT / Microcontroller telemetry)
-6. **Real-Time Team Collaboration & Task Hub** (Agile Kanban sync engine)
+1. **Ekub Circle (እቁብ Circle) — Digital Rotating Savings Platform** *(Addis Ababa University 6-Month Signature Project)*
+   - Tech: React 19, Node.js, Express.js, MongoDB, Tailwind CSS v4, Socket.io, JWT.
+   - Bilingual support: Amharic (አማርኛ) and English (EN).
+2. **Budget Expense Management System** *(Debre Markos University Final Graduation Project)*
+3. **Enterprise Fuel & Fleet Inventory System** *(Full-Stack Logistics & Consumption Auditing Platform)*
+4. **Localized International Portfolio Platform** *(Trilingual showcase with i18n in EN, AM, FR)*
+5. **Corporate ERP User Support & Incident Pipeline** *(Ticketing & database patch tracker)*
+6. **Smart Hardware Health & Sensor Monitor** *(IoT / Microcontroller telemetry)*
+7. **Real-Time Team Collaboration & Task Hub** *(Agile Kanban sync engine)*
 
 ### 🎓 Academic Background & Credentials
-- **Debre Markos University (DMU)** — Bachelor of Science in Electrical and Computer Engineering (Specialization: Computer Engineering) | July 2024.
-- Core Coursework: OOP, Data Structures, Computer Architecture, Embedded Systems, Computer Networks, Operating Systems, DBMS, Software Engineering.
-- Accreditations: MERN Stack Specialist, ERP System Administration, Cisco CCNA Networking, JavaScript Architecture, Python for Systems.
+- **Debre Markos University (DMU)** — Bachelor of Science in Electrical and Computer Engineering (Specialization: Computer Engineering) | July 05, 2024.
+- **Addis Ababa University (AAU)** — 6-Month Full-Stack Software Development Intensive Certification (2024 – 2025).
+- **Enterprise Database Administration & Operations (6-Month Role)** — MySQL, MongoDB, backups, and schema optimization.
+- **Certifications**: MERN Stack Specialist, ERP System Administration, Cisco CCNA Networking Essentials, Python for Systems Engineering.
 
 ### 🌐 Trilingual Localization (i18n)
 - **English (EN)**

@@ -52,6 +52,7 @@ function Experience() {
                   </div>
 
                   <div className="period-badge-wrap">
+                    {item.badge && <span className="exp-highlight-badge">{item.badge}</span>}
                     <span className="period-badge">
                       <Calendar size={14} />
                       {item.period}

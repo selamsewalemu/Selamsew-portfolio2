@@ -2,25 +2,25 @@ export const personalInfo = {
   name: "Selamsew Alemu",
   title: "Electrical and Computer Engineer",
   roles: [
+    "System Administrator & User Support Officer",
     "Full-Stack Web Developer (MERN)",
-    "ERP Systems Administrator",
-    "Database & IT Support Engineer",
+    "Database Associate & Administrator",
     "Computer Systems Specialist",
   ],
   tagline:
     "Bridging the gap between low-level hardware architectures, enterprise ERP platforms, and scalable high-performance full-stack web applications.",
   email: "selamsewalemu1@gmail.com",
-  phone: "+251 92 345 6789", // updated for communication
+  phone: "+251 92 345 6789",
   location: "Addis Ababa / Debre Markos, Ethiopia",
   relocation: "Open to Remote & Global Relocation",
   github: "https://github.com/selamsewalemu",
-  linkedin: "https://linkedin.com/in/selamsewalemu",
+  linkedin: "https://linkedin.com/in/selamsew-alemu",
   telegram: "https://t.me/selamsewalemu",
   stats: [
-    { label: "Years Experience", value: "2+", subtitle: "Dev & Enterprise ERP" },
-    { label: "Completed Projects", value: "12+", subtitle: "Web, ERP & Systems" },
+    { label: "Active Experience", value: "Since Mar 2025", subtitle: "SysAdmin & DB Associate" },
+    { label: "Completed Projects", value: "14+", subtitle: "Web, ERP & Systems" },
     { label: "ERP System Uptime", value: "99.8%", subtitle: "Platform Availability" },
-    { label: "Monthly Support Tickets", value: "150+", subtitle: "Resolved with 98% CSAT" },
+    { label: "AAU Certification", value: "6 Months", subtitle: "Full-Stack Dev Graduate" },
   ],
 };
 
@@ -28,17 +28,17 @@ export const programmingLanguages = [
   {
     name: "JavaScript (ES6+)",
     level: "Advanced / Primary",
-    percentage: 92,
+    percentage: 94,
     category: "Full Stack",
     icon: "Code2",
     color: "#f7df1e",
     description:
-      "Core language used across modern web apps, asynchronous event-driven programming, DOM manipulation, React ecosystem, and Node.js microservices.",
+      "Core language used across modern web apps, asynchronous event-driven programming, DOM manipulation, React 19 ecosystem, and Node.js microservices.",
   },
   {
     name: "TypeScript",
     level: "Proficient",
-    percentage: 84,
+    percentage: 85,
     category: "Full Stack",
     icon: "FileCode",
     color: "#3178c6",
@@ -78,7 +78,7 @@ export const programmingLanguages = [
   {
     name: "SQL (MySQL / PostgreSQL)",
     level: "Advanced",
-    percentage: 90,
+    percentage: 92,
     category: "Database",
     icon: "Database",
     color: "#336791",
@@ -128,7 +128,7 @@ export const skillCategories = [
       { name: "Vite & Fast Bundling", level: "Advanced", tag: "Tooling" },
       { name: "Redux Toolkit & Context API", level: "Advanced", tag: "State" },
       { name: "Responsive & Adaptive Design", level: "Expert", tag: "UI/UX" },
-      { name: "i18next Multilingual", level: "Advanced", tag: "Localization" },
+      { name: "i18next Multilingual (EN/AM/FR)", level: "Advanced", tag: "Localization" },
       { name: "Axios & Fetch Architecture", level: "Expert", tag: "Networking" },
       { name: "Component Modularization", level: "Advanced", tag: "Architecture" },
     ],
@@ -145,16 +145,16 @@ export const skillCategories = [
       { name: "Middleware & Error Handling", level: "Expert", tag: "Design" },
       { name: "Email Pipelines (Brevo/SMTP)", level: "Advanced", tag: "Integration" },
       { name: "Microservices Concepts", level: "Proficient", tag: "Architecture" },
-      { name: "WebSocket & Realtime Comm.", level: "Proficient", tag: "Realtime" },
+      { name: "WebSocket & Realtime Comm.", level: "Advanced", tag: "Realtime" },
     ],
   },
   {
     id: "database",
-    title: "Database Management",
+    title: "Database Management & Admin",
     icon: "Database",
     skills: [
       { name: "MongoDB & Mongoose ODM", level: "Advanced", tag: "NoSQL" },
-      { name: "MySQL & PostgreSQL", level: "Advanced", tag: "Relational" },
+      { name: "MySQL & Relational Systems", level: "Advanced", tag: "Relational" },
       { name: "Schema Modeling & Indexing", level: "Expert", tag: "Design" },
       { name: "Query Performance Tuning", level: "Advanced", tag: "Optimization" },
       { name: "Automated Backup & Recovery", level: "Advanced", tag: "Disaster Recovery" },
@@ -164,12 +164,12 @@ export const skillCategories = [
   },
   {
     id: "erp",
-    title: "Enterprise ERP & Support",
+    title: "System Administration & Support",
     icon: "Layers",
     skills: [
-      { name: "ERP System Deployment", level: "Advanced", tag: "Enterprise" },
+      { name: "System Administration", level: "Advanced", tag: "Infrastructure" },
+      { name: "User Technical Support (Tier 1/2)", level: "Expert", tag: "Troubleshooting" },
       { name: "ERP Platform Administration", level: "Advanced", tag: "Operations" },
-      { name: "User Technical Support Desk", level: "Expert", tag: "Troubleshooting" },
       { name: "Cross-Department DB Mapping", level: "Advanced", tag: "Integration" },
       { name: "Automated Reporting Engines", level: "Advanced", tag: "BI" },
       { name: "Workflow Optimization", level: "Advanced", tag: "Processes" },
@@ -208,25 +208,55 @@ export const skillCategories = [
 
 export const experience = [
   {
-    role: "Systems Administrator, User Support Officer & Junior Full-Stack Developer",
+    role: "System Administrator & User Support Officer",
     company: "Enterprise ERP & Software Solutions",
     location: "Ethiopia",
-    period: "2024 – Present",
-    type: "Full-Time",
+    period: "September 2025 – Present (Still Now)",
+    type: "Full-Time (Promoted / Advanced)",
+    badge: "Current Role",
     highlights: [
-      "Architected, deployed, and administered core Enterprise Resource Planning (ERP) platform modules across organizational departments, achieving 99.8% platform uptime.",
-      "Engineered automated internal web utilities and responsive management dashboards with React, Node.js, Express, and MongoDB, cutting manual data entry time by over 45%.",
-      "Managed relational and NoSQL databases; authored automated maintenance scripts, scheduled backups, schema migrations, and high-performance reporting queries.",
-      "Provided 1st and 2nd-tier user support, resolving over 150+ incidents monthly involving ERP anomalies, authentication issues, database synchronization, and system errors.",
-      "Engineered local network topologies, configured subnet routers/switches, and provisioned physical workstations and servers to eliminate enterprise operational bottlenecks.",
+      "Serving as System Administrator and User Support Officer, overseeing enterprise platform operations, server stability, and network availability.",
+      "Providing high-tier technical user support across departments, rapidly diagnosing application faults, resolving ERP anomalies, and handling authentication/hardware tickets.",
+      "Managing local network topologies, configuring routers/switches, and enforcing strict data security protocols to eliminate system bottlenecks.",
+      "Collaborating with departmental leads to train staff, write Standard Operating Procedures (SOPs), and streamline daily software operations.",
     ],
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "ERP Platform", "MySQL", "Linux", "Networking"],
+    tech: ["System Administration", "ERP Platform", "User Support", "Networking", "Linux", "Windows Server", "IT Infrastructure"],
+  },
+  {
+    role: "Database Associate / Database Administrator",
+    company: "Enterprise ERP & Software Solutions",
+    location: "Ethiopia",
+    period: "March 05, 2025 – September 2025 (6 Months)",
+    type: "Full-Time",
+    badge: "6-Month Specialization",
+    highlights: [
+      "Worked for 6 months as Database Associate, handling core relational (MySQL) and NoSQL (MongoDB) database architectures, schema designs, and data integrity.",
+      "Authored automated maintenance scripts, query optimizations, and scheduled database backups to ensure 99.8% data availability.",
+      "Executed database cross-mapping for enterprise modules, eliminating duplicate records and accelerating monthly reporting query speeds by 40%.",
+      "Diagnosed and resolved critical database lockups, connection pooling limits, and migration scripts during high-traffic enterprise operations.",
+    ],
+    tech: ["Database Administration", "MySQL", "MongoDB", "Query Optimization", "Database Schemas", "Backups & Recovery", "SQL"],
+  },
+  {
+    role: "Full-Stack Software Development Fellow & Project Lead (Ekub Circle)",
+    company: "Addis Ababa University (AAU) — Software Training Initiative",
+    location: "Addis Ababa, Ethiopia",
+    period: "6-Month Intensive Training (2024 – 2025)",
+    type: "Professional Certification & Capstone",
+    badge: "AAU Certified",
+    highlights: [
+      "Completed rigorous 6-month intensive full-stack software development training at Addis Ababa University (AAU) covering modern engineering practices.",
+      "Architected and deployed the signature capstone project 'Ekub Circle' (እቁብ Circle) — an automated digital community savings and rotating credit platform built with React, Node.js, Express, and MongoDB.",
+      "Engineered real-time lottery draws, member digital ledgers, multilingual UI (English & Amharic), and automated contribution tracking.",
+      "Graduated with top marks, demonstrating mastery in REST APIs, JWT authentication, responsive Tailwind design, and agile methodologies.",
+    ],
+    tech: ["React 19", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Socket.io", "REST APIs", "Git"],
   },
   {
     role: "Full-Stack Web Developer (Freelance / Contract)",
     company: "Independent Client & Institutional Solutions",
     location: "Remote / Hybrid",
-    period: "2023 – 2024",
+    period: "2024 – 2025",
     type: "Contract",
     highlights: [
       "Engineered custom, responsive web applications from design through production deployment, employing modern MERN stack practices.",
@@ -240,7 +270,7 @@ export const experience = [
     role: "Engineering IT Systems Assistant & Academic Laboratory Researcher",
     company: "Debre Markos University — College of Technology",
     location: "Debre Markos, Ethiopia",
-    period: "2022 – 2023",
+    period: "2023 – 2024",
     type: "Academic Internship",
     highlights: [
       "Maintained computer engineering lab equipment, configured local area networks (LAN), installed diagnostic tools, and performed hardware repairs.",
@@ -252,6 +282,40 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    id: "ekub-circle",
+    title: "Ekub Circle (እቁብ Circle) — Digital Rotating Savings Platform",
+    subtitle: "Addis Ababa University (AAU) 6-Month Full-Stack Signature Project",
+    category: "Full Stack",
+    image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=900",
+    overview:
+      "A modern, fintech-inspired digital transformation of the traditional Ethiopian rotating credit and savings association ('Ekub' / እቁብ). Features automated lottery round draws, digital contribution tracking, transparent payout schedules, and bilingual support in Amharic and English.",
+    challenge:
+      "Traditional manual Ekub operations face trust barriers, delayed member payments, paper ledger errors, manual lottery draw disputes, and lack of real-time member visibility.",
+    solution:
+      "Architected an end-to-end MERN application with real-time WebSocket round draws, dynamic ledger balance calculations, proof-of-payment image uploads, SMS/Email contribution reminders, and full Amharic/English localized interface.",
+    features: [
+      "Bilingual member interface (English & Amharic / አማርኛ) with culturally intuitive UX",
+      "Transparent automated lottery draw engine with real-time animation for winner selection",
+      "Digital contribution ledger tracking monthly/weekly cycles, balances, and payout order",
+      "Proof of payment upload with admin approval verification pipeline (Multer)",
+      "Late payment penalty calculator and automated notification reminders (Brevo/SMS)",
+      "Role-Based Access Control (RBAC): Ekub Judge/Admin, Regular Members, and Auditors",
+    ],
+    tech: [
+      "JavaScript (ES6+)",
+      "React 19",
+      "Node.js",
+      "Express.js",
+      "MongoDB & Mongoose",
+      "Tailwind CSS v4",
+      "Socket.io",
+      "JWT Auth",
+    ],
+    metrics: "Digitized full savings cycles with 100% calculation accuracy and zero lottery disputes.",
+    demoUrl: "https://selamsew211.github.io/Selamsew211",
+    githubUrl: "https://github.com/selamsewalemu/Selamsew-portfolio2",
+  },
   {
     id: "budget-management",
     title: "Budget & Institutional Expense Management System",
@@ -413,16 +477,22 @@ export const educationData = {
   ],
   certifications: [
     {
-      title: "Full-Stack Web Development (MERN Stack)",
-      issuer: "Advanced Engineering Certification",
-      date: "2024",
-      skills: "React 19, Node.js, Express, MongoDB, REST APIs",
+      title: "6-Month Full-Stack Software Development Intensive",
+      issuer: "Addis Ababa University (AAU)",
+      date: "2024 – 2025",
+      skills: "Full-Stack Web Engineering, React 19, Node.js, Express, MongoDB, REST APIs, Ekub Circle Capstone",
+    },
+    {
+      title: "Enterprise Database Administration & Operations (6-Month Role)",
+      issuer: "Professional Systems & DB Practice",
+      date: "March 2025 – September 2025",
+      skills: "MySQL, MongoDB, Schema Modeling, Performance Tuning, Backups, Data Integrity",
     },
     {
       title: "Enterprise ERP System Administration & DB Integration",
       issuer: "Professional Systems Training",
-      date: "2024",
-      skills: "ERP Deployment, DB Mapping, User Support, Maintenance",
+      date: "2024 – 2025",
+      skills: "ERP Deployment, DB Mapping, User Support, System Maintenance",
     },
     {
       title: "CCNA: Networking Essentials & Switching Concepts",

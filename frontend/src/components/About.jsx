@@ -76,6 +76,24 @@ function About() {
               </div>
 
               <div className="fact-item">
+                <Workflow className="fact-icon" />
+                <div>
+                  <strong>Professional Enterprise Track</strong>
+                  <p>System Admin & User Support Officer (Present)</p>
+                  <small className="fact-tag">Database Associate (6 Mos) • Active since Mar 05, 2025</small>
+                </div>
+              </div>
+
+              <div className="fact-item">
+                <Zap className="fact-icon" />
+                <div>
+                  <strong>AAU Full-Stack Specialization</strong>
+                  <p>Addis Ababa University 6-Month Intensive Training</p>
+                  <small className="fact-tag">Project Lead: Ekub Circle (እቁብ Circle)</small>
+                </div>
+              </div>
+
+              <div className="fact-item">
                 <MapPin className="fact-icon" />
                 <div>
                   <strong>Location & Relocation</strong>

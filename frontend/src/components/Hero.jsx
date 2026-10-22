@@ -37,7 +37,32 @@ function Hero() {
 
   const handleDownloadCV = () => {
     // Generate clean text-based CV / download link
-    const cvText = `SELAMSEW ALEMU - ELECTRICAL & COMPUTER ENGINEER\nFull-Stack Developer | ERP Administrator | System Engineer\nEmail: ${personalInfo.email}\nPhone: ${personalInfo.phone}\nLocation: ${personalInfo.location}\nLinkedIn: ${personalInfo.linkedin}\nGitHub: ${personalInfo.github}\n\nEDUCATION:\nDebre Markos University - B.Sc. in Electrical and Computer Engineering (Specialized in Computer Engineering), Graduated July 2024.\n\nEXPERIENCE:\n1. Systems Administrator, User Support Officer & Junior Full-Stack Developer (2024 - Present)\n2. Full-Stack Web Developer (Freelance / Contract) (2023 - 2024)\n3. Engineering IT Systems Assistant (Debre Markos University) (2022 - 2023)\n\nKEY SKILLS:\nJavaScript, TypeScript, Python, C++, Java, SQL, PHP, Bash, React.js, Node.js, Express, MongoDB, MySQL, ERP Platform Administration, TCP/IP, Linux.`;
+    const cvText = `SELAMSEW ALEMU - ELECTRICAL & COMPUTER ENGINEER
+System Administrator & User Support Officer | Database Associate | Full-Stack Developer
+Email: ${personalInfo.email}
+Phone: ${personalInfo.phone}
+Location: ${personalInfo.location}
+LinkedIn: ${personalInfo.linkedin}
+GitHub: ${personalInfo.github}
+
+PROFESSIONAL EXPERIENCE:
+1. System Administrator & User Support Officer (September 2025 – Present)
+   Enterprise ERP & Software Solutions
+   - Overseeing enterprise system operations, server availability, network topologies, and Tier-1/2 user support.
+2. Database Associate / Administrator (March 05, 2025 – September 2025 | 6 Months)
+   Enterprise ERP & Software Solutions
+   - Schema modeling, MySQL/MongoDB administration, query performance tuning, automated backup schedules, data integrity.
+3. Full-Stack Web Developer & Project Lead (Ekub Circle) (2024 – 2025)
+   Addis Ababa University (AAU) — 6-Month Intensive Software Training
+   - Architected 'Ekub Circle' (እቁብ Circle) community digital savings platform with React 19, Node.js, Express, MongoDB.
+
+EDUCATION & CERTIFICATIONS:
+• Addis Ababa University (AAU) — 6-Month Full-Stack Software Development Intensive (2024 – 2025)
+• Debre Markos University — B.Sc. in Electrical & Computer Engineering (Specialized in Computer Engineering), Graduated July 05, 2024.
+
+KEY SKILLS & TECHNOLOGIES:
+• Languages: JavaScript (ES6+), TypeScript, Python, C++, Java, SQL, PHP, Bash/Shell, HTML5/CSS3.
+• Technologies: React 19, Node.js, Express.js, MongoDB, MySQL, Tailwind CSS v4, ERP Platforms, TCP/IP, Linux.`;
     const blob = new Blob([cvText], { type: "text/plain;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
