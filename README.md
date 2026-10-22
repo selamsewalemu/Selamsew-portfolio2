@@ -6,7 +6,7 @@
 [![Express.js](https://img.shields.io/badge/Express.js-5.2-000000?style=flat&logo=express)](https://expressjs.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-47A248?style=flat&logo=mongodb)](https://mongodb.com/)
 [![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=flat&logo=vite)](https://vitejs.dev/)
-[![i18n](https://img.shields.io/badge/i18n-EN%20%7C%20AM%20%7C%20FR-blue)](https://react.i18next.com/)
+[![English](https://img.shields.io/badge/Language-English-blue)](https://github.com/selamsewalemu/Selamsew-portfolio2)
 
 An international, responsive, modern portfolio and engineering showcase platform built for **Selamsew Alemu** — Electrical & Computer Engineer, Full-Stack Web Developer, and Enterprise ERP Systems Administrator.
 
@@ -57,12 +57,12 @@ Categorized into interactive disciplines:
 
 ### 🚀 Interactive Featured Projects & Case Studies
 Interactive popup case-study modals with problem descriptions, architectural solutions, feature checkmarks, tech tags, and live demo / code links:
-1. **Ekub Circle (እቁብ Circle) — Digital Rotating Savings Platform** *(Addis Ababa University 6-Month Signature Project)*
+1. **Ekub Circle — Digital Rotating Savings Platform** *(Addis Ababa University 6-Month Signature Project)*
    - Tech: React 19, Node.js, Express.js, MongoDB, Tailwind CSS v4, Socket.io, JWT.
-   - Bilingual support: Amharic (አማርኛ) and English (EN).
+   - Core Features: Real-time lottery draw engine, digital contribution ledger, and payout schedule management.
 2. **Budget Expense Management System** *(Debre Markos University Final Graduation Project)*
 3. **Enterprise Fuel & Fleet Inventory System** *(Full-Stack Logistics & Consumption Auditing Platform)*
-4. **Localized International Portfolio Platform** *(Trilingual showcase with i18n in EN, AM, FR)*
+4. **Global Engineering Showcase Platform** *(High-performance portfolio with glassmorphic UI and theme engine)*
 5. **Corporate ERP User Support & Incident Pipeline** *(Ticketing & database patch tracker)*
 6. **Smart Hardware Health & Sensor Monitor** *(IoT / Microcontroller telemetry)*
 7. **Real-Time Team Collaboration & Task Hub** *(Agile Kanban sync engine)*
@@ -72,11 +72,6 @@ Interactive popup case-study modals with problem descriptions, architectural sol
 - **Addis Ababa University (AAU)** — 6-Month Full-Stack Software Development Intensive Certification (2024 – 2025).
 - **Enterprise Database Administration & Operations (6-Month Role)** — MySQL, MongoDB, backups, and schema optimization.
 - **Certifications**: MERN Stack Specialist, ERP System Administration, Cisco CCNA Networking Essentials, Python for Systems Engineering.
-
-### 🌐 Trilingual Localization (i18n)
-- **English (EN)**
-- **Amharic (አማርኛ - AM)**
-- **French (Français - FR)**
 
 ### 📬 Direct Contact & Communication
 - Direct email and phone channels with **1-click clipboard copy** feedback.

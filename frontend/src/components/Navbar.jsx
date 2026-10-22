@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
-import LanguageSwitcher from "./LanguageSwitcher";
 import profileImage from "../assets/selamsew.jpg";
 import { Sun, Moon, Menu, X, Briefcase, Activity, Shield } from "lucide-react";
 
@@ -88,8 +87,6 @@ function Navbar() {
 
         {/* RIGHT CONTROLS */}
         <div className="nav-actions">
-          <LanguageSwitcher />
-
           <button
             type="button"
             onClick={toggleTheme}

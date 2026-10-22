@@ -128,7 +128,7 @@ export const skillCategories = [
       { name: "Vite & Fast Bundling", level: "Advanced", tag: "Tooling" },
       { name: "Redux Toolkit & Context API", level: "Advanced", tag: "State" },
       { name: "Responsive & Adaptive Design", level: "Expert", tag: "UI/UX" },
-      { name: "i18next Multilingual (EN/AM/FR)", level: "Advanced", tag: "Localization" },
+      { name: "Web Internationalization & a11y", level: "Advanced", tag: "Localization" },
       { name: "Axios & Fetch Architecture", level: "Expert", tag: "Networking" },
       { name: "Component Modularization", level: "Advanced", tag: "Architecture" },
     ],
@@ -261,7 +261,7 @@ export const experience = [
     highlights: [
       "Engineered custom, responsive web applications from design through production deployment, employing modern MERN stack practices.",
       "Architected secure RESTful APIs with JSON Web Token (JWT) role-based authorization, rate limiting, and automated notification services (Brevo/SMTP).",
-      "Implemented comprehensive internationalization (i18n) pipelines with instantaneous multi-language rendering (English, Amharic, French).",
+      "Implemented accessible UI architectures with responsive layouts and cross-browser consistency.",
       "Optimized frontend bundle sizes and assets to achieve 90+ Google Lighthouse performance scores and sub-second page loads.",
     ],
     tech: ["React 19", "Node.js", "Express", "Tailwind CSS", "MongoDB", "i18next", "REST APIs", "Git"],
@@ -284,18 +284,18 @@ export const experience = [
 export const projects = [
   {
     id: "ekub-circle",
-    title: "Ekub Circle (እቁብ Circle) — Digital Rotating Savings Platform",
+    title: "Ekub Circle — Digital Rotating Savings Platform",
     subtitle: "Addis Ababa University (AAU) 6-Month Full-Stack Signature Project",
     category: "Full Stack",
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=900",
     overview:
-      "A modern, fintech-inspired digital transformation of the traditional Ethiopian rotating credit and savings association ('Ekub' / እቁብ). Features automated lottery round draws, digital contribution tracking, transparent payout schedules, and bilingual support in Amharic and English.",
+      "A modern fintech digital transformation of rotating credit and savings associations (ROSCA / Ekub). Features automated lottery round draws, digital contribution tracking, transparent payout schedules, and clean user dashboards.",
     challenge:
       "Traditional manual Ekub operations face trust barriers, delayed member payments, paper ledger errors, manual lottery draw disputes, and lack of real-time member visibility.",
     solution:
-      "Architected an end-to-end MERN application with real-time WebSocket round draws, dynamic ledger balance calculations, proof-of-payment image uploads, SMS/Email contribution reminders, and full Amharic/English localized interface.",
+      "Architected an end-to-end MERN application with real-time WebSocket round draws, dynamic ledger balance calculations, proof-of-payment image uploads, SMS/Email contribution reminders, and responsive user interfaces.",
     features: [
-      "Bilingual member interface (English & Amharic / አማርኛ) with culturally intuitive UX",
+      "Intuitive member dashboard and transparent round status overview",
       "Transparent automated lottery draw engine with real-time animation for winner selection",
       "Digital contribution ledger tracking monthly/weekly cycles, balances, and payout order",
       "Proof of payment upload with admin approval verification pipeline (Multer)",
@@ -365,23 +365,22 @@ export const projects = [
   },
   {
     id: "international-portfolio",
-    title: "Global Multi-Lingual Showcase Engine",
-    subtitle: "High-Performance Portfolio with i18n & Glassmorphic UI",
+    title: "Global Engineering Showcase Platform",
+    subtitle: "High-Performance Portfolio with Glassmorphic UI",
     category: "Full Stack",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=900",
     overview:
-      "Engineered a modern, accessible international portfolio engine featuring dynamic language switching (English, Amharic, French), dark/light mode toggle, and seamless REST backend integration.",
+      "Engineered a modern, accessible international portfolio engine featuring dynamic routing, dark/light mode toggle, and seamless REST backend integration.",
     challenge:
       "Showcasing engineering breadth to both local Ethiopian enterprises and global international recruiters requiring multilingual content and responsive design.",
     solution:
       "Integrated client-side i18next dictionaries, smooth CSS glassmorphism, responsive navigation drawers, and an asynchronous Brevo email communication pipeline.",
     features: [
-      "Trilingual support (English, Amharic, French) with zero reload lag",
       "Dark mode & Light mode theme persistence with custom CSS variables",
       "Responsive navigation with mobile drawer and smooth anchor scrolling",
       "Direct email dispatch pipeline via Brevo HTTP API",
     ],
-    tech: ["React 19", "Vite", "Tailwind CSS", "i18next", "Lucide React", "Axios"],
+    tech: ["React 19", "Vite", "Tailwind CSS", "Lucide React", "Axios"],
     metrics: "100% Mobile responsive with sub-second page transitions.",
     demoUrl: "https://selamsew211.github.io/Selamsew211",
     githubUrl: "https://github.com/selamsewalemu/Selamsew-portfolio2",
