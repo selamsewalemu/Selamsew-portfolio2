@@ -115,7 +115,7 @@ function About() {
                 <Code2 className="fact-icon" />
                 <div>
                   <strong>Primary Tech Stacks</strong>
-                  <p>MERN (React 19, Node.js, Express, MongoDB), ERP, MySQL, C++, Python</p>
+                  <p>C# / .NET Core, MERN (React 19, Node.js, Express, MongoDB), ERP, MySQL, C++, Python</p>
                 </div>
               </div>
             </div>

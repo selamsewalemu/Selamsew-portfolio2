@@ -30,13 +30,15 @@ function Languages() {
   const { t } = useTranslation();
   const [filter, setFilter] = useState("All");
 
-  const categories = ["All", "Full Stack", "Backend & Systems", "Database", "Systems & Engineering"];
+  const categories = ["All", ".NET & C#", "Full Stack", "Backend & Systems", "Database", "Systems & Engineering"];
 
   const filteredLanguages =
     filter === "All"
       ? programmingLanguages
-      : programmingLanguages.filter((l) =>
-          l.category.toLowerCase().includes(filter.toLowerCase())
+      : programmingLanguages.filter(
+          (l) =>
+            l.category.toLowerCase().includes(filter.toLowerCase()) ||
+            (filter === ".NET & C#" && (l.name.includes("C#") || l.name.includes(".NET")))
         );
 
   return (

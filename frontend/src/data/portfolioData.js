@@ -26,6 +26,26 @@ export const personalInfo = {
 
 export const programmingLanguages = [
   {
+    name: "C#",
+    level: "Advanced",
+    percentage: 88,
+    category: ".NET & Backend",
+    icon: "Code2",
+    color: "#9b4993",
+    description:
+      "Modern object-oriented programming, LINQ, asynchronous concurrency (async/await), strong typing, dependency injection, and high-performance enterprise applications.",
+  },
+  {
+    name: ".NET / ASP.NET Core",
+    level: "Advanced",
+    percentage: 87,
+    category: ".NET & Backend",
+    icon: "Server",
+    color: "#512bd4",
+    description:
+      "Enterprise RESTful Web APIs, Entity Framework Core (EF Core), clean architecture, middleware pipelines, microservices, and secure JWT authentication.",
+  },
+  {
     name: "JavaScript (ES6+)",
     level: "Advanced / Primary",
     percentage: 94,
@@ -131,6 +151,21 @@ export const skillCategories = [
       { name: "Web Internationalization & a11y", level: "Advanced", tag: "Localization" },
       { name: "Axios & Fetch Architecture", level: "Expert", tag: "Networking" },
       { name: "Component Modularization", level: "Advanced", tag: "Architecture" },
+    ],
+  },
+  {
+    id: "dotnet",
+    title: ".NET & Enterprise C#",
+    icon: "Server",
+    skills: [
+      { name: "C# Language & Modern OOP", level: "Advanced", tag: "C# Core" },
+      { name: ".NET 8 / ASP.NET Core", level: "Advanced", tag: "Web APIs" },
+      { name: "Entity Framework Core (EF Core)", level: "Advanced", tag: "ORM" },
+      { name: "LINQ & Async Programming", level: "Expert", tag: "Architecture" },
+      { name: "Dependency Injection & IoC", level: "Advanced", tag: "Patterns" },
+      { name: "SQL Server & PostgreSQL Integration", level: "Advanced", tag: "Data Access" },
+      { name: "RESTful Web API Endpoints", level: "Expert", tag: "APIs" },
+      { name: "JWT Authentication & Middleware", level: "Advanced", tag: "Security" },
     ],
   },
   {

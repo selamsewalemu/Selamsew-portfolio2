@@ -61,8 +61,8 @@ EDUCATION & CERTIFICATIONS:
 • Debre Markos University — B.Sc. in Electrical & Computer Engineering (Specialized in Computer Engineering), Graduated July 05, 2024.
 
 KEY SKILLS & TECHNOLOGIES:
-• Languages: JavaScript (ES6+), TypeScript, Python, C++, Java, SQL, PHP, Bash/Shell, HTML5/CSS3.
-• Technologies: React 19, Node.js, Express.js, MongoDB, MySQL, Tailwind CSS v4, ERP Platforms, TCP/IP, Linux.`;
+• Languages: C#, .NET / ASP.NET Core, JavaScript (ES6+), TypeScript, Python, C++, Java, SQL, PHP, Bash/Shell, HTML5/CSS3.
+• Technologies: .NET 8 / ASP.NET Core, Entity Framework Core, React 19, Node.js, Express.js, MongoDB, MySQL, Tailwind CSS v4, ERP Platforms, TCP/IP, Linux.`;
     const blob = new Blob([cvText], { type: "text/plain;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");

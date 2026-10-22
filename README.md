@@ -21,6 +21,8 @@ An international, responsive, modern portfolio and engineering showcase platform
 
 ### 💻 Comprehensive Programming Languages
 Dedicated showcase section featuring proficiency metrics, usage context, and categorized filters:
+- **C#** — Modern object-oriented programming, LINQ, async task processing, and enterprise architectures.
+- **.NET / ASP.NET Core** — High-performance RESTful Web APIs, Entity Framework Core (EF Core), and microservices.
 - **JavaScript (ES6+)** — React ecosystem, Node.js microservices, asynchronous architectures.
 - **TypeScript** — Strongly typed enterprise components and contract safety.
 - **Python** — System automation, data manipulation, backend logic.
@@ -33,12 +35,13 @@ Dedicated showcase section featuring proficiency metrics, usage context, and cat
 
 ### 🛠️ Technical Competency Domains
 Categorized into interactive disciplines:
-1. **Frontend Architecture**: React 19, Vite, Tailwind CSS v4, Redux Toolkit, Context API, responsive UI/UX.
-2. **Backend & API Engineering**: Node.js, Express.js, RESTful APIs, JWT Auth, Multer, Brevo email services.
-3. **Database Management**: MongoDB & Mongoose, MySQL, PostgreSQL, query optimization, automated backups.
-4. **Enterprise ERP & Operations**: ERP deployment, cross-department database mapping, user support, reporting engines.
-5. **Computer Engineering & Networking**: TCP/IP, subnetting, Cisco CCNA switching concepts, hardware diagnostics.
-6. **DevOps & Tooling**: Git, GitHub, Docker, Postman, Linux Bash, Render/Vercel deployment.
+1. **.NET & Enterprise C#**: C# (.NET 8/9), ASP.NET Core Web APIs, Entity Framework Core, LINQ, dependency injection.
+2. **Frontend Architecture**: React 19, Vite, Tailwind CSS v4, Redux Toolkit, Context API, responsive UI/UX.
+3. **Backend & API Engineering**: Node.js, Express.js, RESTful APIs, JWT Auth, Multer, Brevo email services.
+4. **Database Management**: MongoDB & Mongoose, MySQL, PostgreSQL, query optimization, automated backups.
+5. **Enterprise ERP & Operations**: ERP deployment, cross-department database mapping, user support, reporting engines.
+6. **Computer Engineering & Networking**: TCP/IP, subnetting, Cisco CCNA switching concepts, hardware diagnostics.
+7. **DevOps & Tooling**: Git, GitHub, Docker, Postman, Linux Bash, Render/Vercel deployment.
 
 ### 💼 In-Depth Work Experience Timeline (Active Track: March 05, 2025 – Present)
 - **System Administrator & User Support Officer** *(September 2025 – Present | Still Now)*
