@@ -38,6 +38,7 @@ function Hero() {
   const handleDownloadCV = () => {
     // Generate clean text-based CV / download link
     const cvText = `SELAMSEW ALEMU - ELECTRICAL & COMPUTER ENGINEER
+Field of Study: Electrical and computer engineering (Computer stream)
 System Administrator & User Support Officer | Database Associate | Full-Stack Developer
 Email: ${personalInfo.email}
 Phone: ${personalInfo.phone}
@@ -46,27 +47,27 @@ LinkedIn: ${personalInfo.linkedin}
 GitHub: ${personalInfo.github}
 
 PROFESSIONAL EXPERIENCE:
-1. System Administrator & User Support Officer (September 2025 – Present)
+1. System Administrator & User Support Officer (September 2025 – Present | Still Now)
    Enterprise ERP & Software Solutions
    - Overseeing enterprise system operations, server availability, network topologies, and Tier-1/2 user support.
 2. Database Associate / Administrator (March 05, 2025 – September 2025 | 6 Months)
    Enterprise ERP & Software Solutions
    - Schema modeling, MySQL/MongoDB administration, query performance tuning, automated backup schedules, data integrity.
-5. Full-Stack Web Developer & Project Lead (Ekub Circle) (2024 – 2025)
-   Addis Ababa University (AAU) — 6-Month Intensive Software Training
-   - Architected 'Ekub Circle' community digital savings platform with JavaScript (ES6+), Node.js, Express, MongoDB.
+3. Full-Stack Software Development Trainee & Ekub Circle Project Lead (March 2026 – Present | Still Now)
+   Addis Ababa University (AAU) — Software Training Initiative
+   - Architected 'Ekub Circle' community digital savings platform with JavaScript (ES6+), Node.js, Express, PostgreSQL.
 
 EDUCATION & CERTIFICATIONS:
-• Addis Ababa University (AAU) — 6-Month Full-Stack Software Development Intensive (2024 – 2025)
-• Debre Markos University — B.Sc. in Electrical & Computer Engineering (Specialized in Computer Engineering), Graduated July 05, 2024.
+• Addis Ababa University (AAU) — Full-Stack Software Development Training (March 2026 – Present | Still Now)
+• Debre Markos University — B.Sc. in Electrical and Computer Engineering (Computer stream), Graduated July 05, 2024.
 
 SPOKEN LANGUAGES:
 • English (Professional Working Proficiency)
 • Amharic (Native)
 
 KEY SKILLS & TECHNOLOGIES:
-• Languages: C#, .NET / ASP.NET Core, JavaScript (ES6+), TypeScript, Python, C++, Java, SQL, PHP, Bash/Shell, HTML5/CSS3.
-• Technologies: .NET 8 / ASP.NET Core, Entity Framework Core, React 19, Node.js, Express.js, MongoDB, MySQL, Tailwind CSS v4, ERP Platforms, TCP/IP, Linux.`;
+• Languages: C#, .NET / ASP.NET Core, JavaScript (ES6+), TypeScript, Python, C++, Java, SQL (PostgreSQL, MySQL), PHP, Bash/Shell, HTML5/CSS3.
+• Technologies: .NET 8 / ASP.NET Core, Entity Framework Core, React 19, Node.js, Express.js, PostgreSQL, MongoDB, MySQL, Tailwind CSS v4, ERP Platforms, TCP/IP, Linux.`;
     const blob = new Blob([cvText], { type: "text/plain;charset=utf-8" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");

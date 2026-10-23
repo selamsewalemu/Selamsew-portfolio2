@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { projects } from "../data/portfolioData";
 import ProjectModal from "./ProjectModal";
+import aauLogo from "../assets/aau-logo.png";
 import { ExternalLink, Eye, Layers } from "lucide-react";
 import { Github } from "./SocialIcons";
 
@@ -64,6 +65,14 @@ function Projects() {
               </div>
 
               <div className="project-card-body">
+                {project.subtitle.includes("Addis Ababa") && (
+                  <div>
+                    <span className="project-aau-badge">
+                      <img src={aauLogo} alt="AAU" className="project-aau-logo-mini" />
+                      <span>AAU Capstone</span>
+                    </span>
+                  </div>
+                )}
                 <h3
                   className="project-title"
                   onClick={() => setSelectedProject(project)}

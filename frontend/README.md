@@ -43,7 +43,8 @@ frontend/src/
 ├── api/
 │   └── axios.js               # Central Axios client with base URL & dev proxy
 ├── assets/
-│   └── selamsew.jpg           # Profile photography
+│   ├── selamsew.jpg           # Profile photography
+│   └── aau-logo.png           # Addis Ababa University official emblem
 ├── components/
 │   ├── Navbar.jsx             # Sticky blurred glass navigation header
 │   ├── Hero.jsx               # Hero banner with role ticker & CV download

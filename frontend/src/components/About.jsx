@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { personalInfo } from "../data/portfolioData";
+import aauLogo from "../assets/aau-logo.png";
 import {
   GraduationCap,
   MapPin,
@@ -69,9 +70,9 @@ function About() {
               <div className="fact-item">
                 <GraduationCap className="fact-icon" />
                 <div>
-                  <strong>Degree & Specialization</strong>
+                  <strong>Field of Study & Degree</strong>
                   <p>B.Sc. in Electrical and Computer Engineering</p>
-                  <small className="fact-tag">Computer Engineering Major (DMU '24)</small>
+                  <small className="fact-tag">Computer stream (DMU '24)</small>
                 </div>
               </div>
 
@@ -85,11 +86,17 @@ function About() {
               </div>
 
               <div className="fact-item">
-                <Zap className="fact-icon" />
+                <div className="fact-aau-logo-wrap">
+                  <img
+                    src={aauLogo}
+                    alt="Addis Ababa University (AAU)"
+                    className="fact-aau-logo"
+                  />
+                </div>
                 <div>
-                  <strong>AAU Full-Stack Specialization</strong>
-                  <p>Addis Ababa University 6-Month Intensive Training</p>
-                  <small className="fact-tag">Project Lead: Ekub Circle (እቁብ Circle)</small>
+                  <strong>AAU Full-Stack Training</strong>
+                  <p>Addis Ababa University (AAU)</p>
+                  <small className="fact-tag">March 2026 – Present • Project Lead: Ekub Circle (PostgreSQL)</small>
                 </div>
               </div>
 
@@ -115,7 +122,7 @@ function About() {
                 <Code2 className="fact-icon" />
                 <div>
                   <strong>Primary Tech Stacks</strong>
-                  <p>C# / .NET Core, MERN (React 19, Node.js, Express, MongoDB), ERP, MySQL, C++, Python</p>
+                  <p>C# / .NET Core, React 19, Node.js, Express, PostgreSQL, MySQL, MongoDB, ERP, Python, C++</p>
                 </div>
               </div>
             </div>

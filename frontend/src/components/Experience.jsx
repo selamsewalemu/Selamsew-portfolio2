@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { experience } from "../data/portfolioData";
+import aauLogo from "../assets/aau-logo.png";
 import {
   Briefcase,
   Calendar,
@@ -41,7 +42,15 @@ function Experience() {
                     <h3 className="role-title">{item.role}</h3>
                     <div className="company-row">
                       <span className="company-name">
-                        <Building size={16} />
+                        {item.company.includes("Addis Ababa") ? (
+                          <img
+                            src={aauLogo}
+                            alt="AAU Logo"
+                            className="company-aau-logo"
+                          />
+                        ) : (
+                          <Building size={16} />
+                        )}
                         {item.company}
                       </span>
                       <span className="location-name">

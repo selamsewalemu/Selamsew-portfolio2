@@ -1,5 +1,6 @@
 import { X, ExternalLink, CheckCircle2, TrendingUp, Layers } from "lucide-react";
 import { Github } from "./SocialIcons";
+import aauLogo from "../assets/aau-logo.png";
 
 function ProjectModal({ project, onClose }) {
   if (!project) return null;
@@ -13,6 +14,12 @@ function ProjectModal({ project, onClose }) {
             <span className="modal-category-badge">{project.category}</span>
             <h2 className="modal-title">{project.title}</h2>
             <p className="modal-subtitle">{project.subtitle}</p>
+            {project.subtitle?.includes("Addis Ababa") && (
+              <div className="modal-aau-badge">
+                <img src={aauLogo} alt="AAU Logo" className="modal-aau-logo-mini" />
+                <span>Official Addis Ababa University Capstone Project</span>
+              </div>
+            )}
           </div>
           <button className="modal-close-btn" onClick={onClose} aria-label="Close modal">
             <X size={22} />

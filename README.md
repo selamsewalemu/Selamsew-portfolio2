@@ -16,12 +16,13 @@ A modern, responsive, high-performance portfolio and engineering showcase platfo
 
 ## 👨‍💻 Professional Summary
 
-- **Title**: Electrical & Computer Engineer (Specialization: Computer Engineering)
+- **Title**: Electrical & Computer Engineer (Computer Stream)
+- **Field of Study**: Electrical and computer engineering (Computer stream)
 - **Active Career Track**: **March 05, 2025 – Present (Still Now)**
 - **Current Position**: **System Administrator & User Support Officer** (*Enterprise ERP & Software Solutions*)
 - **Previous Role**: **Database Associate / Administrator** (*March 05, 2025 – September 2025 | 6 Months*)
-- **Software Training**: **Addis Ababa University (AAU)** — 6-Month Intensive Full-Stack Software Development Certification
-- **Undergraduate Degree**: **Debre Markos University (DMU)** — B.Sc. in Electrical and Computer Engineering (Graduated July 05, 2024 G.C.)
+- **Software Training**: **Addis Ababa University (AAU)** — Full-Stack Software Development Training (**March 2026 – Present | Still Now**)
+- **Undergraduate Degree**: **Debre Markos University (DMU)** — B.Sc. in Electrical and Computer Engineering (Computer stream) (Graduated July 05, 2024 G.C.)
 - **Spoken Languages**: **English** (Professional Working Proficiency) | **Amharic** (Native)
 - **Location**: Addis Ababa & Debre Markos, Ethiopia *(Open to Remote & Global Relocation)*
 
@@ -74,10 +75,10 @@ Categorized into interactive disciplines:
 - Authored automated maintenance scripts, scheduled backups, and optimized complex queries, reducing monthly reporting query runtimes by **40%**.
 - Resolved connection pooling limits, database lockups, and executed data cross-mapping with zero data loss.
 
-### 3. Full-Stack Software Development Fellow & Project Lead *(2024 – 2025)*
-**Addis Ababa University (AAU) — 6-Month Software Training Initiative**
-- Completed rigorous 6-month intensive full-stack software development training covering modern engineering practices and agile sprints.
-- Architected and delivered the signature capstone project **Ekub Circle** — a digitized community savings and rotating credit platform.
+### 3. Full-Stack Software Development Trainee & Ekub Circle Project Lead *(March 2026 – Present | Still Now)*
+**Addis Ababa University (AAU) — Software Training Initiative**
+- Enrolled in intensive full-stack software development training covering modern web engineering practices and agile sprints.
+- Architected and delivered signature project **Ekub Circle** — a digitized community savings and rotating credit platform built with JavaScript (ES6+), Node.js, Express, and PostgreSQL.
 
 ### 4. Full-Stack Web Developer (Freelance / Contract) *(2024 – 2025)*
 - Engineered bespoke, responsive web applications from design through deployment using modern MERN stack practices.
@@ -91,9 +92,9 @@ Categorized into interactive disciplines:
 
 ## 🚀 Interactive Featured Projects & Case Studies
 
-1. **Ekub Circle — Digital Rotating Savings Platform** *(Addis Ababa University 6-Month Signature Project)*
-   - **Tech**: JavaScript (ES6+), Node.js, Express.js, MongoDB & Mongoose, Tailwind CSS v4, Socket.io, JWT Authentication.
-   - **Features**: Real-time transparent lottery draw engine with live animations, digital contribution ledger, payout calendar, late payment penalty calculator, and receipt verification pipeline.
+1. **Ekub Circle — Digital Rotating Savings Platform** *(Addis Ababa University Project | March 2026 – Present)*
+   - **Tech**: JavaScript (ES6+), Node.js, Express.js, PostgreSQL, Tailwind CSS v4, Socket.io, JWT Authentication.
+   - **Features**: Real-time transparent lottery draw engine with live animations, PostgreSQL contribution ledger, payout calendar, late payment penalty calculator, and receipt verification pipeline.
 2. **Budget Expense Management System** *(Debre Markos University Final Graduation Capstone)*
    - **Tech**: React.js, Node.js, Express.js, MongoDB, Tailwind CSS, Chart.js.
    - **Features**: Role-based fund approval workflow, live analytical budget dashboards, printable financial audit reports.
@@ -114,8 +115,8 @@ Categorized into interactive disciplines:
 
 ## 🎓 Academic Background & Credentials
 
-- **Debre Markos University (DMU)** — Bachelor of Science in Electrical and Computer Engineering (Specialization: Computer Engineering) | Graduated July 05, 2024 G.C.
-- **Addis Ababa University (AAU)** — 6-Month Full-Stack Software Development Intensive Certification (2024 – 2025).
+- **Debre Markos University (DMU)** — Bachelor of Science in Electrical and Computer Engineering (Computer stream) | Graduated July 05, 2024 G.C.
+- **Addis Ababa University (AAU)** — Full-Stack Software Development Training (March 2026 – Present | Still Now).
 - **Enterprise Database Administration & Operations (6-Month Role)** — MySQL, MongoDB, backups, query optimization (March 2025 – September 2025).
 - **Professional Accreditations**: Full-Stack Web Engineering, ERP Platform Administration, Cisco CCNA Networking Essentials, Python for Systems Engineering.
 
