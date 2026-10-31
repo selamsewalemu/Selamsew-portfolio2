@@ -514,7 +514,7 @@ export const projects = [
     category: "Full Stack",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=900",
     overview:
-      "TalentHub is a role-based job platform with a Node.js/Express backend and a React/TypeScript/Vite frontend. It supports Applicants, Employers, and Admins, with features for job posting, applications, and resume management. The backend uses MongoDB for persistence and cookie-based JWT authentication, while the frontend provides a responsive UI with role-based access control.",
+      "A role-based job platform (React, TypeScript, Node.js & MongoDB) featuring cookie-based JWT authentication, job posting, applications, and resume tracking for Applicants, Employers, and Admins.",
     challenge:
       "Managing multi-tier recruitment lifecycles with differing permissions (applicants applying and uploading resumes, employers posting and managing candidates, and admins moderating listings) requires robust security, state synchronization, and strict route authorization.",
     solution:
