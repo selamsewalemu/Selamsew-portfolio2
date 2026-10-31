@@ -7,7 +7,6 @@ import {
   MapPin,
   CheckCircle2,
   Building,
-  Terminal,
 } from "lucide-react";
 
 function Experience() {
@@ -18,7 +17,7 @@ function Experience() {
       <div className="section-container">
         {/* SECTION HEADER */}
         <div className="section-header text-center">
-          <span className="section-badge">Career Track</span>
+          <span className="section-badge">{t("experience.badge")}</span>
           <h2 className="section-title">{t("experience.title")}</h2>
           <p className="section-subtitle">{t("experience.subtitle")}</p>
         </div>
@@ -74,7 +73,7 @@ function Experience() {
                 <ul className="highlights-list">
                   {item.highlights.map((point, pIdx) => (
                     <li key={pIdx} className="highlight-point">
-                      <CheckCircle2 size={17} className="bullet-check" />
+                      <CheckCircle2 size={17} className="bullet-check flex-shrink-0" />
                       <span>{point}</span>
                     </li>
                   ))}

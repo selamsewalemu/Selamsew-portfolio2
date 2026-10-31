@@ -1,6 +1,6 @@
 import { personalInfo } from "../data/portfolioData";
 import profileImage from "../assets/selamsew.jpg";
-import { ArrowUp, MessageSquare, Mail, Heart } from "lucide-react";
+import { ArrowUp, MessageSquare, Mail } from "lucide-react";
 import { Github, Linkedin } from "./SocialIcons";
 
 function Footer() {
@@ -11,7 +11,7 @@ function Footer() {
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
     if (el) {
-      const navHeight = 80;
+      const navHeight = 76;
       const pos = el.getBoundingClientRect().top + window.pageYOffset - navHeight;
       window.scrollTo({ top: pos, behavior: "smooth" });
     }
@@ -31,12 +31,18 @@ function Footer() {
               </div>
             </div>
             <p className="footer-tagline">{personalInfo.tagline}</p>
+
+            <div className="footer-status-pill">
+              <span className="footer-pulse-dot"></span>
+              <span>All systems operational • 99.8% ERP Uptime</span>
+            </div>
+
             <div className="footer-social-row">
               <a
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="footer-social-icon"
+                className="footer-social-icon icon-gh"
                 title="GitHub"
               >
                 <Github size={18} />
@@ -45,7 +51,7 @@ function Footer() {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="footer-social-icon"
+                className="footer-social-icon icon-li"
                 title="LinkedIn"
               >
                 <Linkedin size={18} />
@@ -54,14 +60,14 @@ function Footer() {
                 href={personalInfo.telegram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="footer-social-icon"
+                className="footer-social-icon icon-tg"
                 title="Telegram"
               >
                 <MessageSquare size={18} />
               </a>
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="footer-social-icon"
+                className="footer-social-icon icon-mail"
                 title="Email"
               >
                 <Mail size={18} />
@@ -83,6 +89,9 @@ function Footer() {
                 <button onClick={() => scrollToSection("languages")}>Programming Languages</button>
               </li>
               <li>
+                <button onClick={() => scrollToSection("frameworks")}>Frameworks & Libraries</button>
+              </li>
+              <li>
                 <button onClick={() => scrollToSection("skills")}>Technical Skills</button>
               </li>
             </ul>
@@ -90,7 +99,7 @@ function Footer() {
 
           {/* PORTFOLIO SECTIONS */}
           <div className="footer-nav-col">
-            <h4 className="footer-col-title">Portfolio</h4>
+            <h4 className="footer-col-title">Work & Credentials</h4>
             <ul className="footer-nav-list">
               <li>
                 <button onClick={() => scrollToSection("experience")}>Work Experience</button>
@@ -117,6 +126,9 @@ function Footer() {
             <p className="footer-text-info">
               Alma Mater: Debre Markos University
             </p>
+            <p className="footer-text-info">
+              Active: Addis Ababa University (AAU)
+            </p>
           </div>
         </div>
       </div>
@@ -125,11 +137,11 @@ function Footer() {
       <div className="footer-bottom">
         <div className="footer-bottom-container">
           <p className="footer-copyright">
-            © {new Date().getFullYear()} Selamsew Alemu. All rights reserved.
+            © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
           </p>
 
           <p className="footer-built-with">
-            Built with React 19, Tailwind CSS, Lucide Icons, Express & Node.js
+            Built with React 19, Tailwind CSS v4, Lucide Icons, Express & Node.js
           </p>
 
           <button

@@ -7,7 +7,6 @@ import {
   BookOpen,
   Calendar,
   CheckCircle2,
-  Sparkles,
   Code2,
 } from "lucide-react";
 
@@ -30,7 +29,7 @@ function Education() {
       <div className="section-container">
         {/* SECTION HEADER */}
         <div className="section-header text-center">
-          <span className="section-badge">Academic & Accreditations</span>
+          <span className="section-badge">{t("education.badge")}</span>
           <h2 className="section-title">{t("education.title")}</h2>
           <p className="section-subtitle">{t("education.subtitle")}</p>
         </div>
@@ -66,7 +65,7 @@ function Education() {
             <div className="coursework-tags-grid">
               {educationData.coursework.map((course, idx) => (
                 <span key={idx} className="coursework-tag">
-                  <CheckCircle2 size={13} className="text-emerald" />
+                  <CheckCircle2 size={13} className="text-emerald flex-shrink-0" />
                   <span>{course}</span>
                 </span>
               ))}
@@ -118,7 +117,7 @@ function Education() {
             <div className="coursework-tags-grid">
               {aauCoursework.map((item, idx) => (
                 <span key={idx} className="coursework-tag">
-                  <CheckCircle2 size={13} className="text-emerald" />
+                  <CheckCircle2 size={13} className="text-emerald flex-shrink-0" />
                   <span>{item}</span>
                 </span>
               ))}

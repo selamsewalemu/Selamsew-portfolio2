@@ -11,6 +11,8 @@ import {
   Cpu,
   Workflow,
   CheckCircle,
+  ArrowRight,
+  Award,
 } from "lucide-react";
 
 function About() {
@@ -18,33 +20,46 @@ function About() {
 
   const coreStrengths = [
     {
-      icon: <Workflow className="strength-icon text-blue" />,
+      icon: <Workflow className="strength-icon text-cyan" size={26} />,
       title: "ERP & Workflow Automation",
       desc: "Deep experience configuring enterprise modules, bridging ERP databases with frontend tools, and automating administrative workflows.",
+      stat: "99.8% Uptime",
     },
     {
-      icon: <Zap className="strength-icon text-cyan" />,
+      icon: <Zap className="strength-icon text-primary" size={26} />,
       title: "Full-Stack Web Engineering",
-      desc: "Designing responsive, component-driven client applications with React 19 backed by modular Node.js/Express REST microservices.",
+      desc: "Designing responsive, component-driven client applications with React 19 backed by modular Node.js/Express and PostgreSQL REST services.",
+      stat: "Sub-second APIs",
     },
     {
-      icon: <ShieldCheck className="strength-icon text-emerald" />,
+      icon: <ShieldCheck className="strength-icon text-emerald" size={26} />,
       title: "Database Integrity & Uptime",
-      desc: "Implementing automated backups, strict schema validations, indexing, and high-availability operations for enterprise data.",
+      desc: "Implementing automated backups, strict schema validations, indexing, and high-availability operations in PostgreSQL, MySQL, and MongoDB.",
+      stat: "Zero Data-Loss",
     },
     {
-      icon: <Cpu className="strength-icon text-purple" />,
+      icon: <Cpu className="strength-icon text-purple" size={26} />,
       title: "Hardware & Network Topologies",
       desc: "Grounded in electrical and computer engineering fundamentals: TCP/IP subnets, hardware diagnostics, Linux servers, and embedded prototypes.",
+      stat: "Cisco & Linux",
     },
   ];
+
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      const navHeight = 76;
+      const pos = el.getBoundingClientRect().top + window.pageYOffset - navHeight;
+      window.scrollTo({ top: pos, behavior: "smooth" });
+    }
+  };
 
   return (
     <section id="about" className="section-padding about-section">
       <div className="section-container">
         {/* SECTION HEADER */}
         <div className="section-header text-center">
-          <span className="section-badge">Engineering Profile</span>
+          <span className="section-badge">{t("about.badge")}</span>
           <h2 className="section-title">{t("about.title")}</h2>
           <p className="section-subtitle">{t("about.subtitle")}</p>
         </div>
@@ -59,6 +74,25 @@ function About() {
             <div className="objective-box">
               <h4 className="objective-title">{t("about.objectiveTitle")}</h4>
               <p className="objective-text">{t("about.objectiveText")}</p>
+            </div>
+
+            <div className="about-quick-actions" style={{ display: "flex", gap: "12px", marginTop: "24px", flexWrap: "wrap" }}>
+              <button
+                type="button"
+                onClick={() => scrollToSection("experience")}
+                className="btn btn-primary"
+              >
+                <span>View Career Track</span>
+                <ArrowRight size={16} />
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollToSection("education")}
+                className="btn btn-secondary"
+              >
+                <Award size={16} />
+                <span>Degrees & Credentials</span>
+              </button>
             </div>
           </div>
 
@@ -128,8 +162,8 @@ function About() {
             </div>
 
             <div className="status-banner">
-              <CheckCircle size={18} className="text-emerald" />
-              <span>Available for Full-time Roles, Remote Contracts & Technical Consultancy</span>
+              <CheckCircle size={18} className="text-emerald flex-shrink-0" />
+              <span>{t("about.statusAvailable")}</span>
             </div>
           </div>
         </div>
@@ -138,7 +172,12 @@ function About() {
         <div className="core-strengths-grid">
           {coreStrengths.map((item, idx) => (
             <div key={idx} className="strength-card">
-              <div className="strength-icon-wrap">{item.icon}</div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "14px" }}>
+                <div className="strength-icon-wrap" style={{ margin: 0 }}>{item.icon}</div>
+                <span className="section-badge" style={{ margin: 0, fontSize: "0.72rem", padding: "4px 8px" }}>
+                  {item.stat}
+                </span>
+              </div>
               <h4>{item.title}</h4>
               <p>{item.desc}</p>
             </div>

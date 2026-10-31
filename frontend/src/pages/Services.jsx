@@ -1,64 +1,242 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import SkillsSection from "../components/Skills";
 import Footer from "../components/Footer";
-import { Layers, Server, Globe2, ShieldCheck, Database, Wrench } from "lucide-react";
+import {
+  Layers,
+  Server,
+  Globe2,
+  ShieldCheck,
+  Database,
+  Wrench,
+  CheckCircle2,
+  ArrowRight,
+  Calculator,
+  Clock,
+} from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Services() {
+  const [selectedService, setSelectedService] = useState("web");
+  const [selectedUrgency, setSelectedUrgency] = useState("standard");
+  const [estimatedTime, setEstimatedTime] = useState("2 - 4 Weeks");
+
   const serviceOfferings = [
     {
+      id: "erp",
       icon: <Layers size={28} className="text-primary" />,
       title: "ERP Platform Implementation & Administration",
       desc: "End-to-end deployment, user management, database cross-mapping, troubleshooting, and enterprise workflow optimization.",
+      features: [
+        "99.8% System Uptime Guarantee",
+        "Cross-department Database Normalization",
+        "Role-Based Access Control (RBAC)",
+        "Automated Disaster Recovery & Backups",
+      ],
     },
     {
+      id: "web",
       icon: <Server size={28} className="text-cyan" />,
-      title: "Full-Stack Web Development (MERN)",
-      desc: "Custom high-speed web applications engineered using React 19, Node.js, Express, and MongoDB with secure REST APIs.",
+      title: "Full-Stack Web Development (MERN & .NET)",
+      desc: "Custom high-speed web applications engineered using React 19, Node.js, Express, PostgreSQL / MongoDB, or C# / ASP.NET Core.",
+      features: [
+        "Sub-second API response times",
+        "Clean scalable REST architecture",
+        "JWT and secure authorization pipelines",
+        "State management with Redux/Context",
+      ],
     },
     {
+      id: "db",
       icon: <Database size={28} className="text-emerald" />,
       title: "Database Administration & Optimization",
-      desc: "Schema modeling, query performance tuning, automated backup schedules, data normalization, and integrity audits in MySQL and MongoDB.",
+      desc: "Schema modeling, query performance tuning, automated backup schedules, data normalization, and integrity audits in PostgreSQL, MySQL, and MongoDB.",
+      features: [
+        "Up to 40% faster query execution",
+        "ACID compliant transactions",
+        "Connection pooling & cache tuning",
+        "Zero data-loss backup automation",
+      ],
     },
     {
+      id: "i18n",
       icon: <Globe2 size={28} className="text-purple" />,
-      title: "Internationalization (i18n) & UI/UX Design",
+      title: "Internationalization (i18n) & Modern UI/UX",
       desc: "Multilingual websites (English, Amharic, French), mobile-responsive architecture, dark/light themes, and accessibility compliance.",
+      features: [
+        "Instant multi-language localization",
+        "Dark / Light mode system persistence",
+        "Mobile-first responsive fluid grids",
+        "Lighthouse 95+ performance scores",
+      ],
     },
     {
+      id: "infra",
       icon: <ShieldCheck size={28} className="text-amber" />,
       title: "IT Infrastructure & Technical User Support",
       desc: "Network topology configuration, router/switch diagnostics, hardware maintenance, and 1st/2nd-tier enterprise support.",
+      features: [
+        "Subnetting & VLAN configuration",
+        "Hardware diagnostics & recovery",
+        "Standard Operating Procedures (SOPs)",
+        "Rapid Mean Time to Resolution (MTTR)",
+      ],
     },
     {
+      id: "auto",
       icon: <Wrench size={28} className="text-rose" />,
       title: "Systems Automation & API Integration",
-      desc: "Automated bash/Python scripts, third-party service connections (Brevo/Stripe), and transactional notification pipelines.",
+      desc: "Automated bash/Python scripts, third-party service connections (Brevo/SMTP, Socket.io), and transactional notification pipelines.",
+      features: [
+        "Cron & daemon automated scripts",
+        "Real-time Socket.io websockets",
+        "Transactional email notifications",
+        "Automated reporting generation",
+      ],
     },
   ];
+
+  const handleCalculate = (serviceId, urgency) => {
+    setSelectedService(serviceId);
+    setSelectedUrgency(urgency);
+
+    if (serviceId === "web") {
+      setEstimatedTime(urgency === "rush" ? "1 - 2 Weeks" : "3 - 5 Weeks");
+    } else if (serviceId === "erp") {
+      setEstimatedTime(urgency === "rush" ? "2 - 3 Weeks" : "4 - 8 Weeks");
+    } else if (serviceId === "db") {
+      setEstimatedTime(urgency === "rush" ? "3 - 5 Days" : "1 - 2 Weeks");
+    } else {
+      setEstimatedTime(urgency === "rush" ? "1 Week" : "2 - 3 Weeks");
+    }
+  };
 
   return (
     <div className="portfolio-app-root">
       <Navbar />
-      <main style={{ paddingTop: "100px" }}>
+      <main style={{ paddingTop: "110px" }}>
+        {/* HERO HEADER */}
         <section className="section-padding">
           <div className="section-container">
             <div className="section-header text-center">
               <span className="section-badge">Professional Capabilities</span>
               <h1 className="section-title">Engineering Services & Solutions</h1>
               <p className="section-subtitle">
-                High-impact software development, ERP administration, and IT infrastructure services tailored for modern enterprises.
+                High-impact software engineering, ERP systems administration, database performance tuning, and technical infrastructure consulting.
               </p>
             </div>
 
+            {/* SERVICES GRID */}
             <div className="services-showcase-grid">
-              {serviceOfferings.map((service, idx) => (
-                <div key={idx} className="service-feature-card">
+              {serviceOfferings.map((service) => (
+                <div key={service.id} className="service-feature-card">
                   <div className="service-feature-icon">{service.icon}</div>
                   <h3 className="service-feature-title">{service.title}</h3>
                   <p className="service-feature-desc">{service.desc}</p>
+
+                  <div className="service-checklist">
+                    {service.features.map((feat, idx) => (
+                      <div key={idx} className="service-check-item">
+                        <CheckCircle2 size={15} className="text-emerald" />
+                        <span>{feat}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <Link
+                    to="/#contact"
+                    className="service-cta-link"
+                    onClick={() => {
+                      setTimeout(() => {
+                        const el = document.getElementById("contact");
+                        if (el) el.scrollIntoView({ behavior: "smooth" });
+                      }, 100);
+                    }}
+                  >
+                    <span>Request Service Inquiry</span>
+                    <ArrowRight size={15} />
+                  </Link>
                 </div>
               ))}
+            </div>
+
+            {/* INTERACTIVE SCOPE & TIMELINE ESTIMATOR */}
+            <div className="estimator-container">
+              <div className="estimator-card">
+                <div className="estimator-header">
+                  <div className="estimator-icon-box">
+                    <Calculator size={24} className="text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="estimator-title">Interactive Project Scope & Timeline Estimator</h3>
+                    <p className="estimator-subtitle">
+                      Select your project scope to get an estimated delivery timeframe.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="estimator-body">
+                  <div className="estimator-options">
+                    <label className="estimator-label">Select Service Domain:</label>
+                    <div className="estimator-pills-row">
+                      {serviceOfferings.slice(0, 4).map((s) => (
+                        <button
+                          key={s.id}
+                          type="button"
+                          onClick={() => handleCalculate(s.id, selectedUrgency)}
+                          className={`estimator-pill ${selectedService === s.id ? "active" : ""}`}
+                        >
+                          {s.title.split(" ")[0]} {s.title.split(" ")[1]}
+                        </button>
+                      ))}
+                    </div>
+
+                    <label className="estimator-label" style={{ marginTop: "16px" }}>
+                      Project Pace & Delivery Mode:
+                    </label>
+                    <div className="estimator-pills-row">
+                      <button
+                        type="button"
+                        onClick={() => handleCalculate(selectedService, "standard")}
+                        className={`estimator-pill ${selectedUrgency === "standard" ? "active" : ""}`}
+                      >
+                        Standard Production
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => handleCalculate(selectedService, "rush")}
+                        className={`estimator-pill ${selectedUrgency === "rush" ? "active" : ""}`}
+                      >
+                        ⚡ Accelerated Sprint
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="estimator-result-box">
+                    <span className="result-label">Estimated Completion:</span>
+                    <div className="result-time-row">
+                      <Clock size={20} className="text-primary" />
+                      <span className="result-time">{estimatedTime}</span>
+                    </div>
+                    <p className="result-sub">
+                      Includes comprehensive testing, responsive UI, database schema integration, and deployment support.
+                    </p>
+                    <Link
+                      to="/#contact"
+                      className="btn btn-primary btn-block"
+                      onClick={() => {
+                        setTimeout(() => {
+                          const el = document.getElementById("contact");
+                          if (el) el.scrollIntoView({ behavior: "smooth" });
+                        }, 100);
+                      }}
+                    >
+                      <span>Discuss This Project With Selamsew</span>
+                      <ArrowRight size={17} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

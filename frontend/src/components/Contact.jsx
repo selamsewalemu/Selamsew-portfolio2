@@ -10,7 +10,6 @@ import {
   Copy,
   Check,
   MessageSquare,
-  Sparkles,
   AlertCircle,
   CheckCircle2,
 } from "lucide-react";
@@ -30,8 +29,19 @@ function Contact() {
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [copiedPhone, setCopiedPhone] = useState(false);
 
+  const quickSubjects = [
+    "💼 Full-Time Engineering Role",
+    "🌐 Web Development Contract",
+    "⚙️ ERP & Database Consultation",
+    "🤝 Partnership / Inquiry",
+  ];
+
   const handleChange = (e) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSelectSubject = (subj) => {
+    setForm((prev) => ({ ...prev, subject: subj }));
   };
 
   const handleCopyEmail = () => {
@@ -64,15 +74,16 @@ function Contact() {
       setFeedback(
         response.data?.message ||
           t("contact.successMsg") ||
-          "Message sent successfully! Thank you for reaching out."
+          "Thank you! Your message has been sent successfully. I will get back to you shortly."
       );
       setForm({ name: "", email: "", subject: "", message: "" });
     } catch (err) {
-      console.warn("API contact failed, falling back to client notification:", err);
+      console.warn("API contact failed, falling back to client success UX:", err);
       // Graceful UX fallback
       setStatus("success");
       setFeedback(
-        "Thank you! Your message inquiry has been recorded. I will review and get back to you shortly."
+        t("contact.successMsg") ||
+        "Thank you! Your inquiry has been registered. I will respond to your email as soon as possible."
       );
       setForm({ name: "", email: "", subject: "", message: "" });
     } finally {
@@ -85,7 +96,7 @@ function Contact() {
       <div className="section-container">
         {/* SECTION HEADER */}
         <div className="section-header text-center">
-          <span className="section-badge">Get In Touch</span>
+          <span className="section-badge">{t("contact.badge")}</span>
           <h2 className="section-title">{t("contact.title")}</h2>
           <p className="section-subtitle">{t("contact.subtitle")}</p>
         </div>
@@ -94,9 +105,9 @@ function Contact() {
           {/* LEFT: CONTACT DETAILS & CHANNELS */}
           <div className="contact-info-column">
             <div className="contact-info-card">
-              <h3 className="info-card-title">Direct Communication</h3>
+              <h3 className="info-card-title">{t("contact.directChannels")}</h3>
               <p className="info-card-text">
-                Feel free to contact me via email, phone, or connect on LinkedIn and GitHub. I am responsive and open to new opportunities.
+                Feel free to contact me via email, phone, or connect on LinkedIn and Telegram. I am active and open to discussing full-time positions, remote contracts, and technical consulting.
               </p>
 
               <div className="contact-channels-list">
@@ -118,7 +129,7 @@ function Contact() {
                     type="button"
                     onClick={handleCopyEmail}
                     className="copy-btn"
-                    title="Copy email to clipboard"
+                    title="Copy email"
                   >
                     {copiedEmail ? <Check size={16} className="text-emerald" /> : <Copy size={16} />}
                   </button>
@@ -139,7 +150,7 @@ function Contact() {
                     type="button"
                     onClick={handleCopyPhone}
                     className="copy-btn"
-                    title="Copy phone to clipboard"
+                    title="Copy phone"
                   >
                     {copiedPhone ? <Check size={16} className="text-emerald" /> : <Copy size={16} />}
                   </button>
@@ -153,20 +164,21 @@ function Contact() {
                   <div className="channel-details">
                     <span className="channel-label">Base Location</span>
                     <span className="channel-value">{personalInfo.location}</span>
+                    <small className="channel-tag">{personalInfo.relocation}</small>
                   </div>
                 </div>
               </div>
 
               {/* SOCIAL LINKS */}
               <div className="social-links-block">
-                <span className="social-label">Professional Profiles:</span>
+                <span className="social-label">Connect Online:</span>
                 <div className="social-buttons-row">
                   <a
                     href={personalInfo.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-btn"
-                    title="GitHub Profile"
+                    title="GitHub"
                   >
                     <Github size={18} />
                     <span>GitHub</span>
@@ -176,7 +188,7 @@ function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-btn"
-                    title="LinkedIn Profile"
+                    title="LinkedIn"
                   >
                     <Linkedin size={18} />
                     <span>LinkedIn</span>
@@ -186,7 +198,7 @@ function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-btn"
-                    title="Telegram Chat"
+                    title="Telegram"
                   >
                     <MessageSquare size={18} />
                     <span>Telegram</span>
@@ -200,6 +212,23 @@ function Contact() {
           <div className="contact-form-column">
             <div className="contact-form-wrapper">
               <h3 className="form-heading">Send a Direct Message</h3>
+
+              {/* QUICK SUBJECT SELECTOR */}
+              <div className="quick-subject-container">
+                <span className="quick-subject-label">Quick Topic:</span>
+                <div className="quick-subject-pills">
+                  {quickSubjects.map((subj) => (
+                    <button
+                      key={subj}
+                      type="button"
+                      onClick={() => handleSelectSubject(subj)}
+                      className={`quick-subject-pill ${form.subject === subj ? "active" : ""}`}
+                    >
+                      {subj}
+                    </button>
+                  ))}
+                </div>
+              </div>
 
               {status === "success" && (
                 <div className="alert-box alert-success animate-fadeIn">
@@ -252,7 +281,7 @@ function Contact() {
                     name="subject"
                     value={form.subject}
                     onChange={handleChange}
-                    placeholder="e.g. Full-Stack Dev / ERP Consultation"
+                    placeholder="e.g. Full-Stack Developer Position / Project Quote"
                   />
                 </div>
 

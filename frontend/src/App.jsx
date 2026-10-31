@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Languages from "./components/Languages";
+import Frameworks from "./components/Frameworks";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
@@ -17,6 +18,7 @@ function App() {
         <Hero />
         <About />
         <Languages />
+        <Frameworks />
         <Skills />
         <Experience />
         <Projects />
