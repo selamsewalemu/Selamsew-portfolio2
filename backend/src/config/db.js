@@ -4,12 +4,20 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const connectDB = async () => {
-  if (!process.env.MONGO_URI) {
-    console.warn("⚠️  MONGO_URI not specified in environment. Running in standalone memory mode.");
+  let uri = process.env.MONGO_URI || process.env.MONGODB_URI;
+
+  if (!uri) {
+    console.warn("⚠️  Neither MONGO_URI nor MONGODB_URI specified in environment. Running in standalone memory mode.");
     return;
   }
+
+  // Ensure default database name if missing
+  if (uri.startsWith("mongodb+srv://") && !uri.includes(".mongodb.net/") && !uri.includes(".mongodb.net/?")) {
+    uri = uri.replace(".mongodb.net", ".mongodb.net/portfolio");
+  }
+
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI, {
+    const conn = await mongoose.connect(uri, {
       serverSelectionTimeoutMS: 5000,
     });
     console.log(`✅ MongoDB connected: ${conn.connection.host}`);
