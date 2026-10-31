@@ -7,7 +7,7 @@ const isLocalDev =
 const api = axios.create({
   baseURL: isLocalDev
     ? '/api'
-    : 'https://selamsew211-1.onrender.com/api',
+    : import.meta.env.VITE_API_URL || 'https://selamsew211-1.onrender.com/api',
   timeout: 10000,
 });
 
