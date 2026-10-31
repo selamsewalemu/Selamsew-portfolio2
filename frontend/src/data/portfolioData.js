@@ -19,7 +19,7 @@ export const personalInfo = {
   stats: [
     { label: "Active Experience", value: "Since Mar 2025", subtitle: "SysAdmin & DB Associate" },
     { label: "AAU Training", value: "Mar 2026 – Present", subtitle: "Full-Stack Dev (Active)" },
-    { label: "Completed Projects", value: "16+", subtitle: "Web, ERP & Systems" },
+    { label: "Completed Projects", value: "5 Core Apps", subtitle: "Enterprise & Web" },
     { label: "ERP System Uptime", value: "99.8%", subtitle: "High Availability" },
   ],
 };
@@ -246,7 +246,7 @@ export const frameworksData = [
     icon: "Database",
     description: "Document-oriented NoSQL database architecture, Mongoose schema modeling, aggregation pipelines for expense rollups, and automated indexing.",
     highlights: ["Document Schemas", "Aggregation Pipelines", "Flexible Schemas", "Atlas & Local Admin"],
-    usedIn: "TalentHub Job Platform, Budget Management System, ERP Support Portal",
+    usedIn: "TalentHub Job Platform, Budget Management System, Full-Stack Apps",
   },
   {
     name: "MySQL Relational System",
@@ -611,7 +611,7 @@ export const projects = [
     id: "budget-management",
     title: "Budget & Institutional Expense Management System",
     subtitle: "Graduation Capstone Project — Debre Markos University",
-    category: "Full Stack",
+    category: "ERP & Systems",
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=900",
     overview:
       "Centralized institutional web portal streamlining departmental fund allocations, expense tracking, and financial audit reporting.",
@@ -629,95 +629,6 @@ export const projects = [
     metrics: "Reduced paper processing latency by 75% across simulated campus departments.",
     demoUrl: "https://selamsew211.github.io/Selamsew211",
     githubUrl: "https://github.com/selamsewalemu/Budget-Expense-Management-System",
-  },
-  {
-    id: "fuel-management",
-    title: "Enterprise Fuel & Fleet Inventory System",
-    subtitle: "Logistics Auditing & Consumption Monitoring Platform",
-    category: "ERP & Systems",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=900",
-    overview:
-      "Enterprise logistics software for auditing dynamic fuel procurement, monitoring storage tank levels, and logging vehicle efficiency.",
-    challenge:
-      "Manual fuel logs and lack of alerts caused fuel discrepancies, unmonitored wastage, and inventory stockouts.",
-    solution:
-      "Built a secure transaction portal connecting fueling stations, vehicle logs, and treasury approval with automated threshold warnings.",
-    features: [
-      "Automated fuel stock threshold warnings and reorder alerts",
-      "Vehicle mileage-to-consumption ratio tracking",
-      "Digital fuel disbursement approval tickets and reconciliation reports",
-    ],
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs"],
-    metrics: "Audited 10,000+ simulated fuel disbursements with 100% transaction traceability.",
-    demoUrl: "https://selamsew211.github.io/Selamsew211",
-    githubUrl: "https://github.com/selamsewalemu/Selamsew-portfolio2",
-  },
-  {
-    id: "international-portfolio",
-    title: "Global Engineering Showcase Platform",
-    subtitle: "High-Performance Portfolio with Modern UI",
-    category: "Full Stack",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=900",
-    overview:
-      "Modern accessible engineering showcase featuring dark/light mode persistence, responsive drawer, and asynchronous email messaging.",
-    challenge:
-      "Presenting engineering credentials and project case studies cleanly across all mobile, tablet, and desktop viewports.",
-    solution:
-      "Built with React 19, CSS glassmorphism, responsive navigation drawers, and direct Brevo HTTP API contact dispatch.",
-    features: [
-      "Dark mode & Light mode theme persistence with CSS variables",
-      "Responsive navigation drawer and smooth anchor navigation",
-      "Direct email dispatch pipeline via Brevo HTTP API",
-    ],
-    tech: ["React 19", "Vite", "Tailwind CSS", "Lucide React", "Axios"],
-    metrics: "100% mobile responsive with sub-second page transitions.",
-    demoUrl: "https://selamsew211.github.io/Selamsew211",
-    githubUrl: "https://github.com/selamsewalemu/Selamsew-portfolio2",
-  },
-  {
-    id: "erp-support-pipeline",
-    title: "Corporate ERP Incident & Support Portal",
-    subtitle: "Ticketing & Database Troubleshooting Platform",
-    category: "ERP & Systems",
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=900",
-    overview:
-      "Centralized incident management portal for tracking ERP platform anomalies, database patch requests, and user support tickets.",
-    challenge:
-      "Unorganized incoming user queries regarding ERP platform issues caused delayed resolutions and repeat errors.",
-    solution:
-      "Built a structured support queue with priority escalation, automated engineer alerts, and a resolution knowledge base.",
-    features: [
-      "Ticket triage with severity categorization (Low, Medium, Critical)",
-      "Automated email notifications to assigned support engineers",
-      "Searchable knowledge base for recurring ERP issues",
-      "Support metrics tracking Mean Time to Resolution (MTTR)",
-    ],
-    tech: ["Node.js", "Express.js", "MongoDB", "Brevo API", "React.js"],
-    metrics: "Reduced average support ticket response time by 55%.",
-    demoUrl: "https://selamsew211.github.io/Selamsew211",
-    githubUrl: "https://github.com/selamsewalemu/Selamsew-portfolio2",
-  },
-  {
-    id: "collab-hub",
-    title: "Real-Time Team Collaboration & Task Hub",
-    subtitle: "Agile Task Management & Team Sync Tool",
-    category: "Full Stack",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=900",
-    overview:
-      "Lightweight collaborative workspace with interactive Kanban boards, live task updates, and priority tagging for agile teams.",
-    challenge:
-      "Keeping distributed engineering teams synchronized without heavy enterprise software overhead.",
-    solution:
-      "Designed a clean drag-and-drop Kanban workflow with task stage transitions, comments, and priority alerts.",
-    features: [
-      "Interactive Kanban boards with customizable sprint stages",
-      "Task assignment, due-date reminders, and priority tags",
-      "Real-time team activity logs and modifications",
-    ],
-    tech: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
-    metrics: "Tested with 20+ simultaneous user streams.",
-    demoUrl: "https://selamsew211.github.io/Selamsew211",
-    githubUrl: "https://github.com/selamsewalemu/Selamsew-portfolio2",
   },
 ];
 

@@ -125,6 +125,7 @@ Markos University (July 2024).
     • Architected TMS Core: Training Management System (ASP.NET Core 10, Angular 22, SignalR, EF Core).
     • Architected TalentHub: Role-based mini job portal (React, TypeScript, Node.js, Express, MongoDB).
     • Engineered Online Examination Portal: Timed testing & automated grading (React, Node.js, MongoDB).
+    • Developed Budget & Institutional Expense Management System (React, Node.js, MongoDB).
 
 --------------------------------------------------------------------------------
 3. EDUCATION & ACCREDITATIONS
