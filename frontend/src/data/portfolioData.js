@@ -480,18 +480,18 @@ export const projects = [
     category: "Full Stack",
     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=900",
     overview:
-      "A full-stack Training Management System built with ASP.NET Core 10 and Angular 22. Covers student self-registration, admin review & approval, course enrolment, grade management, and real-time updates via SignalR.",
+      "Enterprise training platform built with ASP.NET Core 10 & Angular 22 featuring student self-registration, admin approvals, course enrollment, grade books, and real-time SignalR notifications.",
     challenge:
-      "Institutional training programs struggle with scattered manual student registrations, delayed approval workflows, course scheduling conflicts, and lack of real-time student grade publishing.",
+      "Manual student registrations, delayed approvals, course scheduling conflicts, and lack of real-time grade publishing.",
     solution:
-      "Architected an enterprise-grade full-stack platform uniting reactive Angular 22 standalone components with high-throughput ASP.NET Core 10 Web APIs, Entity Framework Core relational mapping, and SignalR live WebSocket push updates.",
+      "Unified reactive Angular 22 standalone components with ASP.NET Core 10 Web APIs, EF Core data mapping, and SignalR live WebSocket push updates.",
     features: [
-      "Student self-registration portal with credential uploads and real-time verification tracking",
-      "Administrative review & approval workflow queue with role-based sign-offs and audit trails",
-      "Automated course enrolment engine with prerequisite checks, scheduling conflict detection, and seat limits",
-      "Comprehensive grade management module with automatic GPA calculation, grading rubrics, and printable transcripts",
-      "Real-time SignalR notifications for instant course status alerts, approval broadcasts, and grade publishing",
-      "Role-Based Access Control (RBAC) with secure JWT authorization and ASP.NET Core Identity",
+      "Student self-registration portal with credential uploads & live verification",
+      "Administrative review & approval workflow queue with audit trails",
+      "Automated course enrollment engine with prerequisite and conflict checks",
+      "Comprehensive grade management with GPA calculation and printable transcripts",
+      "Real-time SignalR notifications for course alerts, approvals, and grade publishing",
+      "Role-Based Access Control (RBAC) with JWT auth and ASP.NET Core Identity",
     ],
     tech: [
       "ASP.NET Core 10",
@@ -514,16 +514,16 @@ export const projects = [
     category: "Full Stack",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=900",
     overview:
-      "A role-based job platform (React, TypeScript, Node.js & MongoDB) featuring cookie-based JWT authentication, job posting, applications, and resume tracking for Applicants, Employers, and Admins.",
+      "Role-based job platform (React, TypeScript, Node.js & MongoDB) featuring cookie-based JWT authentication, job posting, applications, and resume tracking for Applicants, Employers, and Admins.",
     challenge:
-      "Managing multi-tier recruitment lifecycles with differing permissions (applicants applying and uploading resumes, employers posting and managing candidates, and admins moderating listings) requires robust security, state synchronization, and strict route authorization.",
+      "Managing multi-tier recruitment lifecycles and distinct permissions for Applicants, Employers, and Admins with secure route authorization.",
     solution:
-      "Engineered an end-to-end full-stack portal with cookie-based JWT authentication, protected routes, modular Express controllers, Mongoose schemas with indexed query filtering, and a responsive TypeScript client built with Vite and Tailwind CSS.",
+      "Built an end-to-end portal with cookie-based JWT auth, protected RBAC routes, modular Express controllers, Mongoose query indexing, and a responsive TypeScript client.",
     features: [
       "Role-Based Access Control (RBAC) supporting Applicants, Employers, and Admins",
       "Job posting, editing, and candidate application tracker for verified Employers",
       "Applicant portal with resume uploads, application status tracking, and job bookmarks",
-      "Cookie-based JWT authentication, bcrypt password hashing, and secure session management",
+      "Cookie-based JWT authentication, bcrypt password hashing, and session management",
       "Search and filter engine by category, location, salary range, and employment type",
       "Administrative moderation panel for job listings, user governance, and platform auditing",
     ],
@@ -549,18 +549,18 @@ export const projects = [
     category: "Full Stack",
     image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=900",
     overview:
-      "A secure, full-stack online examination portal designed for scheduled timed assessments, automated objective grading, randomized question banks, and instant student result analytics.",
+      "Secure full-stack digital testing platform featuring timed assessments, automated objective grading, randomized question banks, and instant student analytics.",
     challenge:
-      "Traditional pen-and-paper examinations cause severe grading backlogs, human scoring discrepancies, test leakages, and delayed academic feedback cycles.",
+      "Paper-based exams cause grading backlogs, scoring discrepancies, test leakages, and delayed academic feedback.",
     solution:
-      "Engineered an automated examination platform with countdown timers, auto-submission triggers, randomized question pools, anti-cheating window blur detection, and instant scorecard generation.",
+      "Engineered an automated testing engine with countdown timers, auto-submission, question randomization, anti-cheat detection, and instant scorecards.",
     features: [
-      "Timed testing engine with dynamic countdown clock and auto-submission on timer expiration",
+      "Timed testing engine with dynamic countdown clock and auto-submission on expiration",
       "Randomized question sequence and option shuffling to prevent peer copying",
       "Teacher/Examiner portal for authoring MCQs, short answers, and scoring rubrics",
       "Student examination console with progress overview, flagged questions, and review panel",
-      "Instant automated grading pipeline with comprehensive category-by-category score breakdowns",
-      "Anti-cheat protection with fullscreen enforcement and window focus monitoring",
+      "Instant automated grading pipeline with category-by-category score breakdowns",
+      "Anti-cheat protection with fullscreen enforcement and window blur detection",
     ],
     tech: [
       "React.js",
@@ -582,11 +582,11 @@ export const projects = [
     category: "Full Stack",
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=900",
     overview:
-      "A modern fintech transformation of traditional rotating savings associations (Ekub/ROSCA), featuring automated lottery draws, transparent PostgreSQL member ledgers, and digital payouts.",
+      "Modern fintech platform digitizing traditional rotating savings associations (Ekub) with real-time Socket.io lottery draws, transparent PostgreSQL ledgers, and digital payouts.",
     challenge:
-      "Manual Ekub ledgers suffer from calculation errors, delayed member contributions, paper record losses, and disputed lottery draws.",
+      "Manual Ekub ledgers suffer from calculation errors, lost paper records, delayed contributions, and disputed lottery draws.",
     solution:
-      "Architected an end-to-end web platform with real-time Socket.io lottery draws, dynamic PostgreSQL ledgers, payment receipt uploads, and SMS/Email reminders.",
+      "Built a full-stack platform featuring live Socket.io lottery draws, automated PostgreSQL member ledgers, payment receipt uploads, and automated reminders.",
     features: [
       "Automated lottery draw engine with real-time animated winner selection",
       "PostgreSQL relational ledger tracking monthly/weekly cycles, balances, and payout order",
@@ -614,9 +614,9 @@ export const projects = [
     category: "ERP & Systems",
     image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=900",
     overview:
-      "Centralized institutional web portal streamlining departmental fund allocations, expense tracking, and financial audit reporting.",
+      "Institutional finance and expense portal streamlining departmental fund allocations, expense tracking, and real-time audit reporting.",
     challenge:
-      "Manual paperwork caused delayed fund approvals, calculation discrepancies, and lack of real-time audit visibility.",
+      "Manual paperwork caused delayed fund approvals, calculation discrepancies, and poor audit visibility.",
     solution:
       "Developed a role-based portal with interactive expenditure charts, multi-level sign-offs, and instant printable audit reports.",
     features: [
