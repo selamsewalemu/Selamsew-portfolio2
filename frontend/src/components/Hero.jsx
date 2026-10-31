@@ -84,13 +84,13 @@ GitHub: ${personalInfo.github}
 --------------------------------------------------------------------------------
 1. PROFESSIONAL PROFILE & SUMMARY
 --------------------------------------------------------------------------------
-Electrical and Computer Engineer (Computer stream, B.Sc. Debre Markos University, July 2024).
-Actively serving as System Administrator & User Support Officer at Tibeb Design and Build PLC since March 2025.
-Proven enterprise experience in MySQL/MongoDB database administration, automated backups,
-query tuning, and system administration ensuring 99.8% platform uptime.
+B.Sc. graduate in Electrical and Computer Engineering, specializing in Computer Engineering,
+from Debre Markos University (July 2024). Currently serving as a System Administrator and
+User Support Officer at Tibeb Design and Build PLC, a position I have held since March 2025.
 
-Graduate of intensive Full-Stack Software Development training at Addis Ababa University (AAU)
-and architect of "Ekub Circle" (PostgreSQL, Socket.io, Node.js).
+Successfully completed intensive Full-Stack Software Development training at Addis Ababa
+University (AAU), further strengthening my knowledge and practical skills in modern software
+development and full-stack application development.
 
 --------------------------------------------------------------------------------
 2. PROFESSIONAL EXPERIENCE

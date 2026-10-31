@@ -50,9 +50,9 @@ const resources = {
         subtitle: "Enterprise systems administration, database optimization, and modern full-stack software development.",
         summaryTitle: "Professional Summary",
         summaryText1:
-          "Electrical and Computer Engineer (Computer stream, B.Sc. graduate from Debre Markos University, July 2024) actively serving as System Administrator and User Support Officer at Tibeb Design and Build PLC since March 2025. Brings proven experience in MySQL & MongoDB database administration, automated backups, query tuning, and IT systems uptime.",
+          "B.Sc. graduate in Electrical and Computer Engineering, specializing in Computer Engineering, from Debre Markos University (July 2024). Currently serving as a System Administrator and User Support Officer at Tibeb Design and Build PLC, a position I have held since March 2025.",
         summaryText2:
-          "Completed intensive Full-Stack Software Development training at Addis Ababa University (AAU) and architected 'Ekub Circle' (PostgreSQL, Socket.io, Node.js). Experienced in building scalable web applications and enterprise systems.",
+          "Successfully completed intensive Full-Stack Software Development training at Addis Ababa University (AAU), further strengthening my knowledge and practical skills in modern software development and full-stack application development.",
         objectiveTitle: "Career Objective",
         objectiveText:
           "To leverage strong engineering principles, database administration skills, and modern full-stack development to build secure, scalable, and high-availability enterprise systems.",
@@ -172,9 +172,9 @@ const resources = {
         subtitle: "የኢንተርፕራይዝ ሲስተምስ አስተዳደር፣ የዳታቤዝ ማሻሻያ እና ዘመናዊ የፉል-ስታክ ዌብ ሶፍትዌር ግንባታ።",
         summaryTitle: "የሙያ ማጠቃለያ",
         summaryText1:
-          "የኤሌክትሪካልና ኮምፒውተር መሀንዲስ (ኮምፒውተር ስትሪም፣ ከደብረ ማርቆስ ዩኒቨርሲቲ በሐምሌ 2016 ዓ.ም የተመረቀ)። ከማርች 2025 ጀምሮ በጥበብ ዲዛይን ኤንድ ቢልድ ኃ/የተ/የግ/ማህበር በሲስተም አድሚኒስትሬተርነት እና በቴክኒክ ድጋፍ መኮንንነት እሰራለሁ። በMySQL/MongoDB ዳታቤዝ አስተዳደር፣ በባክአፕ ቁጥጥር እና በሲስተም አስተማማኝነት የተረጋገጠ ልምድ አለኝ።",
+          "ከደብረ ማርቆስ ዩኒቨርሲቲ በኤሌክትሪካልና ኮምፒውተር ምህንድስና፣ በኮምፒውተር ምህንድስና ዘርፍ በቢ.ኤስ.ሲ የተመረቅኩ (ሐምሌ 2016 ዓ.ም)። በአሁኑ ወቅት በጥበብ ዲዛይን ኤንድ ቢልድ ኃ/የተ/የግ/ማህበር ከማርች 2025 ጀምሮ በሲስተም አድሚኒስትሬተርነትና በቴክኒክ ድጋፍ መኮንንነት በማገልገል ላይ እገኛለሁ።",
         summaryText2:
-          "በአዲስ አበባ ዩኒቨርሲቲ (AAU) የተጠናከረ የፉል-ስታክ ሶፍትዌር ስልጠናዬን ያጠናቀቅኩ ሲሆን የዲጂታል ማህበረሰብ ቁጠባ መድረክ የሆነውን 'ዕቁብ ሰርክል' (Ekub Circle) በPostgreSQL እና Node.js ገንብቻለሁ።",
+          "በአዲስ አበባ ዩኒቨርሲቲ (AAU) የተጠናከረ የፉል-ስታክ ሶፍትዌር ስልጠናዬን በተሳካ ሁኔታ ያጠናቀቅኩ ሲሆን በዘመናዊ ሶፍትዌር ልማት እና በፉል-ስታክ አፕሊኬሽን ግንባታ ላይ ያለኝን ተግባራዊ ክህሎት ይበልጥ አጠናክሬያለሁ።",
         objectiveTitle: "የሙያ ግብ",
         objectiveText:
           "ጠንካራ የምህንድስና መርሆችን፣ የዳታቤዝ አስተዳደር ብቃትን እና ዘመናዊ ፉል-ስታክ ቴክኖሎጂዎችን በመጠቀም ደህንነታቸው የተጠበቀ፣ አስተማማኝና ፈጣን የኢንተርፕራይዝ ሲስተሞችን መገንባት።",
@@ -294,9 +294,9 @@ const resources = {
         subtitle: "Administration de systèmes d'entreprise, optimisation de bases de données et développement full-stack moderne.",
         summaryTitle: "Résumé Professionnel",
         summaryText1:
-          "Ingénieur en électricité et informatique (B.Sc. Université de Debre Markos, juillet 2024) en poste en tant qu'administrateur système et support utilisateur chez Tibeb Design and Build PLC depuis mars 2025. Expertise confirmée en gestion de bases de données MySQL/MongoDB, sauvegardes automatisées et disponibilité (99,8%).",
+          "Diplômé B.Sc. en Génie Électrique et Informatique, spécialité Génie Informatique, de l'Université de Debre Markos (juillet 2024). Actuellement administrateur système et support utilisateur chez Tibeb Design and Build PLC, poste que j'occupe depuis mars 2025.",
         summaryText2:
-          "Diplômé de la formation intensive en développement full-stack de l'Université d'Addis-Abeba (AAU) et concepteur d'Ekub Circle (PostgreSQL, Socket.io, Node.js).",
+          "Formation intensive réussie en développement full-stack à l'Université d'Addis-Abeba (AAU), renforçant mes compétences pratiques dans le développement logiciel moderne et la conception d'applications full-stack.",
         objectiveTitle: "Objectif de Carrière",
         objectiveText:
           "Concevoir et maintenir des architectures logicielles et systèmes d'entreprise sécurisés, performants et hautement disponibles.",
