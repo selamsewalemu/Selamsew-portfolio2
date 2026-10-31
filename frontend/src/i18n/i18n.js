@@ -25,7 +25,7 @@ const resources = {
         role: "Electrical & Computer Engineer (Computer Stream)",
         subRole: "System Admin & User Support Officer | Database Associate | Full-Stack Developer",
         description:
-          "Electrical and Computer Engineer (Computer stream). Actively serving as System Administrator & User Support Officer after 6 months as Database Associate (since March 05, 2025). Addis Ababa University (AAU) Full-Stack Software Development Trainee (March 2026 – Present) and creator of Ekub Circle (built with Node.js, Express, and PostgreSQL).",
+          "Electrical & Computer Engineer with enterprise experience as System Administrator & Database Associate (since March 2025). AAU Full-Stack Software Trainee (March 2026 – Present) and creator of Ekub Circle.",
         exploreProjects: "Explore Projects",
         getInTouch: "Get In Touch",
         downloadCV: "Download CV",
@@ -50,9 +50,9 @@ const resources = {
         subtitle: "Enterprise systems administration, database optimization, and modern full-stack software development.",
         summaryTitle: "Professional Summary",
         summaryText1:
-          "Electrical and Computer Engineer (Computer stream) actively working since March 05, 2025. Served 6 months as Database Associate administering MySQL and MongoDB schemas, automated backups, and query tuning; currently serving as System Administrator and User Support Officer ensuring high system uptime and rapid technical support.",
+          "Electrical and Computer Engineer (Computer stream) actively working since March 2025. Proven experience in MySQL & MongoDB database administration, automated backups, query tuning, and IT systems uptime.",
         summaryText2:
-          "Currently undergoing intensive Full-Stack Software Development training at Addis Ababa University (March 2026 – Present). Architected and developed 'Ekub Circle' — an automated digital community savings platform built with JavaScript (ES6+), Node.js, Express, and PostgreSQL. Graduated with a B.Sc. in Electrical and Computer Engineering (Computer stream) from Debre Markos University (July 2024).",
+          "Enrolled in intensive Full-Stack Software Development training at Addis Ababa University (March 2026 – Present) and creator of Ekub Circle. B.Sc. graduate from Debre Markos University (July 2024).",
         objectiveTitle: "Career Objective",
         objectiveText:
           "To leverage strong engineering principles, database administration skills, and modern full-stack development to build secure, scalable, and high-availability enterprise systems.",
@@ -147,7 +147,7 @@ const resources = {
         role: "የኤሌክትሪካልና ኮምፒውተር መሀንዲስ (ኮምፒውተር ስትሪም)",
         subRole: "የሲስተም አድሚኒስትሬተር እና የቴክኒክ ድጋፍ መኮንን | ዳታቤዝ አሶሲዬት | ፉል-ስታክ ሶፍትዌር አበልጻጊ",
         description:
-          "የኤሌክትሪካልና ኮምፒውተር መሀንዲስ (ኮምፒውተር ዘርፍ)። ከማርች 05, 2025 ጀምሮ ለ6 ወራት በዳታቤዝ አሶሲዬትነት ያገለገልኩ ሲሆን አሁን በሲስተም አድሚኒስትሬተርነትና በቴክኒክ ድጋፍ እየሰራሁ እገኛለሁ። እንዲሁም በአዲስ አበባ ዩኒቨርሲቲ የፉል-ስታክ ሶፍትዌር ስልጠና ተሳታፊና የ'ዕቁብ ሰርክል' (Ekub Circle) ፕሮጀክት አበልጻጊ።",
+          "የኤሌክትሪካልና ኮምፒውተር መሀንዲስ። ከማርች 2025 ጀምሮ በሲስተም አድሚኒስትሬተርነትና በዳታቤዝ አሶሲዬትነት ያገለገለ፤ በአዲስ አበባ ዩኒቨርሲቲ የፉል-ስታክ ሰልጣኝና የ'ዕቁብ ሰርክል' ፈጣሪ።",
         exploreProjects: "ፕሮጀክቶችን ይመልከቱ",
         getInTouch: "መልእክት ይላኩ",
         downloadCV: "ሲቪ ያውርዱ",
@@ -172,9 +172,9 @@ const resources = {
         subtitle: "የኢንተርፕራይዝ ሲስተምስ አስተዳደር፣ የዳታቤዝ ማሻሻያ እና ዘመናዊ የፉል-ስታክ ዌብ ሶፍትዌር ግንባታ።",
         summaryTitle: "የሙያ ማጠቃለያ",
         summaryText1:
-          "የኤሌክትሪካልና ኮምፒውተር መሀንዲስ (ኮምፒውተር ስትሪም)። ከማርች 05, 2025 ጀምሮ ለ6 ወራት የMySQL እና MongoDB ዳታቤዝ በማስተዳደር፣ ባክአፕ በማረጋገጥና አፈጻጸምን በማሻሻል አገልግያለሁ። በአሁኑ ወቅት የERP ሲስተም አስተዳዳሪና የቴክኒክ ድጋፍ መኮንን ሆኜ እሰራለሁ።",
+          "የኤሌክትሪካልና ኮምፒውተር መሀንዲስ (ኮምፒውተር ስትሪም)። ከማርች 2025 ጀምሮ የዳታቤዝ አስተዳደር (MySQL/MongoDB)፣ የባክአፕ ቁጥጥር እና የERP ሲስተም አስተዳደርን በከፍተኛ ዝግጁነት አከናውናለሁ።",
         summaryText2:
-          "በአሁኑ ሰዓት በአዲስ አበባ ዩኒቨርሲቲ (AAU) የተጠናከረ የፉል-ስታክ ሶፍትዌር ስልጠና እየወሰድኩ ሲሆን የዲጂታል ማህበረሰብ ቁጠባ መድረክ የሆነውን 'ዕቁብ ሰርክል' (Ekub Circle) በNode.js፣ Express እና PostgreSQL አበልጽጌያለሁ። ከደብረ ማርቆስ ዩኒቨርሲቲ በኤሌክትሪካልና ኮምፒውተር ምህንድስና በቢ.ኤስ.ሲ ተመርቄያለሁ (ሐምሌ 2016 ዓ.ም/July 2024)።",
+          "በአዲስ አበባ ዩኒቨርሲቲ (AAU) የፉል-ስታክ ሶፍትዌር ሰልጣኝ (ከማርች 2026 ጀምሮ) እና የ'ዕቁብ ሰርክል' ፈጣሪ። ከደብረ ማርቆስ ዩኒቨርሲቲ በቢ.ኤስ.ሲ ተመርቄያለሁ (ሐምሌ 2016 ዓ.ም)።",
         objectiveTitle: "የሙያ ግብ",
         objectiveText:
           "ጠንካራ የምህንድስና መርሆችን፣ የዳታቤዝ አስተዳደር ብቃትን እና ዘመናዊ ፉል-ስታክ ቴክኖሎጂዎችን በመጠቀም ደህንነታቸው የተጠበቀ፣ አስተማማኝና ፈጣን የኢንተርፕራይዝ ሲስተሞችን መገንባት።",
@@ -269,7 +269,7 @@ const resources = {
         role: "Ingénieur en Électrique & Informatique (Option Informatique)",
         subRole: "Administrateur Système & Support • Associé Base de Données • Développeur Full-Stack",
         description:
-          "Ingénieur en génie électrique et informatique. Administrateur système et support utilisateur actif après 6 mois en gestion de bases de données (depuis le 5 mars 2025). Stagiaire en développement full-stack à l'Université d'Addis-Abeba (AAU) et créateur de la plateforme 'Ekub Circle' (Node.js, Express, PostgreSQL).",
+          "Ingénieur en électricité et informatique avec expérience en administration système et bases de données (depuis mars 2025). Stagiaire full-stack à l'AAU et créateur d'Ekub Circle.",
         exploreProjects: "Voir les projets",
         getInTouch: "Me contacter",
         downloadCV: "Télécharger CV",
@@ -294,9 +294,9 @@ const resources = {
         subtitle: "Administration de systèmes d'entreprise, optimisation de bases de données et développement full-stack moderne.",
         summaryTitle: "Résumé Professionnel",
         summaryText1:
-          "Ingénieur en génie électrique et informatique en activité depuis le 5 mars 2025. 6 mois d'expérience en gestion de bases de données MySQL et MongoDB, sauvegardes automatisées et réglage de requêtes ; actuellement administrateur système assurant une disponibilité maximale.",
+          "Ingénieur en électricité et informatique actif depuis mars 2025. Expérience confirmée en administration de bases de données (MySQL/MongoDB), sauvegardes et haute disponibilité des systèmes ERP.",
         summaryText2:
-          "Formation intensive en développement full-stack à l'Université d'Addis-Abeba (AAU). Concepteur de la plateforme d'épargne communautaire 'Ekub Circle' conçue avec JavaScript, Node.js, Express et PostgreSQL. Diplômé de l'Université de Debre Markos (B.Sc., juillet 2024).",
+          "En formation full-stack intensive à l'Université d'Addis-Abeba (AAU, mars 2026 – présent) et créateur d'Ekub Circle. Diplômé B.Sc. de l'Université de Debre Markos (juillet 2024).",
         objectiveTitle: "Objectif de Carrière",
         objectiveText:
           "Concevoir et maintenir des architectures logicielles et systèmes d'entreprise sécurisés, performants et hautement disponibles.",

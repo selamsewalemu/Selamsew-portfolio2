@@ -84,17 +84,13 @@ GitHub: ${personalInfo.github}
 --------------------------------------------------------------------------------
 1. PROFESSIONAL PROFILE & SUMMARY
 --------------------------------------------------------------------------------
-Electrical and Computer Engineer (Computer stream) actively working since March 05, 2025.
-Served 6 months as Database Associate administering MySQL and MongoDB schemas, automated
-backups, and query performance tuning; currently serving as System Administrator and User
-Support Officer ensuring 99.8% platform uptime, local network topology management, and
-Tier-1/2 technical user support.
+Electrical and Computer Engineer (Computer stream) actively working since March 2025.
+Proven enterprise experience in MySQL/MongoDB database administration, automated backups,
+query tuning, and system administration ensuring 99.8% ERP platform uptime.
 
-Currently enrolled in intensive Full-Stack Software Development training at Addis Ababa
-University (AAU) (March 2026 – Present). Architected and deployed "Ekub Circle" — a digital
-community savings platform with real-time Socket.io lottery draws and PostgreSQL ledgers.
-Graduated with B.Sc. in Electrical and Computer Engineering (Computer Stream) from Debre
-Markos University (July 2024).
+Enrolled in intensive Full-Stack Software Development training at Addis Ababa University
+(AAU) (March 2026 – Present) and architect of "Ekub Circle" (PostgreSQL, Socket.io, Node.js).
+Graduated with B.Sc. in Electrical and Computer Engineering from Debre Markos University (July 2024).
 
 --------------------------------------------------------------------------------
 2. PROFESSIONAL EXPERIENCE
