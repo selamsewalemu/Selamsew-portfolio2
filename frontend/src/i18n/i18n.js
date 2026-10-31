@@ -19,13 +19,13 @@ const resources = {
         hireMe: "Hire Me",
       },
       hero: {
-        badge: "Active Professional • SysAdmin & DB Associate • AAU Trainee",
+        badge: "Active Professional • Tibeb Design & Build • AAU Graduate",
         greeting: "Hello, I'm",
         title: "SELAMSEW ALEMU",
         role: "Electrical & Computer Engineer (Computer Stream)",
-        subRole: "System Admin & User Support Officer | Database Associate | Full-Stack Developer",
+        subRole: "System Admin & User Support Officer at Tibeb Design and Build PLC | Full-Stack Developer",
         description:
-          "Electrical & Computer Engineer with enterprise experience as System Administrator & Database Associate (since March 2025). AAU Full-Stack Software Trainee (March 2026 – Present) and creator of Ekub Circle.",
+          "Electrical and Computer Engineer (Computer stream, B.Sc. Debre Markos University, July 2024). Actively serving as System Administrator & User Support Officer at Tibeb Design and Build PLC since March 2025. Graduate of intensive Full-Stack Software Development training at AAU and creator of Ekub Circle.",
         exploreProjects: "Explore Projects",
         getInTouch: "Get In Touch",
         downloadCV: "Download CV",
@@ -36,7 +36,7 @@ const resources = {
         stats: {
           experience: "Active Experience",
           expSub: "Since March 2025",
-          training: "AAU Training",
+          training: "AAU Graduate",
           trainSub: "Full-Stack Dev",
           projects: "Completed Projects",
           projSub: "Web & Enterprise",
@@ -50,9 +50,9 @@ const resources = {
         subtitle: "Enterprise systems administration, database optimization, and modern full-stack software development.",
         summaryTitle: "Professional Summary",
         summaryText1:
-          "Electrical and Computer Engineer (Computer stream) actively working since March 2025. Proven experience in MySQL & MongoDB database administration, automated backups, query tuning, and IT systems uptime.",
+          "Electrical and Computer Engineer (Computer stream, B.Sc. graduate from Debre Markos University, July 2024) actively serving as System Administrator and User Support Officer at Tibeb Design and Build PLC since March 2025. Brings proven experience in MySQL & MongoDB database administration, automated backups, query tuning, and IT systems uptime.",
         summaryText2:
-          "Enrolled in intensive Full-Stack Software Development training at Addis Ababa University (March 2026 – Present) and creator of Ekub Circle. B.Sc. graduate from Debre Markos University (July 2024).",
+          "Completed intensive Full-Stack Software Development training at Addis Ababa University (AAU) and architected 'Ekub Circle' (PostgreSQL, Socket.io, Node.js). Experienced in building scalable web applications and enterprise systems.",
         objectiveTitle: "Career Objective",
         objectiveText:
           "To leverage strong engineering principles, database administration skills, and modern full-stack development to build secure, scalable, and high-availability enterprise systems.",
@@ -60,8 +60,8 @@ const resources = {
         degree: "B.Sc. in Electrical and Computer Engineering (Computer Stream)",
         specialization: "Field of Study: Electrical and Computer Engineering (Computer stream)",
         university: "Debre Markos University (July 2024)",
-        training: "Addis Ababa University (AAU) — Full-Stack Software Development Training (March 2026 – Present)",
-        currentRole: "System Admin & User Support Officer (Active Since March 05, 2025)",
+        training: "Addis Ababa University (AAU) — Full-Stack Software Development Training (Completed 2026)",
+        currentRole: "System Admin & User Support Officer at Tibeb Design and Build PLC (Active Since March 2025)",
         location: "Addis Ababa / Debre Markos, Ethiopia",
         languagesSpoken: "English (Professional Working Proficiency), Amharic (Native)",
         statusAvailable: "Available for Full-time Roles, Remote Contracts & Technical Consultancy",
@@ -90,7 +90,7 @@ const resources = {
       experience: {
         badge: "Career Track",
         title: "Professional Experience",
-        subtitle: "Active enterprise career track (March 05, 2025 – Present) and AAU software development training (March 2026 – Present).",
+        subtitle: "Active enterprise career track at Tibeb Design and Build PLC (Since March 2025) and AAU Full-Stack Software Development graduate.",
       },
       projects: {
         badge: "Featured Work",
@@ -105,7 +105,7 @@ const resources = {
       education: {
         badge: "Academic & Accreditations",
         title: "Education & Credentials",
-        subtitle: "Debre Markos University degree, AAU software development training (March 2026 – Present), and certifications.",
+        subtitle: "Debre Markos University degree, AAU Full-Stack Software Development graduation, and professional certifications.",
       },
       contact: {
         badge: "Get In Touch",
@@ -141,13 +141,13 @@ const resources = {
         hireMe: "አግኙኝ",
       },
       hero: {
-        badge: "ንቁ ባለሙያ • ሲስተም አድሚንና ዳታቤዝ አሶሲዬት • አዲስ አበባ ዩኒቨርሲቲ ሰልጣኝ",
+        badge: "ንቁ ባለሙያ • ጥበብ ዲዛይን ኤንድ ቢልድ • አ.አ.ዩ ተመራቂ",
         greeting: "ሰላም፣ እኔ",
         title: "ሰላምሰው አለሙ",
         role: "የኤሌክትሪካልና ኮምፒውተር መሀንዲስ (ኮምፒውተር ስትሪም)",
-        subRole: "የሲስተም አድሚኒስትሬተር እና የቴክኒክ ድጋፍ መኮንን | ዳታቤዝ አሶሲዬት | ፉል-ስታክ ሶፍትዌር አበልጻጊ",
+        subRole: "የሲስተም አድሚኒስትሬተር እና የቴክኒክ ድጋፍ መኮንን በጥበብ ዲዛይን ኤንድ ቢልድ ኃ/የተ/የግ/ማህበር | ፉል-ስታክ ሶፍትዌር አበልጻጊ",
         description:
-          "የኤሌክትሪካልና ኮምፒውተር መሀንዲስ። ከማርች 2025 ጀምሮ በሲስተም አድሚኒስትሬተርነትና በዳታቤዝ አሶሲዬትነት ያገለገለ፤ በአዲስ አበባ ዩኒቨርሲቲ የፉል-ስታክ ሰልጣኝና የ'ዕቁብ ሰርክል' ፈጣሪ።",
+          "የኤሌክትሪካልና ኮምፒውተር መሀንዲስ (ኮምፒውተር ስትሪም፣ ደብረ ማርቆስ ዩኒቨርሲቲ 2016 ዓ.ም)። ከማርች 2025 ጀምሮ በጥበብ ዲዛይን ኤንድ ቢልድ ኃ/የተ/የግ/ማህበር በሲስተም አድሚኒስትሬተርነትና በቴክኒክ ድጋፍ መኮንንነት በማገልገል ላይ የሚገኝ። በአዲስ አበባ ዩኒቨርሲቲ የፉል-ስታክ ስልጠናውን ያጠናቀቀና የ'ዕቁብ ሰርክል' ፈጣሪ።",
         exploreProjects: "ፕሮጀክቶችን ይመልከቱ",
         getInTouch: "መልእክት ይላኩ",
         downloadCV: "ሲቪ ያውርዱ",
@@ -158,7 +158,7 @@ const resources = {
         stats: {
           experience: "የስራ ልምድ",
           expSub: "ከማርች 2025 ጀምሮ",
-          training: "አ.አ.ዩ ስልጠና",
+          training: "አ.አ.ዩ ተመራቂ",
           trainSub: "ፉል-ስታክ አበልጻጊ",
           projects: "የተጠናቀቁ ፕሮጀክቶች",
           projSub: "ዌብና ሲስተሞች",
@@ -172,9 +172,9 @@ const resources = {
         subtitle: "የኢንተርፕራይዝ ሲስተምስ አስተዳደር፣ የዳታቤዝ ማሻሻያ እና ዘመናዊ የፉል-ስታክ ዌብ ሶፍትዌር ግንባታ።",
         summaryTitle: "የሙያ ማጠቃለያ",
         summaryText1:
-          "የኤሌክትሪካልና ኮምፒውተር መሀንዲስ (ኮምፒውተር ስትሪም)። ከማርች 2025 ጀምሮ የዳታቤዝ አስተዳደር (MySQL/MongoDB)፣ የባክአፕ ቁጥጥር እና የERP ሲስተም አስተዳደርን በከፍተኛ ዝግጁነት አከናውናለሁ።",
+          "የኤሌክትሪካልና ኮምፒውተር መሀንዲስ (ኮምፒውተር ስትሪም፣ ከደብረ ማርቆስ ዩኒቨርሲቲ በሐምሌ 2016 ዓ.ም የተመረቀ)። ከማርች 2025 ጀምሮ በጥበብ ዲዛይን ኤንድ ቢልድ ኃ/የተ/የግ/ማህበር በሲስተም አድሚኒስትሬተርነት እና በቴክኒክ ድጋፍ መኮንንነት እሰራለሁ። በMySQL/MongoDB ዳታቤዝ አስተዳደር፣ በባክአፕ ቁጥጥር እና በሲስተም አስተማማኝነት የተረጋገጠ ልምድ አለኝ።",
         summaryText2:
-          "በአዲስ አበባ ዩኒቨርሲቲ (AAU) የፉል-ስታክ ሶፍትዌር ሰልጣኝ (ከማርች 2026 ጀምሮ) እና የ'ዕቁብ ሰርክል' ፈጣሪ። ከደብረ ማርቆስ ዩኒቨርሲቲ በቢ.ኤስ.ሲ ተመርቄያለሁ (ሐምሌ 2016 ዓ.ም)።",
+          "በአዲስ አበባ ዩኒቨርሲቲ (AAU) የተጠናከረ የፉል-ስታክ ሶፍትዌር ስልጠናዬን ያጠናቀቅኩ ሲሆን የዲጂታል ማህበረሰብ ቁጠባ መድረክ የሆነውን 'ዕቁብ ሰርክል' (Ekub Circle) በPostgreSQL እና Node.js ገንብቻለሁ።",
         objectiveTitle: "የሙያ ግብ",
         objectiveText:
           "ጠንካራ የምህንድስና መርሆችን፣ የዳታቤዝ አስተዳደር ብቃትን እና ዘመናዊ ፉል-ስታክ ቴክኖሎጂዎችን በመጠቀም ደህንነታቸው የተጠበቀ፣ አስተማማኝና ፈጣን የኢንተርፕራይዝ ሲስተሞችን መገንባት።",
@@ -182,8 +182,8 @@ const resources = {
         degree: "ቢ.ኤስ.ሲ በኤሌክትሪካልና ኮምፒውተር ምህንድስና (ኮምፒውተር ስትሪም)",
         specialization: "የትምህርት መስክ: ኤሌክትሪካልና ኮምፒውተር ምህንድስና (ኮምፒውተር ዘርፍ)",
         university: "ደብረ ማርቆስ ዩኒቨርሲቲ (ሐምሌ 2016 ዓ.ም / July 2024)",
-        training: "አዲስ አበባ ዩኒቨርሲቲ (AAU) — የፉል-ስታክ ሶፍትዌር ስልጠና (ማርች 2026 – አሁን)",
-        currentRole: "ሲስተም አድሚኒስትሬተር እና ቴክኒክ ድጋፍ መኮንን (ከማርች 2025 ጀምሮ)",
+        training: "አዲስ አበባ ዩኒቨርሲቲ (AAU) — የፉል-ስታክ ሶፍትዌር ስልጠና (የተጠናቀቀ 2026)",
+        currentRole: "ሲስተም አድሚኒስትሬተር እና ቴክኒክ ድጋፍ መኮንን በጥበብ ዲዛይን ኤንድ ቢልድ ኃ/የተ/የግ/ማህበር (ከማርች 2025 ጀምሮ)",
         location: "አዲስ አበባ / ደብረ ማርቆስ፣ ኢትዮጵያ",
         languagesSpoken: "እንግሊዝኛ (በስራ ደረጃ የተካነ)፣ አማርኛ (የአፍ መፍቻ)",
         statusAvailable: "ለሙሉ ጊዜ ስራ፣ የርቀት ኮንትራት እና አማካሪነት ዝግጁ",
@@ -212,7 +212,7 @@ const resources = {
       experience: {
         badge: "የስራ ጉዞ",
         title: "የስራ ልምድ",
-        subtitle: "የኢንተርፕራይዝ የስራ ልምድ (ከማርች 05, 2025 ጀምሮ) እና የአዲስ አበባ ዩኒቨርሲቲ ስልጠና (ከማርች 2026 ጀምሮ)።",
+        subtitle: "በጥበብ ዲዛይን ኤንድ ቢልድ ኃ/የተ/የግ/ማህበር የስራ ልምድ (ከማርች 2025 ጀምሮ) እና የአዲስ አበባ ዩኒቨርሲቲ ፉል-ስታክ ምረቃ።",
       },
       projects: {
         badge: "ተለይተው የቀረቡ ስራዎች",
@@ -263,13 +263,13 @@ const resources = {
         hireMe: "Me recruter",
       },
       hero: {
-        badge: "Professionnel Actif • SysAdmin & Base de Données • Formation AAU",
+        badge: "Professionnel Actif • Tibeb Design & Build • Diplômé AAU",
         greeting: "Bonjour, je suis",
         title: "SELAMSEW ALEMU",
         role: "Ingénieur en Électrique & Informatique (Option Informatique)",
-        subRole: "Administrateur Système & Support • Associé Base de Données • Développeur Full-Stack",
+        subRole: "Administrateur Système & Support chez Tibeb Design & Build PLC • Développeur Full-Stack",
         description:
-          "Ingénieur en électricité et informatique avec expérience en administration système et bases de données (depuis mars 2025). Stagiaire full-stack à l'AAU et créateur d'Ekub Circle.",
+          "Ingénieur en génie électrique et informatique (B.Sc. Université de Debre Markos, juillet 2024). Administrateur système et support utilisateur chez Tibeb Design and Build PLC depuis mars 2025. Diplômé de la formation intensive full-stack AAU et créateur d'Ekub Circle.",
         exploreProjects: "Voir les projets",
         getInTouch: "Me contacter",
         downloadCV: "Télécharger CV",
@@ -280,7 +280,7 @@ const resources = {
         stats: {
           experience: "Expérience Active",
           expSub: "Depuis Mars 2025",
-          training: "Formation AAU",
+          training: "Diplômé AAU",
           trainSub: "Dév Full-Stack",
           projects: "Projets Réalisés",
           projSub: "Web & Systèmes",
@@ -294,9 +294,9 @@ const resources = {
         subtitle: "Administration de systèmes d'entreprise, optimisation de bases de données et développement full-stack moderne.",
         summaryTitle: "Résumé Professionnel",
         summaryText1:
-          "Ingénieur en électricité et informatique actif depuis mars 2025. Expérience confirmée en administration de bases de données (MySQL/MongoDB), sauvegardes et haute disponibilité des systèmes ERP.",
+          "Ingénieur en électricité et informatique (B.Sc. Université de Debre Markos, juillet 2024) en poste en tant qu'administrateur système et support utilisateur chez Tibeb Design and Build PLC depuis mars 2025. Expertise confirmée en gestion de bases de données MySQL/MongoDB, sauvegardes automatisées et disponibilité (99,8%).",
         summaryText2:
-          "En formation full-stack intensive à l'Université d'Addis-Abeba (AAU, mars 2026 – présent) et créateur d'Ekub Circle. Diplômé B.Sc. de l'Université de Debre Markos (juillet 2024).",
+          "Diplômé de la formation intensive en développement full-stack de l'Université d'Addis-Abeba (AAU) et concepteur d'Ekub Circle (PostgreSQL, Socket.io, Node.js).",
         objectiveTitle: "Objectif de Carrière",
         objectiveText:
           "Concevoir et maintenir des architectures logicielles et systèmes d'entreprise sécurisés, performants et hautement disponibles.",
@@ -304,8 +304,8 @@ const resources = {
         degree: "B.Sc. en Génie Électrique & Informatique (Option Informatique)",
         specialization: "Domaine d'études : Génie Électrique & Informatique",
         university: "Université de Debre Markos (Juillet 2024)",
-        training: "Université d'Addis-Abeba (AAU) — Formation Full-Stack (Mars 2026 – Présent)",
-        currentRole: "Administrateur Système & Support (Actif depuis le 5 mars 2025)",
+        training: "Université d'Addis-Abeba (AAU) — Formation Full-Stack (Complétée 2026)",
+        currentRole: "Administrateur Système & Support chez Tibeb Design and Build PLC (Depuis mars 2025)",
         location: "Addis-Abeba / Debre Markos, Éthiopie",
         languagesSpoken: "Anglais (professionnel), Amharique (langue maternelle)",
         statusAvailable: "Disponible pour opportunités temps plein & contrats à distance",
@@ -334,7 +334,7 @@ const resources = {
       experience: {
         badge: "Parcours Professionnel",
         title: "Expérience Professionnelle",
-        subtitle: "Parcours actif en entreprise et formation d'ingénierie logicielle à l'Université d'Addis-Abeba.",
+        subtitle: "Parcours professionnel chez Tibeb Design and Build PLC (Depuis mars 2025) et diplômé de la formation full-stack AAU.",
       },
       projects: {
         badge: "Réalisations",

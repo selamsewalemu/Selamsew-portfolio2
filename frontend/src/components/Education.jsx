@@ -95,14 +95,14 @@ function Education() {
                 </span>
                 <span className="edu-grad-date">
                   <Calendar size={15} />
-                  Duration: March 2026 – Present (Still Now)
+                  Status: Completed Graduate (2026)
                 </span>
               </div>
             </div>
           </div>
 
           <p className="edu-description">
-            Undergoing intensive full-stack software development training at Addis Ababa University
+            Completed intensive full-stack software development training at Addis Ababa University
             covering modern web architectures, asynchronous JavaScript, Node.js/Express REST APIs,
             PostgreSQL relational modeling, and real-time Socket.io. Architected and deployed signature
             capstone project: <strong>Ekub Circle</strong>.

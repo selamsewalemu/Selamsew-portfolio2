@@ -128,9 +128,9 @@ function About() {
                   />
                 </div>
                 <div>
-                  <strong>AAU Full-Stack Training</strong>
+                  <strong>AAU Full-Stack Development</strong>
                   <p>Addis Ababa University (AAU)</p>
-                  <small className="fact-tag">March 2026 – Present • Project Lead: Ekub Circle (PostgreSQL)</small>
+                  <small className="fact-tag">Completed (2026) • Project Lead: Ekub Circle (PostgreSQL)</small>
                 </div>
               </div>
 

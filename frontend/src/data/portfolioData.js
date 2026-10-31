@@ -8,7 +8,7 @@ export const personalInfo = {
     "Computer Systems Specialist",
   ],
   tagline:
-    "Electrical and Computer Engineer (Computer stream) bridging enterprise systems administration, database optimization, and modern full-stack web applications.",
+    "Electrical and Computer Engineer (Computer stream) serving as System Administrator & User Support Officer at Tibeb Design and Build PLC, with hands-on expertise in database optimization, ERP uptime, and modern full-stack web applications.",
   email: "selamsewalemu1@gmail.com",
   phone: "+251 92 345 6789",
   location: "Addis Ababa / Debre Markos, Ethiopia",
@@ -17,8 +17,8 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/selamsew-alemu",
   telegram: "https://t.me/selamsewalemu",
   stats: [
-    { label: "Active Experience", value: "Since Mar 2025", subtitle: "SysAdmin & DB Associate" },
-    { label: "AAU Training", value: "Mar 2026 – Present", subtitle: "Full-Stack Dev (Active)" },
+    { label: "Active Experience", value: "Since Mar 2025", subtitle: "Tibeb Design & Build" },
+    { label: "AAU Training", value: "Completed", subtitle: "Full-Stack Dev Graduate" },
     { label: "Completed Projects", value: "5 Core Apps", subtitle: "Enterprise & Web" },
     { label: "ERP System Uptime", value: "99.8%", subtitle: "High Availability" },
   ],
@@ -401,7 +401,7 @@ export const skillCategories = [
 export const experience = [
   {
     role: "System Administrator & User Support Officer",
-    company: "Enterprise ERP & Software Solutions",
+    company: "Tibeb Design and Build PLC",
     location: "Ethiopia",
     period: "September 2025 – Present (Still Now)",
     type: "Full-Time (Promoted)",
@@ -416,7 +416,7 @@ export const experience = [
   },
   {
     role: "Database Associate / Administrator",
-    company: "Enterprise ERP & Software Solutions",
+    company: "Tibeb Design and Build PLC",
     location: "Ethiopia",
     period: "March 05, 2025 – September 2025 (6 Months)",
     type: "Full-Time",
@@ -430,17 +430,17 @@ export const experience = [
     tech: ["Database Administration", "MySQL", "MongoDB", "Query Optimization", "Database Schemas", "Backups & Recovery", "SQL"],
   },
   {
-    role: "Full-Stack Software Development Trainee & Ekub Circle Project Lead",
+    role: "Full-Stack Software Development Graduate & Ekub Circle Project Lead",
     company: "Addis Ababa University (AAU) — Software Training Initiative",
     location: "Addis Ababa, Ethiopia",
-    period: "March 2026 – Present (Still Now)",
+    period: "Completed (2026)",
     type: "Intensive Software Training",
-    badge: "Active Training (AAU)",
+    badge: "AAU Graduate",
     highlights: [
-      "Enrolled in intensive full-stack software development training in modern engineering practices at AAU.",
+      "Completed intensive full-stack software development training in modern engineering practices at AAU.",
       "Architected and deployed 'Ekub Circle' — an automated digital community savings platform using JavaScript (ES6+), Node.js, Express, and PostgreSQL.",
       "Engineered real-time lottery draws (Socket.io), relational ledgers, and automated contribution tracking in PostgreSQL.",
-      "Mastering modular REST APIs, JWT authentication, responsive Tailwind CSS styling, and agile team workflows.",
+      "Mastered modular REST APIs, JWT authentication, responsive Tailwind CSS styling, and agile team workflows.",
     ],
     tech: ["JavaScript (ES6+)", "Node.js", "Express.js", "PostgreSQL", "Tailwind CSS", "Socket.io", "REST APIs", "Git"],
   },
@@ -578,7 +578,7 @@ export const projects = [
   {
     id: "ekub-circle",
     title: "Ekub Circle — Digital Rotating Savings Platform",
-    subtitle: "Addis Ababa University (AAU) Full-Stack Project (March 2026 – Present)",
+    subtitle: "Addis Ababa University (AAU) Full-Stack Project Lead Capstone",
     category: "Full Stack",
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=900",
     overview:
@@ -656,19 +656,19 @@ export const educationData = {
     {
       title: "Full-Stack Software Development Training",
       issuer: "Addis Ababa University (AAU)",
-      date: "March 2026 – Present (Still Now)",
+      date: "Completed (2026)",
       skills: "Full-Stack Web Engineering, JavaScript (ES6+), Node.js, Express, PostgreSQL, Socket.io, REST APIs, Ekub Circle Capstone",
     },
     {
       title: "Enterprise Database Administration & Operations (6-Month Role)",
-      issuer: "Professional Systems Practice",
+      issuer: "Tibeb Design and Build PLC",
       date: "March 2025 – September 2025",
       skills: "MySQL, MongoDB, Schema Modeling, Performance Tuning, Backups, Data Integrity",
     },
     {
       title: "Enterprise ERP System Administration & DB Integration",
-      issuer: "Professional Systems Practice",
-      date: "2024 – 2025",
+      issuer: "Tibeb Design and Build PLC",
+      date: "September 2025 – Present",
       skills: "ERP Deployment, DB Mapping, User Support, System Maintenance",
     },
     {

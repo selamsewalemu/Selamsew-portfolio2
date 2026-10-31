@@ -84,34 +84,34 @@ GitHub: ${personalInfo.github}
 --------------------------------------------------------------------------------
 1. PROFESSIONAL PROFILE & SUMMARY
 --------------------------------------------------------------------------------
-Electrical and Computer Engineer (Computer stream) actively working since March 2025.
+Electrical and Computer Engineer (Computer stream, B.Sc. Debre Markos University, July 2024).
+Actively serving as System Administrator & User Support Officer at Tibeb Design and Build PLC since March 2025.
 Proven enterprise experience in MySQL/MongoDB database administration, automated backups,
-query tuning, and system administration ensuring 99.8% ERP platform uptime.
+query tuning, and system administration ensuring 99.8% platform uptime.
 
-Enrolled in intensive Full-Stack Software Development training at Addis Ababa University
-(AAU) (March 2026 – Present) and architect of "Ekub Circle" (PostgreSQL, Socket.io, Node.js).
-Graduated with B.Sc. in Electrical and Computer Engineering from Debre Markos University (July 2024).
+Graduate of intensive Full-Stack Software Development training at Addis Ababa University (AAU)
+and architect of "Ekub Circle" (PostgreSQL, Socket.io, Node.js).
 
 --------------------------------------------------------------------------------
 2. PROFESSIONAL EXPERIENCE
 --------------------------------------------------------------------------------
 [1] System Administrator & User Support Officer
-    Enterprise ERP & Software Solutions | Ethiopia
+    Tibeb Design and Build PLC | Ethiopia
     Period: September 2025 – Present (Still Active)
     • Ensuring 99.8% enterprise ERP platform stability, server availability, and LAN uptime.
     • Delivering fast-tier technical user support across administrative departments.
     • Managing local network switches/routers, enforcing backup schedules and access security.
 
 [2] Database Associate / Administrator
-    Enterprise ERP & Software Solutions | Ethiopia
+    Tibeb Design and Build PLC | Ethiopia
     Period: March 05, 2025 – September 2025 (6 Months Specialization)
     • Administered MySQL relational schemas and MongoDB collections for enterprise ERP modules.
     • Authored automated daily backup scripts and tuned indexing, eliminating duplicate records.
     • Accelerated departmental reporting queries by 40%.
 
-[3] Full-Stack Software Development Trainee & Ekub Circle Project Lead
+[3] Full-Stack Software Development Graduate & Ekub Circle Project Lead
     Addis Ababa University (AAU) — Software Training Initiative
-    Period: March 2026 – Present (Still Active)
+    Period: Completed (2026)
     • Architected and developed "Ekub Circle" rotating savings platform.
     • Tech stack: JavaScript (ES6+), Node.js, Express, PostgreSQL, Tailwind CSS, Socket.io.
 
@@ -132,7 +132,7 @@ Graduated with B.Sc. in Electrical and Computer Engineering from Debre Markos Un
   Graduation Date: July 05, 2024 G.C.
 
 • Addis Ababa University (AAU)
-  Full-Stack Software Development Intensive Training (March 2026 – Present)
+  Full-Stack Software Development Intensive Training (Completed 2026)
 
 --------------------------------------------------------------------------------
 4. TECHNICAL SKILLS & PROGRAMMING LANGUAGES
