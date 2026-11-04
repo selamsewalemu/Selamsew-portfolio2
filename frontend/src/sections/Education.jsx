@@ -30,12 +30,12 @@ function Education() {
         {/* SECTION HEADER */}
         <div className="section-header text-center">
           <span className="section-badge">{t("education.badge")}</span>
-          <h2 className="section-title">{t("education.title")}</h2>
+          <h2 className="section-title gradient-text">{t("education.title")}</h2>
           <p className="section-subtitle">{t("education.subtitle")}</p>
         </div>
 
-        {/* 1. DEBRE MARKOS UNIVERSITY CARD */}
-        <div className="education-main-card">
+        {/* 1. DEBRE MARKOS UNIVERSITY CARD — glass + left accent border */}
+        <div className="education-main-card edu-glass-card">
           <div className="edu-card-header">
             <div className="edu-icon-box">
               <GraduationCap size={32} className="text-primary" />
@@ -65,7 +65,11 @@ function Education() {
             <div className="coursework-tags-grid">
               {educationData.coursework.map((course, idx) => (
                 <span key={idx} className="coursework-tag">
-                  <CheckCircle2 size={13} className="text-emerald flex-shrink-0" />
+                  <CheckCircle2
+                    size={13}
+                    className="flex-shrink-0"
+                    style={{ color: "var(--emerald)" }}
+                  />
                   <span>{course}</span>
                 </span>
               ))}
@@ -73,8 +77,8 @@ function Education() {
           </div>
         </div>
 
-        {/* 2. ADDIS ABABA UNIVERSITY (AAU) CARD WITH LOGO */}
-        <div className="education-main-card edu-aau-card">
+        {/* 2. ADDIS ABABA UNIVERSITY (AAU) CARD — red brand accent preserved */}
+        <div className="education-main-card edu-glass-card edu-aau-card">
           <div className="edu-card-header">
             <div className="edu-aau-logo-box">
               <img
@@ -91,7 +95,7 @@ function Education() {
               </p>
               <div className="edu-dates-row">
                 <span className="edu-spec" style={{ color: "#ef4444" }}>
-                  Focus: Full-Stack Web & PostgreSQL
+                  Focus: Full-Stack Web &amp; PostgreSQL
                 </span>
                 <span className="edu-grad-date">
                   <Calendar size={15} />
@@ -102,19 +106,25 @@ function Education() {
           </div>
 
           <p className="edu-description">
-            Intensive training in modern web architecture, Node.js/Express REST APIs, PostgreSQL schemas, and real-time Socket.io. Built signature capstone: <strong>Ekub Circle</strong>.
+            Intensive training in modern web architecture, Node.js/Express REST APIs,
+            PostgreSQL schemas, and real-time Socket.io. Built signature capstone:{" "}
+            <strong>Ekub Circle</strong>.
           </p>
 
           {/* AAU COURSEWORK TAGS */}
           <div className="coursework-container">
             <h4 className="coursework-heading">
               <Code2 size={18} />
-              <span>Core Modules & Capstone:</span>
+              <span>Core Modules &amp; Capstone:</span>
             </h4>
             <div className="coursework-tags-grid">
               {aauCoursework.map((item, idx) => (
                 <span key={idx} className="coursework-tag">
-                  <CheckCircle2 size={13} className="text-emerald flex-shrink-0" />
+                  <CheckCircle2
+                    size={13}
+                    className="flex-shrink-0"
+                    style={{ color: "var(--emerald)" }}
+                  />
                   <span>{item}</span>
                 </span>
               ))}
@@ -122,18 +132,18 @@ function Education() {
           </div>
         </div>
 
-        {/* CERTIFICATIONS & ACCREDITATIONS GRID */}
+        {/* CERTIFICATIONS & ACCREDITATIONS GRID — 3-col glass cards */}
         <div className="certifications-block">
           <h3 className="certifications-heading">
             <Award size={22} className="text-primary" />
-            <span>Certifications & Accreditations</span>
+            <span>Certifications &amp; Accreditations</span>
           </h3>
 
           <div className="certifications-grid">
             {educationData.certifications.map((cert, idx) => {
               const isAAU = cert.issuer.includes("Addis Ababa University");
               return (
-                <div key={idx} className="cert-card">
+                <div key={idx} className="cert-card cert-glass-card">
                   <div className="cert-card-top">
                     {isAAU ? (
                       <div className="cert-aau-logo-wrap">
@@ -144,14 +154,17 @@ function Education() {
                         />
                       </div>
                     ) : (
-                      <div className="cert-icon-wrap">
+                      <div className="cert-icon-wrap-gradient">
                         <Award size={20} className="text-primary" />
                       </div>
                     )}
                     <span className="cert-year-badge">{cert.date}</span>
                   </div>
                   <h4 className="cert-title">{cert.title}</h4>
-                  <p className="cert-issuer" style={isAAU ? { color: "#ef4444" } : {}}>
+                  <p
+                    className="cert-issuer"
+                    style={isAAU ? { color: "#ef4444" } : {}}
+                  >
                     {cert.issuer}
                   </p>
                   <div className="cert-skills-wrap">

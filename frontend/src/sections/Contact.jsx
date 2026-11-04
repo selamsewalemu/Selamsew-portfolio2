@@ -297,10 +297,13 @@ function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="btn btn-primary btn-block"
+                  className="btn btn-primary btn-block contact-submit-btn"
                 >
                   {loading ? (
-                    <span>{t("contact.sending")}</span>
+                    <>
+                      <span className="contact-spinner" aria-hidden="true" />
+                      <span>{t("contact.sending")}</span>
+                    </>
                   ) : (
                     <>
                       <span>{t("contact.sendMessage")}</span>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @import 'tailwindcss';
 
 /* ==========================================================================
@@ -1525,4 +1525,583 @@ button { font-family: inherit; cursor: pointer; }
   .bento-frameworks-split { grid-template-columns: 1fr; }
   .project-thumbnails-matrix { grid-template-columns: repeat(2, 1fr); }
   .project-selector-strip { justify-content: flex-start; overflow-x: auto; padding-bottom: 6px; }
+}
+
+/* ==========================================================================
+   FEAT-003: EXPERIENCE � ALTERNATING TIMELINE
+   ========================================================================== */
+.experience-timeline-alt {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+}
+
+/* Vertical gradient line */
+.timeline-alt-line {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, var(--accent-primary), var(--accent-secondary), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.timeline-alt-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 48px 1fr;
+  gap: 0;
+  margin-bottom: 32px;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+/* Left-side items: card left, dot center, empty right */
+.timeline-alt-left .timeline-alt-card { grid-column: 1; grid-row: 1; margin-right: 24px; }
+.timeline-alt-left .timeline-alt-node { grid-column: 2; grid-row: 1; }
+
+/* Right-side items: empty left, dot center, card right */
+.timeline-alt-right .timeline-alt-card { grid-column: 3; grid-row: 1; margin-left: 24px; }
+.timeline-alt-right .timeline-alt-node { grid-column: 2; grid-row: 1; }
+
+.timeline-alt-node {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.timeline-alt-pin {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 4px var(--bg-main), 0 0 16px var(--primary-glow);
+  flex-shrink: 0;
+  z-index: 2;
+  position: relative;
+}
+
+.timeline-alt-card {
+  padding: 18px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.timeline-alt-card:hover {
+  border-color: var(--accent-primary);
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-3px);
+}
+
+/* Gradient date badge */
+.period-badge-gradient {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: var(--accent-gradient);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Glass tech tags */
+.exp-tech-badge-glass {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border-glass);
+  color: var(--text-main);
+  transition: border-color 0.2s;
+}
+
+.exp-tech-badge-glass:hover {
+  border-color: var(--accent-primary);
+}
+
+/* Mobile: single column timeline */
+@media (max-width: 768px) {
+  .timeline-alt-line { left: 18px; }
+  .timeline-alt-item {
+    grid-template-columns: 36px 1fr;
+    grid-template-rows: auto;
+  }
+  .timeline-alt-left .timeline-alt-node,
+  .timeline-alt-right .timeline-alt-node {
+    grid-column: 1; grid-row: 1;
+    padding-top: 18px;
+  }
+  .timeline-alt-left .timeline-alt-card,
+  .timeline-alt-right .timeline-alt-card {
+    grid-column: 2; grid-row: 1;
+    margin: 0 0 0 8px;
+  }
+  .timeline-alt-pin { width: 30px; height: 30px; }
+}
+
+/* ==========================================================================
+   FEAT-003: EDUCATION � GLASS CARDS
+   ========================================================================== */
+.edu-glass-card {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-glass);
+  border-radius: 20px;
+}
+
+.edu-glass-card:hover {
+  border-color: var(--accent-primary);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.cert-glass-card {
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-glass);
+  border-radius: 18px;
+}
+
+.cert-glass-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-primary);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* Gradient icon box for non-AAU certs */
+.cert-icon-wrap-gradient {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--accent-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-icon-wrap-gradient .text-primary { color: #fff !important; }
+
+/* ==========================================================================
+   FEAT-003: PROJECTS � GRID + FILTER
+   ========================================================================== */
+
+/* Filter tab bar */
+.projects-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.projects-filter-btn {
+  padding: 7px 18px;
+  border-radius: 30px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.projects-filter-btn:hover {
+  border-color: var(--accent-primary);
+  color: var(--text-main);
+}
+
+.projects-filter-btn.active {
+  background: var(--accent-gradient);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 14px var(--primary-glow);
+}
+
+/* 3-column grid */
+.projects-grid-new {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Glass project card */
+.project-card-glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-glass);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+}
+
+.project-card-glass:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-primary);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* Project image area */
+.project-img-box {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card-glass:hover .project-img {
+  transform: scale(1.07);
+}
+
+/* Hover gradient overlay */
+.project-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(99, 102, 241, 0.2) 0%,
+    rgba(10, 10, 15, 0.75) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card-glass:hover .project-img-overlay {
+  opacity: 1;
+}
+
+.project-overlay-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  background: var(--accent-gradient);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border-radius: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  transform: translateY(4px);
+  transition: transform 0.3s ease;
+}
+
+.project-card-glass:hover .project-overlay-pill {
+  transform: translateY(0);
+}
+
+/* Category chip on image */
+.project-cat-chip {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 3px 10px;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--accent-primary);
+  font-size: 0.68rem;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 1px solid var(--border-glass);
+}
+
+/* Card body */
+.project-card-body-new {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+}
+
+.project-card-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.3;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.project-card-title:hover { color: var(--accent-primary); }
+
+.project-card-sub {
+  font-size: 0.78rem;
+  color: var(--accent-primary);
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+/* Tech pills row */
+.project-tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.project-tech-pill {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-subtle);
+}
+
+.project-tech-more {
+  color: var(--accent-primary);
+  font-weight: 700;
+}
+
+/* Action buttons */
+.project-card-actions-new {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   FEAT-003: MODAL � GLASS STYLING UPDATES
+   ========================================================================== */
+/* backdrop stronger blur */
+.modal-backdrop {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* modal container glass */
+.modal-container {
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 28px;
+}
+
+.modal-header {
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 28px 28px 0 0;
+}
+
+.modal-footer {
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 0 0 28px 28px;
+}
+
+/* Active tab gradient underline */
+.modal-tab-btn.active {
+  background: var(--accent-gradient);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 2px 0 var(--accent-primary);
+}
+
+/* Tech pills � glass mini pills */
+.tech-badge {
+  background: var(--bg-glass);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border-glass);
+}
+
+/* ==========================================================================
+   FEAT-003: CONTACT � LOADING SPINNER
+   ========================================================================== */
+.contact-submit-btn {
+  position: relative;
+}
+
+.contact-spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+/* Quick subject active pill: gradient background */
+.quick-subject-pill.active {
+  background: var(--accent-gradient);
+  border-color: transparent;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   FEAT-003: FOOTER � GLASS REDESIGN
+   ========================================================================== */
+.footer-glass {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-glass);
+}
+
+/* Glass social circles */
+.footer-social-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-glass);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.footer-social-circle:hover {
+  background: var(--accent-gradient);
+  border-color: transparent;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--primary-glow);
+}
+
+/* Back-to-top glass pill */
+.back-to-top-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-glass);
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-to-top-pill:hover {
+  background: var(--accent-gradient);
+  border-color: transparent;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   FEAT-003: DASHBOARD / SERVICES / LOGIN � GLASS OVERRIDES
+   ========================================================================== */
+/* Dashboard metric cards: glass override */
+.dashboard-metric-card.glass-card {
+  padding: 16px 18px;
+  border-radius: 14px;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+}
+
+.dashboard-metric-card.glass-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-primary);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* Dashboard panel glass */
+.dashboard-panel.glass-card {
+  padding: 18px 20px;
+  border-radius: 14px;
+}
+
+/* Dashboard telemetry table header � accent primary */
+.telemetry-table th {
+  color: var(--accent-primary);
+}
+
+/* Service feature card glass */
+.service-feature-card.glass-card {
+  padding: 20px 22px;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+.service-feature-card.glass-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-primary);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* Estimator card glass */
+.estimator-card.glass-card {
+  padding: 22px 24px;
+  border-radius: 16px;
+}
+
+/* Auth card � glass is already applied via .auth-card in existing CSS */
+
+/* ==========================================================================
+   FEAT-003: PORTFOLIO ROOT
+   ========================================================================== */
+.portfolio-app-root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-app-root > main {
+  flex: 1;
+}
+
+/* ==========================================================================
+   FEAT-003: ADDITIONAL RESPONSIVE RULES
+   ========================================================================== */
+@media (max-width: 1040px) {
+  .projects-grid-new { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .projects-grid-new { grid-template-columns: 1fr; }
+  .certifications-grid { grid-template-columns: repeat(2, 1fr); }
+  .projects-filter-bar { justify-content: flex-start; overflow-x: auto; padding-bottom: 4px; }
+  .back-to-top-pill { padding: 6px 12px; font-size: 0.78rem; }
+}
+
+@media (max-width: 480px) {
+  .certifications-grid { grid-template-columns: 1fr; }
+  .timeline-alt-item { margin-bottom: 20px; }
 }

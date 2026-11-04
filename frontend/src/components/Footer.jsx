@@ -18,32 +18,38 @@ function Footer() {
   };
 
   return (
-    <footer className="modern-footer">
+    <footer className="modern-footer footer-glass">
       <div className="footer-top">
         <div className="footer-container">
           {/* BRAND COLUMN */}
           <div className="footer-brand-col">
             <div className="footer-brand" onClick={scrollToTop}>
-              <img src={profileImage} alt="Selamsew Alemu" className="footer-avatar" />
+              <img
+                src={profileImage}
+                alt="Selamsew Alemu"
+                className="footer-avatar"
+              />
               <div>
-                <h3 className="footer-name">{personalInfo.name}</h3>
+                <h3 className="footer-name gradient-text">{personalInfo.name}</h3>
                 <p className="footer-role">{personalInfo.title}</p>
               </div>
             </div>
             <p className="footer-tagline">{personalInfo.tagline}</p>
 
             <div className="footer-status-pill">
-              <span className="footer-pulse-dot"></span>
+              <span className="footer-pulse-dot" />
               <span>All systems operational • Continuous ERP Availability</span>
             </div>
 
+            {/* SOCIAL ICON CIRCLES — glass with hover gradient fill */}
             <div className="footer-social-row">
               <a
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="footer-social-icon icon-gh"
+                className="footer-social-circle"
                 title="GitHub"
+                aria-label="GitHub profile"
               >
                 <Github size={18} />
               </a>
@@ -51,8 +57,9 @@ function Footer() {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="footer-social-icon icon-li"
+                className="footer-social-circle"
                 title="LinkedIn"
+                aria-label="LinkedIn profile"
               >
                 <Linkedin size={18} />
               </a>
@@ -60,15 +67,17 @@ function Footer() {
                 href={personalInfo.telegram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="footer-social-icon icon-tg"
+                className="footer-social-circle"
                 title="Telegram"
+                aria-label="Telegram contact"
               >
                 <MessageSquare size={18} />
               </a>
               <a
                 href={`mailto:${personalInfo.email}`}
-                className="footer-social-icon icon-mail"
+                className="footer-social-circle"
                 title="Email"
+                aria-label="Send email"
               >
                 <Mail size={18} />
               </a>
@@ -86,31 +95,41 @@ function Footer() {
                 <button onClick={() => scrollToSection("about")}>About Me</button>
               </li>
               <li>
-                <button onClick={() => scrollToSection("skills")}>Tech Stack (Languages & Frameworks)</button>
+                <button onClick={() => scrollToSection("skills")}>
+                  Tech Stack
+                </button>
               </li>
             </ul>
           </div>
 
-          {/* PORTFOLIO SECTIONS */}
+          {/* WORK & CREDENTIALS */}
           <div className="footer-nav-col">
-            <h4 className="footer-col-title">Work & Credentials</h4>
+            <h4 className="footer-col-title">Work &amp; Credentials</h4>
             <ul className="footer-nav-list">
               <li>
-                <button onClick={() => scrollToSection("experience")}>Work Experience</button>
+                <button onClick={() => scrollToSection("experience")}>
+                  Work Experience
+                </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection("projects")}>Featured Projects</button>
+                <button onClick={() => scrollToSection("projects")}>
+                  Featured Projects
+                </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection("education")}>Education & Degrees</button>
+                <button onClick={() => scrollToSection("education")}>
+                  Education &amp; Degrees
+                </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection("contact")}>Contact & Inquiries</button>
+                <button onClick={() => scrollToSection("contact")}>
+                  Contact &amp; Inquiries
+                </button>
               </li>
             </ul>
           </div>
 
-          {/* LOCATION & RELOCATION */}
+          {/* LOCATION */}
           <div className="footer-contact-col">
             <h4 className="footer-col-title">Engineering Base</h4>
             <p className="footer-text-info">{personalInfo.location}</p>
@@ -135,17 +154,18 @@ function Footer() {
           </p>
 
           <p className="footer-built-with">
-            Built with React 19, Tailwind CSS v4, Lucide Icons, Express & Node.js
+            Built with React 19, Tailwind CSS v4, Lucide Icons &amp; Node.js
           </p>
 
+          {/* BACK-TO-TOP: glass pill */}
           <button
             onClick={scrollToTop}
-            className="back-to-top-btn"
+            className="back-to-top-pill"
             title="Back to Top"
             aria-label="Back to top"
           >
-            <span>Top</span>
             <ArrowUp size={16} />
+            <span>Top</span>
           </button>
         </div>
       </div>

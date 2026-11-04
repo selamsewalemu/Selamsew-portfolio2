@@ -95,7 +95,7 @@ function Dashboard() {
           {/* METRIC CARDS */}
           <div className="dashboard-metrics-grid">
             {metrics.map((m, i) => (
-              <div key={i} className="dashboard-metric-card">
+              <div key={i} className="dashboard-metric-card glass-card">
                 <div className="metric-header-row">
                   <span className="metric-icon-wrap">{m.icon}</span>
                   <span className="metric-change-badge">{m.change}</span>
@@ -108,10 +108,10 @@ function Dashboard() {
           </div>
 
           {/* TELEMETRY TABLE */}
-          <div className="dashboard-panel" style={{ marginBottom: "30px" }}>
+          <div className="dashboard-panel glass-card" style={{ marginBottom: "30px" }}>
             <div className="panel-header">
               <Server size={20} className="text-primary" />
-              <h3>Core Infrastructure & Application Telemetry</h3>
+              <h3 className="text-primary">Core Infrastructure &amp; Application Telemetry</h3>
             </div>
             <div className="table-responsive">
               <table className="telemetry-table">
@@ -147,7 +147,7 @@ function Dashboard() {
           </div>
 
           {/* ACTIVITY FEED */}
-          <div className="dashboard-panel">
+          <div className="dashboard-panel glass-card">
             <div className="panel-header">
               <Activity size={20} className="text-primary" />
               <h3>Recent System & Maintenance Log</h3>

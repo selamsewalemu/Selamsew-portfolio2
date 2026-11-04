@@ -129,7 +129,7 @@ function Services() {
             {/* SERVICES GRID */}
             <div className="services-showcase-grid">
               {serviceOfferings.map((service) => (
-                <div key={service.id} className="service-feature-card">
+                <div key={service.id} className="service-feature-card glass-card">
                   <div className="service-feature-icon">{service.icon}</div>
                   <h3 className="service-feature-title">{service.title}</h3>
                   <p className="service-feature-desc">{service.desc}</p>
@@ -162,7 +162,7 @@ function Services() {
 
             {/* INTERACTIVE SCOPE & TIMELINE ESTIMATOR */}
             <div className="estimator-container">
-              <div className="estimator-card">
+              <div className="estimator-card glass-card">
                 <div className="estimator-header">
                   <div className="estimator-icon-box">
                     <Calculator size={24} className="text-primary" />
