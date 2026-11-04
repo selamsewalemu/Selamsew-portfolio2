@@ -60,13 +60,13 @@ function About() {
         {/* SECTION HEADER */}
         <div className="section-header text-center">
           <span className="section-badge">{t("about.badge")}</span>
-          <h2 className="section-title">{t("about.title")}</h2>
+          <h2 className="section-title gradient-text">{t("about.title")}</h2>
           <p className="section-subtitle">{t("about.subtitle")}</p>
         </div>
 
         {/* TWO-COLUMN BIO */}
         <div className="about-grid">
-          <div className="about-bio-card">
+          <div className="about-bio-card glass-card">
             <h3 className="card-headline">{t("about.summaryTitle")}</h3>
             <p className="paragraph">{t("about.summaryText1")}</p>
             <p className="paragraph">{t("about.summaryText2")}</p>
@@ -97,12 +97,12 @@ function About() {
           </div>
 
           {/* QUICK FACTS & INFO */}
-          <div className="about-facts-card">
+          <div className="about-facts-card glass-card">
             <h3 className="card-headline">{t("about.quickFacts")}</h3>
 
             <div className="facts-list">
               <div className="fact-item">
-                <GraduationCap className="fact-icon" />
+                <GraduationCap className="fact-icon" style={{ color: "var(--accent-cyan)" }} />
                 <div>
                   <strong>Degree & University</strong>
                   <p>B.Sc. Computer Engineering</p>
@@ -111,7 +111,7 @@ function About() {
               </div>
 
               <div className="fact-item">
-                <Workflow className="fact-icon" />
+                <Workflow className="fact-icon" style={{ color: "var(--accent-primary)" }} />
                 <div>
                   <strong>Enterprise Role</strong>
                   <p>SysAdmin @ Tibeb Design & Build</p>
@@ -135,7 +135,7 @@ function About() {
               </div>
 
               <div className="fact-item">
-                <MapPin className="fact-icon" />
+                <MapPin className="fact-icon" style={{ color: "var(--accent-primary)" }} />
                 <div>
                   <strong>Location</strong>
                   <p>{personalInfo.location}</p>
@@ -144,7 +144,7 @@ function About() {
               </div>
 
               <div className="fact-item">
-                <Globe2 className="fact-icon" />
+                <Globe2 className="fact-icon" style={{ color: "var(--accent-cyan)" }} />
                 <div>
                   <strong>Languages</strong>
                   <p>English & Amharic</p>
@@ -153,7 +153,7 @@ function About() {
               </div>
 
               <div className="fact-item">
-                <Code2 className="fact-icon" />
+                <Code2 className="fact-icon" style={{ color: "var(--accent-secondary)" }} />
                 <div>
                   <strong>Core Stacks</strong>
                   <p>React 19, Node.js, PostgreSQL, .NET Core & ERP</p>
@@ -171,9 +171,18 @@ function About() {
         {/* 4 CORE ENGINEERING PILLARS */}
         <div className="core-strengths-grid">
           {coreStrengths.map((item, idx) => (
-            <div key={idx} className="strength-card">
+            <div key={idx} className="strength-card glass-card">
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "14px" }}>
-                <div className="strength-icon-wrap" style={{ margin: 0 }}>{item.icon}</div>
+                <div
+                  className="strength-icon-wrap"
+                  style={{
+                    margin: 0,
+                    background: "var(--accent-gradient)",
+                    border: "none",
+                  }}
+                >
+                  {item.icon}
+                </div>
                 <span className="section-badge" style={{ margin: 0, fontSize: "0.72rem", padding: "4px 8px" }}>
                   {item.stat}
                 </span>

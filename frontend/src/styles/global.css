@@ -1336,6 +1336,152 @@ button { font-family: inherit; cursor: pointer; }
 .anchor-offset { display: block; position: absolute; top: -80px; visibility: hidden; }
 
 /* ==========================================================================
+   FEAT-002: NAVBAR ENHANCEMENTS
+   ========================================================================== */
+/* Gradient logo name — uses .gradient-text utility already defined above */
+.logo-name.gradient-text {
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Theme toggle rounded-full glass variant */
+.theme-toggle-glass {
+  border-radius: 50% !important;
+  background: var(--bg-glass) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid var(--border-glass) !important;
+}
+
+.theme-toggle-glass:hover {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 12px var(--primary-glow) !important;
+}
+
+/* Mobile active dot indicator */
+.mobile-link-item { position: relative; }
+.mobile-link-item.active { color: var(--primary); background: var(--primary-glow); }
+.mobile-active-dot {
+  display: inline-block; width: 6px; height: 6px;
+  border-radius: 50%; background: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+  margin-left: 8px; vertical-align: middle;
+}
+
+/* ==========================================================================
+   FEAT-002: HERO ENHANCEMENTS
+   ========================================================================== */
+/* Full viewport hero */
+.hero-section.hero-fullvp { min-height: 100vh; }
+
+/* Social icons row */
+.hero-social-row {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 16px; padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.hero-social-icon {
+  display: flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 10px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border-glass);
+  color: var(--text-muted);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.hero-social-icon:hover {
+  transform: translateY(-3px) scale(1.08);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  box-shadow: 0 4px 14px var(--primary-glow);
+}
+
+/* Scroll-down chevron */
+.hero-scroll-chevron {
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 14px;
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--bg-glass);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border-glass);
+  color: var(--text-muted);
+  cursor: pointer;
+  animation: bounceDown 2s ease-in-out infinite;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.hero-scroll-chevron:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+/* Stat cards glass override */
+.hero-stats-grid .stat-card.glass-card {
+  display: flex; flex-direction: column;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.hero-stats-grid .stat-card.glass-card:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+.hero-stats-grid .stat-card .stat-number.gradient-text {
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+/* ==========================================================================
+   FEAT-002: ABOUT SECTION ENHANCEMENTS
+   ========================================================================== */
+/* Glass override for bio & facts cards — .glass-card handles backdrop-blur + border,
+   but the section-specific sizing/padding is kept from .about-bio-card / .about-facts-card */
+.about-bio-card.glass-card,
+.about-facts-card.glass-card {
+  border-color: var(--border-glass);
+}
+
+/* Strength icon gradient background override */
+.strength-card.glass-card .strength-icon-wrap {
+  background: var(--accent-gradient);
+  border: none;
+  color: #fff;
+}
+
+/* About section title gradient */
+.about-section .section-title.gradient-text {
+  display: inline-block;
+}
+
+/* ==========================================================================
+   FEAT-002: SKILLS BENTO ENHANCEMENTS
+   ========================================================================== */
+/* Rounded-3xl bento cards are handled via inline style (borderRadius: 24px).
+   Additional hover enhancement for indigo border on chips: */
+.bento-skill-chip:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+  background: var(--bg-surface-elevated);
+}
+
+/* Skills section title gradient */
+.tech-stack-section .section-title.gradient-text {
+  display: inline-block;
+}
+
+/* ==========================================================================
    RESPONSIVE DESIGN
    ========================================================================== */
 @media (max-width: 1040px) {

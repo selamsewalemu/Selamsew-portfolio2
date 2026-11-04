@@ -16,18 +16,27 @@ import {
   Copy,
   Clock,
   ShieldCheck,
+  GitBranch,
+  Globe2,
+  Send,
+  ChevronDown,
 } from "lucide-react";
 
 function Hero() {
   const { t } = useTranslation();
   const [activeRoleIndex, setActiveRoleIndex] = useState(0);
+  const [roleVisible, setRoleVisible] = useState(true);
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [localTime, setLocalTime] = useState("");
 
-  // Cycle through titles
+  // Cycle through titles with fade animation
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveRoleIndex((prev) => (prev + 1) % personalInfo.roles.length);
+      setRoleVisible(false);
+      setTimeout(() => {
+        setActiveRoleIndex((prev) => (prev + 1) % personalInfo.roles.length);
+        setRoleVisible(true);
+      }, 300);
     }, 3200);
     return () => clearInterval(interval);
   }, []);
@@ -156,7 +165,7 @@ development and full-stack application development.
   };
 
   return (
-    <section id="home" className="hero-section">
+    <section id="home" className="hero-section hero-fullvp">
       <div className="hero-background-glow"></div>
       <div className="hero-grid-pattern"></div>
 
@@ -184,7 +193,17 @@ development and full-stack application development.
             <h2 className="hero-main-role">{t("hero.role")}</h2>
             <div className="dynamic-role-pill">
               <Terminal size={16} />
-              <span className="role-typed-text">{personalInfo.roles[activeRoleIndex]}</span>
+              <span
+                className="role-typed-text"
+                style={{
+                  opacity: roleVisible ? 1 : 0,
+                  transform: roleVisible ? "translateY(0)" : "translateY(-6px)",
+                  transition: "opacity 0.3s ease, transform 0.3s ease",
+                  display: "inline-block",
+                }}
+              >
+                {personalInfo.roles[activeRoleIndex]}
+              </span>
             </div>
           </div>
 
@@ -230,12 +249,51 @@ development and full-stack application development.
           {/* KEY STATS COUNTER GRID */}
           <div className="hero-stats-grid">
             {personalInfo.stats.map((stat, i) => (
-              <div key={i} className="stat-card">
-                <span className="stat-number">{stat.value}</span>
+              <div key={i} className="stat-card glass-card" style={{ padding: "12px 14px", borderRadius: "12px" }}>
+                <span className="stat-number gradient-text">{stat.value}</span>
                 <span className="stat-label">{stat.label}</span>
                 <span className="stat-sub">{stat.subtitle}</span>
               </div>
             ))}
+          </div>
+
+          {/* SOCIAL ICONS ROW */}
+          <div className="hero-social-row">
+            <a
+              href={personalInfo.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-social-icon"
+              aria-label="GitHub Profile"
+              title="GitHub"
+            >
+              <GitBranch size={18} />
+            </a>
+            <a
+              href={personalInfo.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-social-icon"
+              aria-label="LinkedIn Profile"
+              title="LinkedIn"
+            >
+              <Globe2 size={18} />
+            </a>
+            <a
+              href={personalInfo.telegram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-social-icon"
+              aria-label="Telegram"
+              title="Telegram"
+            >
+              <Send size={18} />
+            </a>
+          </div>
+
+          {/* SCROLL DOWN INDICATOR */}
+          <div className="hero-scroll-chevron" onClick={() => scrollToSection("about")} aria-label="Scroll to About section">
+            <ChevronDown size={22} />
           </div>
         </div>
 
@@ -257,6 +315,10 @@ development and full-stack application development.
                 src={profileImage}
                 alt="Selamsew Alemu - Electrical & Computer Engineer"
                 className="profile-card-img"
+                style={{
+                  boxShadow: "0 0 0 4px var(--accent-primary), 0 0 40px rgba(99,102,241,0.4)",
+                  borderRadius: "14px",
+                }}
               />
               <div className="profile-card-verified-strip">
                 <ShieldCheck size={14} className="text-emerald" />

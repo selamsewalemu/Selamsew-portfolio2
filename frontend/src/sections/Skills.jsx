@@ -68,7 +68,7 @@ function Skills() {
             <Sparkles size={14} className="inline mr-1" />
             {t("skills.badge") || "Technical Arsenal"}
           </span>
-          <h2 className="section-title">
+          <h2 className="section-title gradient-text">
             {t("nav.techStack") || "Unified Tech Stack"}
           </h2>
           <p className="section-subtitle">
@@ -79,9 +79,9 @@ function Skills() {
         {/* 4-CARD BENTO GRID */}
         <div className="tech-bento-grid">
           {/* CARD 1: PROGRAMMING LANGUAGES */}
-          <div className="tech-bento-card card-languages">
+          <div className="tech-bento-card card-languages" style={{ borderRadius: "24px" }}>
             <div className="bento-card-header">
-              <div className="bento-icon-badge icon-lang">
+              <div className="bento-icon-badge icon-lang" style={{ background: "var(--accent-gradient)", border: "none", color: "#fff" }}>
                 <Code2 size={22} />
               </div>
               <div>
@@ -110,6 +110,16 @@ function Skills() {
             <div className="bento-lang-list">
               {filteredLanguages.map((lang, idx) => {
                 const IconComponent = langIconMap[lang.icon] || Code2;
+                const levelClass = lang.level.toLowerCase().includes("expert")
+                  ? "level-expert"
+                  : lang.level.toLowerCase().includes("advanced")
+                  ? "level-advanced"
+                  : "level-proficient";
+                const dotColor = lang.level.toLowerCase().includes("expert")
+                  ? "var(--accent-primary)"
+                  : lang.level.toLowerCase().includes("advanced")
+                  ? "var(--accent-cyan)"
+                  : "var(--accent-secondary)";
                 return (
                   <div key={idx} className="bento-lang-item">
                     <div className="bento-lang-left">
@@ -127,14 +137,19 @@ function Skills() {
                     <div className="bento-lang-right">
                       <span className="bento-lang-cat-pill">{lang.category}</span>
                       <span
-                        className={`bento-lang-level ${
-                          lang.level.toLowerCase().includes("expert")
-                            ? "level-expert"
-                            : lang.level.toLowerCase().includes("advanced")
-                            ? "level-advanced"
-                            : "level-proficient"
-                        }`}
+                        className={`bento-lang-level ${levelClass}`}
+                        style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}
                       >
+                        <span
+                          style={{
+                            width: "7px",
+                            height: "7px",
+                            borderRadius: "50%",
+                            background: dotColor,
+                            boxShadow: `0 0 6px ${dotColor}`,
+                            flexShrink: 0,
+                          }}
+                        />
                         {lang.level}
                       </span>
                     </div>
@@ -145,9 +160,9 @@ function Skills() {
           </div>
 
           {/* CARD 2: FRONTEND ENGINEERING */}
-          <div className="tech-bento-card card-frontend">
+          <div className="tech-bento-card card-frontend" style={{ borderRadius: "24px" }}>
             <div className="bento-card-header">
-              <div className="bento-icon-badge icon-front">
+              <div className="bento-icon-badge icon-front" style={{ background: "var(--accent-gradient)", border: "none", color: "#fff" }}>
                 <Layout size={22} />
               </div>
               <div>
@@ -192,9 +207,9 @@ function Skills() {
           </div>
 
           {/* CARD 3: BACKEND & SYSTEMS */}
-          <div className="tech-bento-card card-backend">
+          <div className="tech-bento-card card-backend" style={{ borderRadius: "24px" }}>
             <div className="bento-card-header">
-              <div className="bento-icon-badge icon-back">
+              <div className="bento-icon-badge icon-back" style={{ background: "var(--accent-gradient)", border: "none", color: "#fff" }}>
                 <Server size={22} />
               </div>
               <div>
@@ -239,9 +254,9 @@ function Skills() {
           </div>
 
           {/* CARD 4: FRAMEWORKS, DATABASES & DEVOPS */}
-          <div className="tech-bento-card card-frameworks">
+          <div className="tech-bento-card card-frameworks" style={{ borderRadius: "24px" }}>
             <div className="bento-card-header">
-              <div className="bento-icon-badge icon-data">
+              <div className="bento-icon-badge icon-data" style={{ background: "var(--accent-gradient)", border: "none", color: "#fff" }}>
                 <Database size={22} />
               </div>
               <div>

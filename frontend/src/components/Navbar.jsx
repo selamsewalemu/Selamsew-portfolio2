@@ -106,7 +106,7 @@ function Navbar() {
             <span className="online-indicator" title="Available for Work"></span>
           </div>
           <div className="logo-meta">
-            <span className="logo-name">Selamsew Alemu</span>
+            <span className="logo-name gradient-text">Selamsew Alemu</span>
             <span className="logo-role">Electrical & Computer Eng.</span>
           </div>
         </div>
@@ -159,7 +159,7 @@ function Navbar() {
           <button
             type="button"
             onClick={handleToggleTheme}
-            className="theme-toggle-btn"
+            className="theme-toggle-btn theme-toggle-glass"
             aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
             title={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
           >
@@ -199,6 +199,7 @@ function Navbar() {
                 className={`mobile-link-item ${activeSection === item.id ? "active" : ""}`}
               >
                 {item.label}
+                {activeSection === item.id && <span className="mobile-active-dot" />}
               </button>
             ))}
             <Link
