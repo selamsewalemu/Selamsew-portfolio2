@@ -29,7 +29,7 @@ function Navbar() {
       setScrolled(totalScroll > 30);
 
       // Scroll spy for sections
-      const sections = ["home", "about", "languages", "frameworks", "skills", "experience", "projects", "education", "contact"];
+      const sections = ["home", "about", "skills", "experience", "projects", "education", "contact"];
       const scrollPos = window.scrollY + 120;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -54,7 +54,7 @@ function Navbar() {
       setTimeout(() => {
         const element = document.getElementById(id);
         if (element) {
-          const navHeight = 76;
+          const navHeight = 62;
           const pos = element.getBoundingClientRect().top + window.pageYOffset - navHeight;
           window.scrollTo({ top: pos, behavior: "smooth" });
         }
@@ -62,7 +62,7 @@ function Navbar() {
     } else {
       const element = document.getElementById(id);
       if (element) {
-        const navHeight = 76;
+        const navHeight = 62;
         const pos = element.getBoundingClientRect().top + window.pageYOffset - navHeight;
         window.scrollTo({ top: pos, behavior: "smooth" });
       }
@@ -82,11 +82,9 @@ function Navbar() {
   const navItems = [
     { id: "home", label: t("nav.home") },
     { id: "about", label: t("nav.about") },
-    { id: "languages", label: t("nav.languages") },
-    { id: "frameworks", label: t("nav.frameworks") || "Frameworks" },
-    { id: "skills", label: t("nav.skills") },
-    { id: "experience", label: t("nav.experience") },
+    { id: "skills", label: t("nav.techStack") || "Tech Stack" },
     { id: "projects", label: t("nav.projects") },
+    { id: "experience", label: t("nav.experience") },
     { id: "education", label: t("nav.education") },
     { id: "contact", label: t("nav.contact") },
   ];

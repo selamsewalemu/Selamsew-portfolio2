@@ -1,0 +1,7 @@
+{
+  "task_id": "task-selamsew-ui-overhaul",
+  "task_description": "Full modern UI and architecture overhaul of the Selamsew portfolio frontend. Dark-first design with indigo/purple gradient accents (#6366f1 -> #8b5cf6), glassmorphism cards, smooth scroll animations, unified Skills section, vertical timeline for Experience/Education, responsive project grid with filter tabs. New file structure: src/hooks/, src/layouts/, src/sections/ (move sections from components/). New reusable primitives in src/components/. All existing content and API integrations preserved. Build must pass with zero errors.",
+  "status": "pending",
+  "feature_order": ["FEAT-001", "FEAT-002", "FEAT-003"],
+  "blocked_reason": null
+}

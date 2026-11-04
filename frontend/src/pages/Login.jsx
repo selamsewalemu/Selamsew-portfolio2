@@ -16,7 +16,7 @@ function Login() {
   return (
     <div className="portfolio-app-root">
       <Navbar />
-      <main style={{ paddingTop: "120px", minHeight: "80vh" }}>
+      <main style={{ paddingTop: "80px", minHeight: "80vh" }}>
         <div className="section-container" style={{ maxWidth: "480px" }}>
           <div className="auth-card">
             <div className="auth-icon-wrap">

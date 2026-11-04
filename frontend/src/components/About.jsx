@@ -20,27 +20,27 @@ function About() {
 
   const coreStrengths = [
     {
-      icon: <Workflow className="strength-icon text-cyan" size={26} />,
-      title: "ERP & Workflow Automation",
-      desc: "Deep experience configuring enterprise modules, bridging ERP databases with frontend tools, and automating administrative workflows.",
-      stat: "99.8% Uptime",
+      icon: <Workflow className="strength-icon text-cyan" size={24} />,
+      title: "ERP & Workflows",
+      desc: "Enterprise modules, ERP uptime & automated admin workflows.",
+      stat: "High Uptime",
     },
     {
-      icon: <Zap className="strength-icon text-primary" size={26} />,
-      title: "Full-Stack Web Engineering",
-      desc: "Designing responsive, component-driven client applications with React 19 backed by modular Node.js/Express and PostgreSQL REST services.",
+      icon: <Zap className="strength-icon text-primary" size={24} />,
+      title: "Full-Stack Web",
+      desc: "Responsive React 19 apps with Node.js & PostgreSQL APIs.",
       stat: "Sub-second APIs",
     },
     {
-      icon: <ShieldCheck className="strength-icon text-emerald" size={26} />,
-      title: "Database Integrity & Uptime",
-      desc: "Implementing automated backups, strict schema validations, indexing, and high-availability operations in PostgreSQL, MySQL, and MongoDB.",
+      icon: <ShieldCheck className="strength-icon text-emerald" size={24} />,
+      title: "Database Ops",
+      desc: "Schema design, query tuning & automated daily backups.",
       stat: "Zero Data-Loss",
     },
     {
-      icon: <Cpu className="strength-icon text-purple" size={26} />,
-      title: "Hardware & Network Topologies",
-      desc: "Grounded in electrical and computer engineering fundamentals: TCP/IP subnets, hardware diagnostics, Linux servers, and embedded prototypes.",
+      icon: <Cpu className="strength-icon text-purple" size={24} />,
+      title: "Networks & Systems",
+      desc: "TCP/IP subnets, hardware diagnostics & Linux servers.",
       stat: "Cisco & Linux",
     },
   ];
@@ -48,7 +48,7 @@ function About() {
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
     if (el) {
-      const navHeight = 76;
+      const navHeight = 62;
       const pos = el.getBoundingClientRect().top + window.pageYOffset - navHeight;
       window.scrollTo({ top: pos, behavior: "smooth" });
     }
@@ -104,18 +104,18 @@ function About() {
               <div className="fact-item">
                 <GraduationCap className="fact-icon" />
                 <div>
-                  <strong>Field of Study & Degree</strong>
-                  <p>B.Sc. in Electrical and Computer Engineering</p>
-                  <small className="fact-tag">Computer stream (DMU '24)</small>
+                  <strong>Degree & University</strong>
+                  <p>B.Sc. Computer Engineering</p>
+                  <small className="fact-tag">Debre Markos Univ. ('24)</small>
                 </div>
               </div>
 
               <div className="fact-item">
                 <Workflow className="fact-icon" />
                 <div>
-                  <strong>Professional Enterprise Track</strong>
-                  <p>System Admin & User Support Officer (Present)</p>
-                  <small className="fact-tag">Database Associate (6 Mos) • Active since Mar 05, 2025</small>
+                  <strong>Enterprise Role</strong>
+                  <p>SysAdmin @ Tibeb Design & Build</p>
+                  <small className="fact-tag">Active (Mar 2025–Present) • Continuous Uptime</small>
                 </div>
               </div>
 
@@ -128,16 +128,16 @@ function About() {
                   />
                 </div>
                 <div>
-                  <strong>AAU Full-Stack Development</strong>
+                  <strong>Full-Stack Graduate</strong>
                   <p>Addis Ababa University (AAU)</p>
-                  <small className="fact-tag">Completed (2026) • Project Lead: Ekub Circle (PostgreSQL)</small>
+                  <small className="fact-tag">Certified ('26) • Lead: Ekub Circle</small>
                 </div>
               </div>
 
               <div className="fact-item">
                 <MapPin className="fact-icon" />
                 <div>
-                  <strong>Location & Relocation</strong>
+                  <strong>Location</strong>
                   <p>{personalInfo.location}</p>
                   <small className="fact-tag">{personalInfo.relocation}</small>
                 </div>
@@ -146,17 +146,17 @@ function About() {
               <div className="fact-item">
                 <Globe2 className="fact-icon" />
                 <div>
-                  <strong>Spoken Languages</strong>
-                  <p>{t("about.languagesSpoken")}</p>
-                  <small className="fact-tag">English & Amharic</small>
+                  <strong>Languages</strong>
+                  <p>English & Amharic</p>
+                  <small className="fact-tag">Professional Working Proficiency</small>
                 </div>
               </div>
 
               <div className="fact-item">
                 <Code2 className="fact-icon" />
                 <div>
-                  <strong>Primary Tech Stacks</strong>
-                  <p>C# / .NET Core, React 19, Node.js, Express, PostgreSQL, MySQL, MongoDB, ERP, Python, C++</p>
+                  <strong>Core Stacks</strong>
+                  <p>React 19, Node.js, PostgreSQL, .NET Core & ERP</p>
                 </div>
               </div>
             </div>

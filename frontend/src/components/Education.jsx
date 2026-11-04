@@ -60,7 +60,7 @@ function Education() {
           <div className="coursework-container">
             <h4 className="coursework-heading">
               <BookOpen size={18} />
-              <span>Core Coursework & Specialized Curriculum:</span>
+              <span>Core Coursework:</span>
             </h4>
             <div className="coursework-tags-grid">
               {educationData.coursework.map((course, idx) => (
@@ -84,35 +84,32 @@ function Education() {
               />
             </div>
             <div className="edu-header-meta">
-              <span className="edu-badge-aau">Active Professional Training</span>
+              <span className="edu-badge-aau">Professional Training</span>
               <h3 className="edu-school-name">Addis Ababa University (AAU)</h3>
               <p className="edu-college-name">
-                Full-Stack Software Development Training & Engineering Initiative
+                Full-Stack Software Development Training
               </p>
               <div className="edu-dates-row">
                 <span className="edu-spec" style={{ color: "#ef4444" }}>
-                  Specialization: Full-Stack Web Development & Ekub Circle (PostgreSQL)
+                  Focus: Full-Stack Web & PostgreSQL
                 </span>
                 <span className="edu-grad-date">
                   <Calendar size={15} />
-                  Status: Completed Graduate (2026)
+                  Graduate (2026)
                 </span>
               </div>
             </div>
           </div>
 
           <p className="edu-description">
-            Completed intensive full-stack software development training at Addis Ababa University
-            covering modern web architectures, asynchronous JavaScript, Node.js/Express REST APIs,
-            PostgreSQL relational modeling, and real-time Socket.io. Architected and deployed signature
-            capstone project: <strong>Ekub Circle</strong>.
+            Intensive training in modern web architecture, Node.js/Express REST APIs, PostgreSQL schemas, and real-time Socket.io. Built signature capstone: <strong>Ekub Circle</strong>.
           </p>
 
           {/* AAU COURSEWORK TAGS */}
           <div className="coursework-container">
             <h4 className="coursework-heading">
               <Code2 size={18} />
-              <span>Intensive Training Modules & Capstone Competencies:</span>
+              <span>Core Modules & Capstone:</span>
             </h4>
             <div className="coursework-tags-grid">
               {aauCoursework.map((item, idx) => (
@@ -129,7 +126,7 @@ function Education() {
         <div className="certifications-block">
           <h3 className="certifications-heading">
             <Award size={22} className="text-primary" />
-            <span>Professional Certifications & Accreditations</span>
+            <span>Certifications & Accreditations</span>
           </h3>
 
           <div className="certifications-grid">
@@ -158,7 +155,7 @@ function Education() {
                     {cert.issuer}
                   </p>
                   <div className="cert-skills-wrap">
-                    <small className="cert-skills-label">Core Competencies:</small>
+                    <small className="cert-skills-label">Focus:</small>
                     <p className="cert-skills-text">{cert.skills}</p>
                   </div>
                 </div>

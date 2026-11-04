@@ -17,21 +17,21 @@ function Dashboard() {
   const metrics = [
     {
       label: "ERP System Availability",
-      val: "99.85%",
-      change: "+0.25%",
+      val: "Continuous",
+      change: "Optimal",
       sub: "Active High-Availability",
       icon: <Server size={22} className="text-cyan" />,
     },
     {
       label: "Technical Support CSAT",
-      val: "98.4%",
+      val: "Top Tier",
       change: "4.9 / 5.0",
       sub: "Tier-1/2 User Support",
       icon: <CheckCircle2 size={22} className="text-emerald" />,
     },
     {
       label: "Database Integrity & Backups",
-      val: "100%",
+      val: "Verified",
       change: "Daily Verified",
       sub: "PostgreSQL & MySQL",
       icon: <Database size={22} className="text-amber" />,
@@ -46,11 +46,11 @@ function Dashboard() {
   ];
 
   const serverTelemetry = [
-    { name: "Node.js API Microservice (Ekub Circle)", status: "Operational", uptime: "99.9%", latency: "24ms", load: "18%" },
-    { name: "PostgreSQL Production Cluster", status: "Operational", uptime: "99.8%", latency: "12ms", load: "34%" },
-    { name: "Enterprise ERP Application Server", status: "Operational", uptime: "99.8%", latency: "42ms", load: "45%" },
-    { name: "MySQL Relational Datastore", status: "Operational", uptime: "99.9%", latency: "15ms", load: "28%" },
-    { name: "Automated Daily Backup Pipeline", status: "Completed", uptime: "100%", latency: "--", load: "Idle" },
+    { name: "Node.js API Microservice (Ekub Circle)", status: "Operational", uptime: "Online", latency: "24ms", load: "Optimal" },
+    { name: "PostgreSQL Production Cluster", status: "Operational", uptime: "Online", latency: "12ms", load: "Normal" },
+    { name: "Enterprise ERP Application Server", status: "Operational", uptime: "Online", latency: "42ms", load: "Normal" },
+    { name: "MySQL Relational Datastore", status: "Operational", uptime: "Online", latency: "15ms", load: "Optimal" },
+    { name: "Automated Daily Backup Pipeline", status: "Completed", uptime: "Active", latency: "--", load: "Idle" },
   ];
 
   const handleRefresh = () => {
@@ -64,7 +64,7 @@ function Dashboard() {
   return (
     <div className="portfolio-app-root">
       <Navbar />
-      <main style={{ paddingTop: "110px", minHeight: "85vh" }}>
+      <main style={{ paddingTop: "76px", minHeight: "85vh" }}>
         <div className="section-container">
           {/* HEADER ROW WITH LIVE BADGE & REFRESH */}
           <div className="dashboard-top-row">

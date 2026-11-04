@@ -27,25 +27,25 @@ function ProjectModal({ project, onClose }) {
               {project.subtitle?.includes("Addis Ababa") && (
                 <div className="modal-aau-badge">
                   <img src={aauLogo} alt="AAU Logo" className="modal-aau-logo-mini" />
-                  <span>Official Addis Ababa University Project</span>
+                  <span>AAU Capstone Project</span>
                 </div>
               )}
               {project.id === "tms-core" && (
                 <div className="modal-tms-badge">
                   <span className="pulse-dot-sm"></span>
-                  <span>Enterprise Training Platform • ASP.NET Core 10 & Angular 22</span>
+                  <span>Enterprise .NET 10 & Angular 22</span>
                 </div>
               )}
               {project.id === "talenthub" && (
                 <div className="modal-talenthub-badge">
                   <span className="pulse-dot-emerald"></span>
-                  <span>Role-Based Job Platform • React, TypeScript, Node.js & MongoDB</span>
+                  <span>Job Portal • RBAC & MERN</span>
                 </div>
               )}
               {project.id === "online-exam" && (
                 <div className="modal-exam-badge">
                   <span className="pulse-dot-cyan"></span>
-                  <span>Online Examination Engine • Timed Testing & Automated Evaluation</span>
+                  <span>Exam Engine • Timed & Auto-Graded</span>
                 </div>
               )}
             </div>
@@ -70,21 +70,21 @@ function ProjectModal({ project, onClose }) {
               onClick={() => setActiveTab("overview")}
               className={`modal-tab-btn ${activeTab === "overview" ? "active" : ""}`}
             >
-              Overview & Solution
+              Overview
             </button>
             <button
               type="button"
               onClick={() => setActiveTab("features")}
               className={`modal-tab-btn ${activeTab === "features" ? "active" : ""}`}
             >
-              System Features
+              Features
             </button>
             <button
               type="button"
               onClick={() => setActiveTab("tech")}
               className={`modal-tab-btn ${activeTab === "tech" ? "active" : ""}`}
             >
-              Stack & Metrics
+              Stack & Impact
             </button>
           </div>
 
@@ -92,17 +92,17 @@ function ProjectModal({ project, onClose }) {
           {activeTab === "overview" && (
             <div className="modal-tab-content animate-fadeIn">
               <div className="modal-section">
-                <h4 className="modal-section-title">Project Summary</h4>
+                <h4 className="modal-section-title">Summary</h4>
                 <p className="modal-text">{project.overview}</p>
               </div>
 
               <div className="modal-grid-two">
                 <div className="modal-challenge-card">
-                  <h4 className="modal-section-title text-rose">Engineering Challenge</h4>
+                  <h4 className="modal-section-title text-rose">Challenge</h4>
                   <p className="modal-text">{project.challenge}</p>
                 </div>
                 <div className="modal-solution-card">
-                  <h4 className="modal-section-title text-cyan">Architectural Solution</h4>
+                  <h4 className="modal-section-title text-cyan">Solution</h4>
                   <p className="modal-text">{project.solution}</p>
                 </div>
               </div>
@@ -113,7 +113,7 @@ function ProjectModal({ project, onClose }) {
           {activeTab === "features" && (
             <div className="modal-tab-content animate-fadeIn">
               <div className="modal-section">
-                <h4 className="modal-section-title">Core Implemented Capabilities</h4>
+                <h4 className="modal-section-title">Key Features</h4>
                 <ul className="modal-features-list">
                   {project.features.map((f, i) => (
                     <li key={i} className="modal-feature-item">
@@ -133,14 +133,14 @@ function ProjectModal({ project, onClose }) {
                 <div className="modal-metrics-card">
                   <TrendingUp size={22} className="text-emerald" />
                   <div>
-                    <strong>Demonstrated Impact & Results:</strong>
+                    <strong>Impact & Metrics:</strong>
                     <p>{project.metrics}</p>
                   </div>
                 </div>
               )}
 
               <div className="modal-section">
-                <h4 className="modal-section-title">Technologies Deployed</h4>
+                <h4 className="modal-section-title">Tech Stack</h4>
                 <div className="modal-tech-pills">
                   {project.tech.map((t, idx) => (
                     <span key={idx} className="tech-badge">
@@ -162,7 +162,7 @@ function ProjectModal({ project, onClose }) {
             className="btn btn-primary"
           >
             <ExternalLink size={17} />
-            <span>Visit Live Application</span>
+            <span>Live Demo</span>
           </a>
 
           <a
@@ -172,7 +172,7 @@ function ProjectModal({ project, onClose }) {
             className="btn btn-outline"
           >
             <Github size={17} />
-            <span>Review Source Code</span>
+            <span>Source Code</span>
           </a>
         </div>
       </div>

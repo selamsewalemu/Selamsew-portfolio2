@@ -1,0 +1,30 @@
+{
+  "id": "FEAT-002",
+  "type": "feat",
+  "description": "Restyle the Navbar, Hero, About, and Skills (TechStack) sections in src/sections/ with the new dark-first indigo/purple design system established in FEAT-001. All existing JSX logic (scroll spy, animations, i18n, sound toggle, role cycling, email copy, stats grid, skill filters) is preserved — only visual presentation is upgraded. This feat depends on FEAT-001 completing successfully (sections exist in src/sections/, global.css has new variables, tailwindcss plugin wired).",
+  "status": "pending",
+  "steps": [
+    "Step 1 — Restyle src/components/Navbar.jsx (keep in components/ since it is imported by pages too): Apply the new glassmorphism navbar: use CSS var --nav-bg with backdrop-filter blur(20px). Add a scroll-progress bar at top using the existing scrollProgress state — style it with accent gradient (background: var(--accent-gradient)). The logo brand text 'Selamsew Alemu' should use gradient-text class. Nav link active state: underline with --accent-primary color and a small glowing dot indicator. The Hire Me button: use gradient background (var(--accent-gradient)). Mobile drawer: animate with slideDown @keyframe. Theme toggle button: rounded-full with glass style. All existing functionality (scrollToSection, sound toggle, i18n, route awareness) must be preserved exactly.",
+    "Step 2 — Restyle src/sections/Hero.jsx: Full viewport height (min-h-screen). Background: pure CSS animated gradient blob using a ::before pseudo-element or a dedicated div with radial-gradient animation using gradientShift @keyframe (indigo to purple). Profile card on the right: glassmorphism (backdrop-blur, --bg-glass background, --border-glass border). Profile image: circular with a glowing ring using box-shadow: 0 0 0 4px var(--accent-primary), 0 0 40px rgba(99,102,241,0.4). Animated job title cycling: add a smooth fade transition (opacity + translateY, 300ms) when the activeRoleIndex changes — use a key prop on the span to trigger remount animation. CTA buttons: 'View Projects' uses gradient background, 'Download CV' uses outline style with --accent-primary border. Social icons row: add GitHub, LinkedIn, Telegram icon links from personalInfo below the action buttons with hover scale and color animations. Animated scroll-down chevron indicator at the bottom. Stats grid: each stat card is a glass card with the number in gradient text. Availability pill: pulsing green dot retained. Keep all existing logic (localTime, copyEmail, downloadCV, role cycling). The hero must have id='home' on the section tag.",
+    "Step 3 — Restyle src/sections/About.jsx: Two-column layout. Left column: biography text with gradient accent on section titles, objective box with left border in --accent-primary. Right column: quick facts cards with glass styling, icons colored with --accent-cyan and --accent-primary. The 4 core-strengths cards at bottom: glass cards with gradient icon backgrounds. Status banner: emerald glow. Keep all existing i18n keys and scrollToSection calls. Section must have id='about'.",
+    "Step 4 — Restyle src/sections/Skills.jsx (was TechStack.jsx): The 4-card bento grid layout is already good — upgrade each card with glassmorphism. Card headers: icon badge uses gradient background. Category filter pills: active state uses gradient background. Language items: progress-style indicator replaced with a colored dot indicating level (Expert = indigo, Advanced = cyan, Proficient = purple). The bento grid: 2x2 on desktop (grid-template-columns: repeat(2, 1fr)), single column on mobile. Each bento card: rounded-3xl, glass background. Skill chips: glass mini-cards with hover: border-indigo-500/30. Keep all existing filter logic, i18n, and section id='skills'. Hidden anchor spans for id='languages', id='frameworks', id='stack' must be retained."
+  ],
+  "acceptance_criteria": [
+    "npm run build exits 0 with zero errors",
+    "Navbar shows glassmorphism effect with gradient logo text and gradient scroll-progress bar",
+    "Hero section fills minimum viewport height, shows animated gradient background blob",
+    "Hero profile card has glowing border ring around profile image",
+    "Hero CTA 'View Projects' button has gradient background",
+    "Hero shows social icon links row below action buttons",
+    "About section has two-column layout with glass cards",
+    "Skills section bento cards have glassmorphism styling",
+    "All existing i18n translations still work (language switcher switches text in all 3 languages)",
+    "Scroll-spy active section indicator still highlights the correct nav link",
+    "Theme toggle still switches between dark and light modes"
+  ],
+  "verification": [
+    "cd c:\\Users\\HP\\.gemini\\antigravity\\scratch\\Selamsew-portfolio2\\frontend && npm run build"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

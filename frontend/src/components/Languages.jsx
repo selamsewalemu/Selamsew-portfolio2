@@ -155,28 +155,6 @@ function Languages() {
                       </div>
                     </div>
                   </div>
-
-                  <p className="lang-desc">{lang.description}</p>
-
-                  {/* PROFICIENCY PROGRESS BAR WITH GLOW */}
-                  <div className="lang-progress-wrap">
-                    <div className="progress-labels">
-                      <span className="progress-title">{t("languages.proficiency")}</span>
-                      <span className="progress-value" style={{ color: lang.color }}>
-                        {lang.percentage}%
-                      </span>
-                    </div>
-                    <div className="progress-track">
-                      <div
-                        className="progress-fill"
-                        style={{
-                          width: `${lang.percentage}%`,
-                          backgroundColor: lang.color,
-                          boxShadow: `0 0 10px ${lang.color}60`,
-                        }}
-                      ></div>
-                    </div>
-                  </div>
                 </div>
               );
             })}

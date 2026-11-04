@@ -25,73 +25,73 @@ function Services() {
     {
       id: "erp",
       icon: <Layers size={28} className="text-primary" />,
-      title: "ERP Platform Implementation & Administration",
-      desc: "End-to-end deployment, user management, database cross-mapping, troubleshooting, and enterprise workflow optimization.",
+      title: "ERP Administration",
+      desc: "Enterprise module deployment, database mapping, and workflow optimization.",
       features: [
-        "99.8% System Uptime Guarantee",
-        "Cross-department Database Normalization",
-        "Role-Based Access Control (RBAC)",
-        "Automated Disaster Recovery & Backups",
+        "Continuous System Uptime",
+        "Database Normalization",
+        "Role-Based Access Control",
+        "Disaster Recovery & Backups",
       ],
     },
     {
       id: "web",
       icon: <Server size={28} className="text-cyan" />,
-      title: "Full-Stack Web Development (MERN & .NET)",
-      desc: "Custom high-speed web applications engineered using React 19, Node.js, Express, PostgreSQL / MongoDB, or C# / ASP.NET Core.",
+      title: "Full-Stack Development",
+      desc: "High-speed web apps with React 19, Node.js, Express, and PostgreSQL.",
       features: [
         "Sub-second API response times",
-        "Clean scalable REST architecture",
-        "JWT and secure authorization pipelines",
-        "State management with Redux/Context",
+        "Modular REST architecture",
+        "JWT & Bcrypt authorization",
+        "Redux / Context state",
       ],
     },
     {
       id: "db",
       icon: <Database size={28} className="text-emerald" />,
-      title: "Database Administration & Optimization",
-      desc: "Schema modeling, query performance tuning, automated backup schedules, data normalization, and integrity audits in PostgreSQL, MySQL, and MongoDB.",
+      title: "Database Optimization",
+      desc: "Relational schema design, query indexing, and automated backups.",
       features: [
-        "Up to 40% faster query execution",
+        "Query execution tuning",
         "ACID compliant transactions",
-        "Connection pooling & cache tuning",
-        "Zero data-loss backup automation",
+        "Connection pooling tuning",
+        "Zero data-loss automation",
       ],
     },
     {
       id: "i18n",
       icon: <Globe2 size={28} className="text-purple" />,
-      title: "Internationalization (i18n) & Modern UI/UX",
-      desc: "Multilingual websites (English, Amharic, French), mobile-responsive architecture, dark/light themes, and accessibility compliance.",
+      title: "UI/UX & Localization",
+      desc: "Multilingual sites, fluid responsive grids, and dark/light themes.",
       features: [
-        "Instant multi-language localization",
-        "Dark / Light mode system persistence",
-        "Mobile-first responsive fluid grids",
-        "Lighthouse 95+ performance scores",
+        "Instant multi-language (i18n)",
+        "Dark / Light theme toggle",
+        "Mobile-first fluid grids",
+        "High Lighthouse performance",
       ],
     },
     {
       id: "infra",
       icon: <ShieldCheck size={28} className="text-amber" />,
-      title: "IT Infrastructure & Technical User Support",
-      desc: "Network topology configuration, router/switch diagnostics, hardware maintenance, and 1st/2nd-tier enterprise support.",
+      title: "IT Support & Networks",
+      desc: "Hardware diagnostics, LAN/VLAN config, and user support.",
       features: [
-        "Subnetting & VLAN configuration",
-        "Hardware diagnostics & recovery",
-        "Standard Operating Procedures (SOPs)",
-        "Rapid Mean Time to Resolution (MTTR)",
+        "Subnetting & VLAN config",
+        "Hardware diagnostics",
+        "Standard Operating Procedures",
+        "Rapid issue resolution",
       ],
     },
     {
       id: "auto",
       icon: <Wrench size={28} className="text-rose" />,
-      title: "Systems Automation & API Integration",
-      desc: "Automated bash/Python scripts, third-party service connections (Brevo/SMTP, Socket.io), and transactional notification pipelines.",
+      title: "Automation & APIs",
+      desc: "Cron scripts, REST integrations, and real-time WebSockets.",
       features: [
-        "Cron & daemon automated scripts",
-        "Real-time Socket.io websockets",
-        "Transactional email notifications",
-        "Automated reporting generation",
+        "Cron & daemon automation",
+        "Socket.io real-time events",
+        "Transactional email alerts",
+        "Automated reporting",
       ],
     },
   ];
@@ -114,7 +114,7 @@ function Services() {
   return (
     <div className="portfolio-app-root">
       <Navbar />
-      <main style={{ paddingTop: "110px" }}>
+      <main style={{ paddingTop: "76px" }}>
         {/* HERO HEADER */}
         <section className="section-padding">
           <div className="section-container">

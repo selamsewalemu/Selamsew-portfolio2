@@ -1,0 +1,37 @@
+{
+  "id": "FEAT-003",
+  "type": "feat",
+  "description": "Restyle the Experience, Education, Projects, Contact, Footer sections and the ProjectModal, plus update the page-level files (Login, Dashboard, Services). Also complete the global.css responsive rules update and ensure the full build is clean. This feat depends on FEAT-001 (structure) and FEAT-002 (Navbar/Hero/About/Skills done) completing first.",
+  "status": "pending",
+  "steps": [
+    "Step 1 — Restyle src/sections/Experience.jsx: Vertical timeline with alternating cards on desktop (odd items left, even items right using grid or flexbox offset). On mobile: single column. Timeline line: a vertical line div with gradient (from --accent-primary to --accent-secondary). Timeline dot/pin: glowing circle with --accent-primary box-shadow. Each card: glass card (backdrop-blur, --bg-glass, rounded-2xl). Date badge: indigo/purple pill with gradient background. Company name row: bold with accent color. Highlight bullets: checkmark icon in --accent-cyan. Tech tags: small glass pills. Keep all existing i18n, data from experience array in portfolioData.js, and id='experience' on the section.",
+    "Step 2 — Restyle src/sections/Education.jsx: University cards use glass styling with left border in --accent-primary. AAU card: keep the red AAU brand color (#ef4444) for the logo border and left accent. Certifications grid: 3-column on desktop, 2-col on tablet, 1-col mobile. Each cert card: glass card with hover lift. Cert icon wrap: small gradient icon box. Keep all existing data from educationData, coursework tags, and id='education'.",
+    "Step 3 — Restyle src/sections/Projects.jsx: Replace the single-card showcase layout with a responsive 3-column grid of project cards. Each project card: glass card with rounded-2xl, project image on top with gradient overlay on hover (showing 'View Details' pill), tech badges row, category pill badge, and 3 action buttons (Live Demo, Source Code, Case Study). Add a filter tab bar above the grid with category options extracted from projects data: 'All', 'Full Stack', 'ERP & Systems'. Keep the existing ProjectModal logic — clicking 'Case Study' or the image overlay opens the modal. Navigation arrows and selector strip from old layout can be removed (replaced by grid). Keep id='projects'.",
+    "Step 4 — Restyle src/sections/ProjectModal.jsx: Update modal container to use glass styling (backdrop-blur, --bg-surface background, rounded-3xl). Modal header: gradient badge for category. Tab buttons: active tab uses gradient underline. Tech pills: glass mini-pills. Modal backdrop: rgba(0,0,0,0.8) with blur(12px). Keep all existing tab logic (overview/features/tech tabs), keyboard escape handler, and data bindings.",
+    "Step 5 — Restyle src/sections/Contact.jsx: Split layout: left column has contact info + social links, right column has the form. Form inputs: add focus ring (box-shadow: 0 0 0 3px rgba(99,102,241,0.3)) on focus using :focus CSS. Submit button: gradient background, loading spinner state (replace text with animated spinner). Toast notifications: the alert-box classes get updated colors to match new palette (success: emerald, error: rose). Quick subject pills: active state uses gradient background. Keep ALL existing API integration (api.post('/contact', form) call in handleSubmit), form state, validation, copy handlers, and i18n keys. id='contact' preserved.",
+    "Step 6 — Restyle src/components/Footer.jsx: Minimal 4-column layout: brand+tagline+social icons | Navigation | Work & Credentials | Location. Social icon circles: glass with hover gradient fill. Back-to-top button: glass pill with arrow icon. Footer bottom bar: copyright + built-with + back-to-top. Brand name uses gradient-text class. Footer background: --bg-surface with top border in --border-glass.",
+    "Step 7 — Update page-level files for visual consistency: src/pages/Login.jsx: the auth-card should use glass styling (update the .auth-card CSS class to use var(--bg-glass) and backdrop-blur). src/pages/Dashboard.jsx: metric cards use glass style. Dashboard panel uses glass style. Telemetry table header uses --accent-primary for header text. Activity dots use appropriate accent colors. src/pages/Services.jsx: service feature cards use glass style. Estimator card uses glass style. Services already imports Skills component from ../components/Skills — keep that import intact.",
+    "Step 8 — Update global.css responsive rules: Ensure all new glass card classes, gradient-text, AnimatedSection, and section-specific styles have proper @media (max-width: 1040px) and (max-width: 768px) breakpoints. Mobile hamburger drawer should use slideDown animation. Hero on mobile: single column, profile card below text. Projects grid: 2-col on tablet, 1-col on mobile.",
+    "Step 9 — Final cleanup: Verify src/App.css can be completely emptied or minimized (the new global.css handles all styles). Verify src/index.css only contains bare minimum CSS vars that don't conflict. Verify no duplicate class definitions between index.css, App.css, and global.css that might cause unexpected overrides. Update global.css to ensure .portfolio-app-root has min-height: 100svh and flexbox column layout (needed by pages that render Navbar + main + Footer).",
+    "Step 10 — Write verdict and completion marker: Set FEAT-003 status to 'completed' in the FEAT-003.json file. Run npm run build and confirm exit code 0. Record any findings in the findings field."
+  ],
+  "acceptance_criteria": [
+    "npm run build exits 0 with zero errors",
+    "Experience section has alternating timeline cards on desktop",
+    "Projects section shows a 3-column glass card grid with filter tabs",
+    "Contact form API integration still works (api.post('/contact')) — do not break this",
+    "Contact form submit button shows loading state",
+    "Footer uses minimal glass design with gradient brand text",
+    "Login page glass card renders properly in both dark and light themes",
+    "Dashboard page metrics cards have glass styling",
+    "All sections have proper mobile responsive layouts (single column on <768px)",
+    "ProjectModal opens when clicking a project card's Case Study button",
+    "All 3 language translations still work after section file moves",
+    "The portfolio-app-root class provides correct full-height flex column layout for page-level files"
+  ],
+  "verification": [
+    "cd c:\\Users\\HP\\.gemini\\antigravity\\scratch\\Selamsew-portfolio2\\frontend && npm run build"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

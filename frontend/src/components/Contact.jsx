@@ -30,10 +30,10 @@ function Contact() {
   const [copiedPhone, setCopiedPhone] = useState(false);
 
   const quickSubjects = [
-    "💼 Full-Time Engineering Role",
-    "🌐 Web Development Contract",
-    "⚙️ ERP & Database Consultation",
-    "🤝 Partnership / Inquiry",
+    "💼 Full-Time Role",
+    "🌐 Web Project",
+    "⚙️ ERP & Databases",
+    "🤝 Quick Inquiry",
   ];
 
   const handleChange = (e) => {
@@ -107,7 +107,7 @@ function Contact() {
             <div className="contact-info-card">
               <h3 className="info-card-title">{t("contact.directChannels")}</h3>
               <p className="info-card-text">
-                Feel free to contact me via email, phone, or connect on LinkedIn and Telegram. I am active and open to discussing full-time positions, remote contracts, and technical consulting.
+                Available for full-time engineering roles, remote contracts, and ERP consulting. Quick response within 24h.
               </p>
 
               <div className="contact-channels-list">

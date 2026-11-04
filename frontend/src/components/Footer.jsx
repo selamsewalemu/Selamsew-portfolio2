@@ -11,7 +11,7 @@ function Footer() {
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
     if (el) {
-      const navHeight = 76;
+      const navHeight = 62;
       const pos = el.getBoundingClientRect().top + window.pageYOffset - navHeight;
       window.scrollTo({ top: pos, behavior: "smooth" });
     }
@@ -34,7 +34,7 @@ function Footer() {
 
             <div className="footer-status-pill">
               <span className="footer-pulse-dot"></span>
-              <span>All systems operational • 99.8% ERP Uptime</span>
+              <span>All systems operational • Continuous ERP Availability</span>
             </div>
 
             <div className="footer-social-row">
@@ -86,13 +86,7 @@ function Footer() {
                 <button onClick={() => scrollToSection("about")}>About Me</button>
               </li>
               <li>
-                <button onClick={() => scrollToSection("languages")}>Programming Languages</button>
-              </li>
-              <li>
-                <button onClick={() => scrollToSection("frameworks")}>Frameworks & Libraries</button>
-              </li>
-              <li>
-                <button onClick={() => scrollToSection("skills")}>Technical Skills</button>
+                <button onClick={() => scrollToSection("skills")}>Tech Stack (Languages & Frameworks)</button>
               </li>
             </ul>
           </div>

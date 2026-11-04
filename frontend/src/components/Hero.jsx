@@ -15,6 +15,7 @@ import {
   Check,
   Copy,
   Clock,
+  ShieldCheck,
 } from "lucide-react";
 
 function Hero() {
@@ -56,7 +57,7 @@ function Hero() {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      const navHeight = 80;
+      const navHeight = 62;
       const pos = element.getBoundingClientRect().top + window.pageYOffset - navHeight;
       window.scrollTo({ top: pos, behavior: "smooth" });
     }
@@ -98,7 +99,7 @@ development and full-stack application development.
 [1] System Administrator & User Support Officer
     Tibeb Design and Build PLC | Ethiopia
     Period: September 2025 – Present (Still Active)
-    • Ensuring 99.8% enterprise ERP platform stability, server availability, and LAN uptime.
+    • Ensuring continuous enterprise ERP platform stability, server availability, and LAN uptime.
     • Delivering fast-tier technical user support across administrative departments.
     • Managing local network switches/routers, enforcing backup schedules and access security.
 
@@ -107,7 +108,7 @@ development and full-stack application development.
     Period: March 05, 2025 – September 2025 (6 Months Specialization)
     • Administered MySQL relational schemas and MongoDB collections for enterprise ERP modules.
     • Authored automated daily backup scripts and tuned indexing, eliminating duplicate records.
-    • Accelerated departmental reporting queries by 40%.
+    • Accelerated departmental reporting queries with optimized database indexing.
 
 [3] Full-Stack Software Development Graduate & Ekub Circle Project Lead
     Addis Ababa University (AAU) — Software Training Initiative
@@ -238,51 +239,63 @@ development and full-stack application development.
           </div>
         </div>
 
-        {/* RIGHT COLUMN: HERO PROFILE IMAGE & FLOATING BADGES */}
+        {/* RIGHT COLUMN: HERO PROFILE CARD */}
         <div className="hero-visual">
-          <div className="avatar-frame-wrapper">
-            <div className="avatar-glow-ring"></div>
-            <div className="avatar-frame">
+          <div className="hero-profile-card">
+            {/* CARD TOP META */}
+            <div className="profile-card-header">
+              <span className="profile-card-status">
+                <span className="pulse-dot"></span>
+                <span>Available for Hire</span>
+              </span>
+              <span className="profile-card-loc">Addis Ababa, ET</span>
+            </div>
+
+            {/* AVATAR FRAME (BEST-FIT INSIDE THE CARD) */}
+            <div className="profile-card-image-box">
               <img
                 src={profileImage}
                 alt="Selamsew Alemu - Electrical & Computer Engineer"
-                className="profile-photo"
+                className="profile-card-img"
               />
-            </div>
-
-            {/* FLOATING BADGE 1: REACT & NODE */}
-            <div className="floating-badge badge-top-left">
-              <Server size={18} className="badge-icon icon-node" />
-              <div>
-                <strong>React 19 & Node.js</strong>
-                <small>Full-Stack Web Dev</small>
+              <div className="profile-card-verified-strip">
+                <ShieldCheck size={14} className="text-emerald" />
+                <span>DMU '24 • AAU Certified</span>
               </div>
             </div>
 
-            {/* FLOATING BADGE 2: ERP SYSTEMS */}
-            <div className="floating-badge badge-top-right">
-              <Layers size={18} className="badge-icon icon-erp" />
-              <div>
-                <strong>ERP Administration</strong>
-                <small>99.8% Uptime & Support</small>
+            {/* CARD BADGES GRID (BEST-FIT INSIDE THE CARD) */}
+            <div className="profile-card-badges-grid">
+              <div className="profile-badge-item">
+                <Server size={15} className="badge-icon icon-node" />
+                <div>
+                  <strong>React 19 & Node</strong>
+                  <small>Full-Stack Dev</small>
+                </div>
               </div>
-            </div>
 
-            {/* FLOATING BADGE 3: DATABASE */}
-            <div className="floating-badge badge-bottom-left">
-              <Database size={18} className="badge-icon icon-db" />
-              <div>
-                <strong>PostgreSQL & MySQL</strong>
-                <small>DB Administration</small>
+              <div className="profile-badge-item">
+                <Layers size={15} className="badge-icon icon-erp" />
+                <div>
+                  <strong>ERP Admin</strong>
+                  <small>Continuous Uptime</small>
+                </div>
               </div>
-            </div>
 
-            {/* FLOATING BADGE 4: COMPUTER ENG */}
-            <div className="floating-badge badge-bottom-right">
-              <Cpu size={18} className="badge-icon icon-eng" />
-              <div>
-                <strong>Computer Stream</strong>
-                <small>DMU '24 Engineering</small>
+              <div className="profile-badge-item">
+                <Database size={15} className="badge-icon icon-db" />
+                <div>
+                  <strong>Postgres & MySQL</strong>
+                  <small>DB Operations</small>
+                </div>
+              </div>
+
+              <div className="profile-badge-item">
+                <Cpu size={15} className="badge-icon icon-eng" />
+                <div>
+                  <strong>Computer Eng.</strong>
+                  <small>B.Sc. Graduate</small>
+                </div>
               </div>
             </div>
           </div>
