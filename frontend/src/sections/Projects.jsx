@@ -37,6 +37,7 @@ function Projects() {
           <h2 className="section-title gradient-text">
             {t("projects.title") || "Featured Projects"}
           </h2>
+          <span className="section-title-underline" aria-hidden="true" />
           <p className="section-subtitle">
             {t("projects.subtitle") ||
               "A curated selection of engineering, ERP, and full-stack software projects."}

@@ -1,81 +1,25 @@
-import { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
 import profileImage from "../assets/selamsew.jpg";
 import { personalInfo } from "../data/portfolioData";
 import {
   ArrowRight,
-  Mail,
   Download,
-  Terminal,
-  Server,
-  Layers,
-  Database,
-  Cpu,
-  Sparkles,
-  Check,
-  Copy,
-  Clock,
-  ShieldCheck,
   GitBranch,
   Globe2,
   Send,
-  ChevronDown,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
   const { t } = useTranslation();
-  const [activeRoleIndex, setActiveRoleIndex] = useState(0);
-  const [roleVisible, setRoleVisible] = useState(true);
-  const [copiedEmail, setCopiedEmail] = useState(false);
-  const [localTime, setLocalTime] = useState("");
-
-  // Cycle through titles with fade animation
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setRoleVisible(false);
-      setTimeout(() => {
-        setActiveRoleIndex((prev) => (prev + 1) % personalInfo.roles.length);
-        setRoleVisible(true);
-      }, 300);
-    }, 3200);
-    return () => clearInterval(interval);
-  }, []);
-
-  // Live Addis Ababa Time (UTC+3)
-  useEffect(() => {
-    const updateTime = () => {
-      try {
-        const now = new Date();
-        const options = {
-          timeZone: "Africa/Addis_Ababa",
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit",
-          hour12: true,
-        };
-        setLocalTime(new Intl.DateTimeFormat("en-US", options).format(now));
-      } catch {
-        setLocalTime(new Date().toLocaleTimeString());
-      }
-    };
-    updateTime();
-    const timer = setInterval(updateTime, 1000);
-    return () => clearInterval(timer);
-  }, []);
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       const navHeight = 62;
-      const pos = element.getBoundingClientRect().top + window.pageYOffset - navHeight;
+      const pos =
+        element.getBoundingClientRect().top + window.pageYOffset - navHeight;
       window.scrollTo({ top: pos, behavior: "smooth" });
     }
-  };
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(personalInfo.email);
-    setCopiedEmail(true);
-    setTimeout(() => setCopiedEmail(false), 2500);
   };
 
   const handleDownloadCV = () => {
@@ -165,66 +109,36 @@ development and full-stack application development.
   };
 
   return (
-    <section id="home" className="hero-section hero-fullvp">
-      <div className="hero-background-glow"></div>
-      <div className="hero-grid-pattern"></div>
+    <section id="home" className="hero-section">
+      <div className="hero-background-glow" aria-hidden="true"></div>
+      <div className="hero-grid-pattern" aria-hidden="true"></div>
 
       <div className="hero-container">
-        {/* LEFT COLUMN: HERO CONTENT */}
+        {/* LEFT COLUMN: TEXT CONTENT */}
         <div className="hero-content">
-          {/* AVAILABILITY PILL & LIVE TIME */}
-          <div className="hero-top-badges">
-            <div className="availability-pill">
-              <span className="pulse-dot"></span>
-              <Sparkles size={14} className="sparkle-icon" />
-              <span>{t("hero.badge")}</span>
-            </div>
-
-            <div className="live-clock-pill" title="Current time in Addis Ababa (EAT)">
-              <Clock size={13} className="text-cyan" />
-              <span>Addis Ababa: <strong>{localTime || "09:30 AM"}</strong></span>
-            </div>
+          {/* AVAILABILITY PILL */}
+          <div className="availability-pill">
+            <span className="pulse-dot"></span>
+            <span>{t("hero.badge")}</span>
           </div>
 
           <h3 className="greeting-text">{t("hero.greeting")}</h3>
           <h1 className="hero-name">{t("hero.title")}</h1>
 
-          <div className="hero-role-wrapper">
-            <h2 className="hero-main-role">{t("hero.role")}</h2>
-            <div className="dynamic-role-pill">
-              <Terminal size={16} />
-              <span
-                className="role-typed-text"
-                style={{
-                  opacity: roleVisible ? 1 : 0,
-                  transform: roleVisible ? "translateY(0)" : "translateY(-6px)",
-                  transition: "opacity 0.3s ease, transform 0.3s ease",
-                  display: "inline-block",
-                }}
-              >
-                {personalInfo.roles[activeRoleIndex]}
-              </span>
-            </div>
-          </div>
+          <p className="hero-role-subtitle">
+            Computer Engineer &amp; Full-Stack Developer
+          </p>
 
           <p className="hero-description">{t("hero.description")}</p>
 
-          {/* ACTION BUTTONS */}
+          {/* CTA BUTTONS */}
           <div className="hero-actions">
             <button
               onClick={() => scrollToSection("projects")}
               className="btn btn-primary"
             >
-              <span>{t("hero.exploreProjects")}</span>
+              <span>View Projects</span>
               <ArrowRight size={18} />
-            </button>
-
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="btn btn-secondary"
-            >
-              <Mail size={18} />
-              <span>{t("hero.getInTouch")}</span>
             </button>
 
             <button
@@ -235,26 +149,6 @@ development and full-stack application development.
               <Download size={18} />
               <span>{t("hero.downloadCV")}</span>
             </button>
-
-            <button
-              onClick={handleCopyEmail}
-              className={`btn btn-copy-email ${copiedEmail ? "copied" : ""}`}
-              title="Click to copy email address"
-            >
-              {copiedEmail ? <Check size={16} className="text-emerald" /> : <Copy size={16} />}
-              <span>{copiedEmail ? t("hero.emailCopied") : t("hero.copyEmail")}</span>
-            </button>
-          </div>
-
-          {/* KEY STATS COUNTER GRID */}
-          <div className="hero-stats-grid">
-            {personalInfo.stats.map((stat, i) => (
-              <div key={i} className="stat-card glass-card" style={{ padding: "12px 14px", borderRadius: "12px" }}>
-                <span className="stat-number gradient-text">{stat.value}</span>
-                <span className="stat-label">{stat.label}</span>
-                <span className="stat-sub">{stat.subtitle}</span>
-              </div>
-            ))}
           </div>
 
           {/* SOCIAL ICONS ROW */}
@@ -290,76 +184,23 @@ development and full-stack application development.
               <Send size={18} />
             </a>
           </div>
-
-          {/* SCROLL DOWN INDICATOR */}
-          <div className="hero-scroll-chevron" onClick={() => scrollToSection("about")} aria-label="Scroll to About section">
-            <ChevronDown size={22} />
-          </div>
         </div>
 
-        {/* RIGHT COLUMN: HERO PROFILE CARD */}
-        <div className="hero-visual">
-          <div className="hero-profile-card">
-            {/* CARD TOP META */}
-            <div className="profile-card-header">
-              <span className="profile-card-status">
-                <span className="pulse-dot"></span>
-                <span>Available for Hire</span>
-              </span>
-              <span className="profile-card-loc">Addis Ababa, ET</span>
-            </div>
+        {/* RIGHT COLUMN: CIRCULAR PHOTO + TECH PILLS */}
+        <div className="hero-photo-col">
+          <div className="hero-photo-ring">
+            <img
+              src={profileImage}
+              alt="Selamsew Alemu - Computer Engineer"
+              className="hero-photo-img"
+            />
+          </div>
 
-            {/* AVATAR FRAME */}
-            <div className="profile-card-image-box">
-              <img
-                src={profileImage}
-                alt="Selamsew Alemu - Electrical & Computer Engineer"
-                className="profile-card-img"
-                style={{
-                  boxShadow: "0 0 0 4px var(--accent-primary), 0 0 40px rgba(99,102,241,0.4)",
-                  borderRadius: "14px",
-                }}
-              />
-              <div className="profile-card-verified-strip">
-                <ShieldCheck size={14} className="text-emerald" />
-                <span>DMU '24 • AAU Certified</span>
-              </div>
-            </div>
-
-            {/* CARD BADGES GRID */}
-            <div className="profile-card-badges-grid">
-              <div className="profile-badge-item">
-                <Server size={15} className="badge-icon icon-node" />
-                <div>
-                  <strong>React 19 & Node</strong>
-                  <small>Full-Stack Dev</small>
-                </div>
-              </div>
-
-              <div className="profile-badge-item">
-                <Layers size={15} className="badge-icon icon-erp" />
-                <div>
-                  <strong>ERP Admin</strong>
-                  <small>Continuous Uptime</small>
-                </div>
-              </div>
-
-              <div className="profile-badge-item">
-                <Database size={15} className="badge-icon icon-db" />
-                <div>
-                  <strong>Postgres & MySQL</strong>
-                  <small>DB Operations</small>
-                </div>
-              </div>
-
-              <div className="profile-badge-item">
-                <Cpu size={15} className="badge-icon icon-eng" />
-                <div>
-                  <strong>Computer Eng.</strong>
-                  <small>B.Sc. Graduate</small>
-                </div>
-              </div>
-            </div>
+          <div className="hero-tech-pills">
+            <span className="tech-pill">React</span>
+            <span className="tech-pill">Node.js</span>
+            <span className="tech-pill">PostgreSQL</span>
+            <span className="tech-pill">C# / .NET</span>
           </div>
         </div>
       </div>

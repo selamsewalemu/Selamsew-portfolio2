@@ -61,12 +61,13 @@ function About() {
         <div className="section-header text-center">
           <span className="section-badge">{t("about.badge")}</span>
           <h2 className="section-title gradient-text">{t("about.title")}</h2>
+          <span className="section-title-underline" aria-hidden="true" />
           <p className="section-subtitle">{t("about.subtitle")}</p>
         </div>
 
         {/* TWO-COLUMN BIO */}
         <div className="about-grid">
-          <div className="about-bio-card glass-card">
+          <div className="about-bio-card">
             <h3 className="card-headline">{t("about.summaryTitle")}</h3>
             <p className="paragraph">{t("about.summaryText1")}</p>
             <p className="paragraph">{t("about.summaryText2")}</p>
@@ -97,7 +98,7 @@ function About() {
           </div>
 
           {/* QUICK FACTS & INFO */}
-          <div className="about-facts-card glass-card">
+          <div className="about-facts-card">
             <h3 className="card-headline">{t("about.quickFacts")}</h3>
 
             <div className="facts-list">
@@ -171,7 +172,7 @@ function About() {
         {/* 4 CORE ENGINEERING PILLARS */}
         <div className="core-strengths-grid">
           {coreStrengths.map((item, idx) => (
-            <div key={idx} className="strength-card glass-card">
+            <div key={idx} className="strength-card">
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "14px" }}>
                 <div
                   className="strength-icon-wrap"

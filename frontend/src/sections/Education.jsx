@@ -31,6 +31,7 @@ function Education() {
         <div className="section-header text-center">
           <span className="section-badge">{t("education.badge")}</span>
           <h2 className="section-title gradient-text">{t("education.title")}</h2>
+          <span className="section-title-underline" aria-hidden="true" />
           <p className="section-subtitle">{t("education.subtitle")}</p>
         </div>
 

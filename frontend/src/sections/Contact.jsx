@@ -97,6 +97,7 @@ function Contact() {
         <div className="section-header text-center">
           <span className="section-badge">{t("contact.badge")}</span>
           <h2 className="section-title">{t("contact.title")}</h2>
+          <span className="section-title-underline" aria-hidden="true" />
           <p className="section-subtitle">{t("contact.subtitle")}</p>
         </div>
 

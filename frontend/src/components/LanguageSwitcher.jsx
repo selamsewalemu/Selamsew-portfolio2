@@ -13,8 +13,6 @@ function LanguageSwitcher() {
 
   const languages = [
     { code: "en", label: "EN", title: "English" },
-    { code: "am", label: "አማ", title: "አማርኛ (Amharic)" },
-    { code: "fr", label: "FR", title: "Français" },
   ];
 
   return (

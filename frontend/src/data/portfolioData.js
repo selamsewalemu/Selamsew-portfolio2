@@ -9,8 +9,8 @@ export const personalInfo = {
   ],
   tagline:
     "Computer Engineer specializing in enterprise ERP administration, tuned databases, and modern full-stack web applications.",
-  email: "selamsewalemu1@gmail.com",
-  phone: "+251 92 345 6789",
+  email: "selamsewdmu@gmail.com",
+  phone: "+251 091 550 4626",
   location: "Addis Ababa, Ethiopia",
   relocation: "Open to Remote & Global Relocation",
   github: "https://github.com/selamsewalemu",
