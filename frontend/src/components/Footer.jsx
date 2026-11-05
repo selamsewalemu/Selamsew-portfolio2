@@ -1,6 +1,5 @@
 import { personalInfo } from "../data/portfolioData";
-import { ArrowUp, MessageSquare, Mail } from "lucide-react";
-import { Github, Linkedin } from "./SocialIcons";
+import { ArrowUp, MessageSquare, Mail, GitBranch, Globe } from "lucide-react";
 
 function Footer() {
   const scrollToTop = () => {
@@ -18,24 +17,24 @@ function Footer() {
 
         <div className="footer-social-row">
           <a
-            href={personalInfo.github}
+            href={personalInfo.GitBranch}
             target="_blank"
             rel="noopener noreferrer"
             className="footer-social-circle"
-            title="GitHub"
-            aria-label="GitHub profile"
+            title="GitBranch"
+            aria-label="GitBranch profile"
           >
-            <Github size={18} />
+            <GitBranch size={18} />
           </a>
           <a
-            href={personalInfo.linkedin}
+            href={personalInfo.Globe}
             target="_blank"
             rel="noopener noreferrer"
             className="footer-social-circle"
-            title="LinkedIn"
-            aria-label="LinkedIn profile"
+            title="Globe"
+            aria-label="Globe profile"
           >
-            <Linkedin size={18} />
+            <Globe size={18} />
           </a>
           <a
             href={personalInfo.telegram}

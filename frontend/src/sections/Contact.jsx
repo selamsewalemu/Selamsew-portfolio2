@@ -12,8 +12,9 @@ import {
   MessageSquare,
   AlertCircle,
   CheckCircle2,
+  GitBranch,
+  Globe,
 } from "lucide-react";
-import { Github, Linkedin } from "../components/SocialIcons";
 
 function Contact() {
   const { t } = useTranslation();
@@ -171,24 +172,24 @@ function Contact() {
                 <span className="social-label">Connect Online:</span>
                 <div className="social-buttons-row">
                   <a
-                    href={personalInfo.github}
+                    href={personalInfo.GitBranch}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-btn"
-                    title="GitHub"
+                    title="GitBranch"
                   >
-                    <Github size={18} />
-                    <span>GitHub</span>
+                    <GitBranch size={18} />
+                    <span>GitBranch</span>
                   </a>
                   <a
-                    href={personalInfo.linkedin}
+                    href={personalInfo.Globe}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-btn"
-                    title="LinkedIn"
+                    title="Globe"
                   >
-                    <Linkedin size={18} />
-                    <span>LinkedIn</span>
+                    <Globe size={18} />
+                    <span>Globe</span>
                   </a>
                   <a
                     href={personalInfo.telegram}

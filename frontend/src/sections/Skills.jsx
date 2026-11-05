@@ -24,7 +24,7 @@ const SKILLS = [
   { name: "MongoDB",        level: "Advanced",  tab: "Database",  icon: "🍃" },
   { name: "EF Core",        level: "Advanced",  tab: "Database",  icon: "🗃️" },
   // Tools
-  { name: "Git & GitHub",   level: "Expert",    tab: "Tools",     icon: "🔀" },
+  { name: "Git & GitBranch",   level: "Expert",    tab: "Tools",     icon: "🔀" },
   { name: "Docker",         level: "Proficient",tab: "Tools",     icon: "🐳" },
   { name: "Linux Server",   level: "Expert",    tab: "Tools",     icon: "🐧" },
   { name: "Nginx",          level: "Advanced",  tab: "Tools",     icon: "⚙️" },

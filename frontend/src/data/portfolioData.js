@@ -10,11 +10,11 @@ export const personalInfo = {
   tagline:
     "Computer Engineer specializing in enterprise ERP administration, tuned databases, and modern full-stack web applications.",
   email: "selamsewdmu@gmail.com",
-  phone: "+251 091 550 4626",
+  phone: "+251-915-504-626",
   location: "Addis Ababa, Ethiopia",
   relocation: "Open to Remote & Global Relocation",
-  github: "https://github.com/selamsewalemu",
-  linkedin: "https://linkedin.com/in/selamsew-alemu",
+  GitBranch: "https://GitBranch.com/selamsewalemu",
+  Globe: "https://Globe.com/in/selamsew-alemu",
   telegram: "https://t.me/selamsewalemu",
   stats: [
     { label: "Current Role", value: "SysAdmin", subtitle: "Tibeb Design & Build" },
@@ -373,7 +373,7 @@ export const skillCategories = [
     title: "DevOps & Cloud Tools",
     icon: "GitBranch",
     skills: [
-      { name: "Git & GitHub Workflows", level: "Expert", tag: "Version Control" },
+      { name: "Git & GitBranch Workflows", level: "Expert", tag: "Version Control" },
       { name: "Docker Containerization", level: "Proficient", tag: "Containers" },
       { name: "Postman API Automation", level: "Expert", tag: "Testing" },
       { name: "Render & Vercel Cloud Hosting", level: "Advanced", tag: "Cloud" },
@@ -489,8 +489,8 @@ export const projects = [
       "REST APIs",
     ],
     metrics: "Streamlined enrollment approval cycles with zero grade sync latency via real-time SignalR hubs.",
-    demoUrl: "https://selamsew211.github.io/Selamsew211",
-    githubUrl: "https://github.com/selamsewalemu/Tms-Study",
+    demoUrl: "https://selamsew211.GitBranch.io/Selamsew211",
+    githubUrl: "https://GitBranch.com/selamsewalemu/Tms-Study",
   },
   {
     id: "talenthub",
@@ -523,8 +523,8 @@ export const projects = [
       "Tailwind CSS",
     ],
     metrics: "Seamlessly manages multi-role recruitment workflows with secure cookie session validation.",
-    demoUrl: "https://selamsew211.github.io/Selamsew211",
-    githubUrl: "https://github.com/selamsewalemu/Mini-Job-Portal",
+    demoUrl: "https://selamsew211.GitBranch.io/Selamsew211",
+    githubUrl: "https://GitBranch.com/selamsewalemu/Mini-Job-Portal",
   },
   {
     id: "online-exam",
@@ -556,8 +556,8 @@ export const projects = [
       "REST APIs",
     ],
     metrics: "Handled 1,000+ simulated concurrent exam submissions with zero data loss and instant score tabulation.",
-    demoUrl: "https://selamsew211.github.io/Selamsew211",
-    githubUrl: "https://github.com/selamsewalemu/Online-exam",
+    demoUrl: "https://selamsew211.GitBranch.io/Selamsew211",
+    githubUrl: "https://GitBranch.com/selamsewalemu/Online-exam",
   },
   {
     id: "ekub-circle",
@@ -588,8 +588,8 @@ export const projects = [
       "JWT Auth",
     ],
     metrics: "Flawless calculation accuracy and zero lottery disputes across digitized savings cycles.",
-    demoUrl: "https://selamsew211.github.io/Selamsew211",
-    githubUrl: "https://github.com/selamsewalemu/EqubCircleHackatonMe",
+    demoUrl: "https://selamsew211.GitBranch.io/Selamsew211",
+    githubUrl: "https://GitBranch.com/selamsewalemu/EqubCircleHackatonMe",
   },
   {
     id: "budget-management",
@@ -611,8 +611,8 @@ export const projects = [
     ],
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Chart.js"],
     metrics: "Drastically reduced paper processing latency across campus departments.",
-    demoUrl: "https://selamsew211.github.io/Selamsew211",
-    githubUrl: "https://github.com/selamsewalemu/Budget-Expense-Management-System",
+    demoUrl: "https://selamsew211.GitBranch.io/Selamsew211",
+    githubUrl: "https://GitBranch.com/selamsewalemu/Budget-Expense-Management-System",
   },
 ];
 

@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { projects } from "../data/portfolioData";
 import ProjectModal from "./ProjectModal";
-import { ExternalLink, Eye, Sparkles } from "lucide-react";
-import { Github } from "../components/SocialIcons";
+import { ExternalLink, Eye, Sparkles, GitBranch } from "lucide-react";
 
 // Derive filter categories from projects data
 const ALL_FILTER = "All";
@@ -126,7 +125,7 @@ function Projects() {
                     className="card-btn card-btn-ghost"
                     title="Source Code"
                   >
-                    <Github size={14} />
+                    <GitBranch size={14} />
                     <span>Source</span>
                   </a>
 

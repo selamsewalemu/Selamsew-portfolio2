@@ -32,8 +32,8 @@ Email: ${personalInfo.email}
 Phone: ${personalInfo.phone}
 Location: ${personalInfo.location}
 Status: ${personalInfo.relocation}
-LinkedIn: ${personalInfo.linkedin}
-GitHub: ${personalInfo.github}
+Globe: ${personalInfo.Globe}
+GitBranch: ${personalInfo.GitBranch}
 
 --------------------------------------------------------------------------------
 1. PROFESSIONAL PROFILE & SUMMARY
@@ -96,7 +96,7 @@ development and full-stack application development.
 • Frameworks & Stacks: ASP.NET Core 10, Angular 22, React 19, Node.js, Express.js, SignalR,
                        Entity Framework Core, Tailwind CSS v4, Mongoose ODM, Redux Toolkit, Socket.io.
 • Systems & Infrastructure: Linux Server, Windows Server, ERP Platforms, TCP/IP, CCNA,
-                            Docker, Git & GitHub, Postman, Relational Schemas.
+                            Docker, Git & GitBranch, Postman, Relational Schemas.
 ================================================================================`;
 
     const blob = new Blob([cvText], { type: "text/plain;charset=utf-8" });
@@ -154,22 +154,22 @@ development and full-stack application development.
           {/* SOCIAL ICONS ROW */}
           <div className="hero-social-row">
             <a
-              href={personalInfo.github}
+              href={personalInfo.GitBranch}
               target="_blank"
               rel="noopener noreferrer"
               className="hero-social-icon"
-              aria-label="GitHub Profile"
-              title="GitHub"
+              aria-label="GitBranch Profile"
+              title="GitBranch"
             >
               <GitBranch size={18} />
             </a>
             <a
-              href={personalInfo.linkedin}
+              href={personalInfo.Globe}
               target="_blank"
               rel="noopener noreferrer"
               className="hero-social-icon"
-              aria-label="LinkedIn Profile"
-              title="LinkedIn"
+              aria-label="Globe Profile"
+              title="Globe"
             >
               <Globe2 size={18} />
             </a>

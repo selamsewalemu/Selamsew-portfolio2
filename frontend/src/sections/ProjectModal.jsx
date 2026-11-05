@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { X, ExternalLink, CheckCircle2, TrendingUp } from "lucide-react";
-import { Github } from "../components/SocialIcons";
+import { X, ExternalLink, CheckCircle2, TrendingUp, GitBranch } from "lucide-react";
 import aauLogo from "../assets/aau-logo.png";
 
 function ProjectModal({ project, onClose }) {
@@ -171,7 +170,7 @@ function ProjectModal({ project, onClose }) {
             rel="noopener noreferrer"
             className="btn btn-outline"
           >
-            <Github size={17} />
+            <GitBranch size={17} />
             <span>Source Code</span>
           </a>
         </div>
