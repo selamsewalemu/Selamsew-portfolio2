@@ -19,10 +19,9 @@ B.Sc. Electrical & Computer Engineering graduate (Debre Markos University, 2024)
 
 **Contact**
 - Email: [selamsewdmu@gmail.com](mailto:selamsewdmu@gmail.com)
-- Phone: +251 091 550 4626
 - GitHub: [github.com/selamsewalemu](https://github.com/selamsewalemu)
 - LinkedIn: [linkedin.com/in/selamsew-alemu](https://linkedin.com/in/selamsew-alemu)
-- Telegram: [@selamsewalemu](https://t.me/selamsewalemu)
+
 
 ---
 
