@@ -9,8 +9,6 @@
 
 Personal portfolio website for **Selamsew Alemu** — Computer Engineer, System Administrator, and Full-Stack Developer based in Addis Ababa, Ethiopia.
 
-🔗 **Live site**: [https://selamsewalemu.github.io/Selamsew211](https://selamsewalemu.github.io/Selamsew211)
-
 ---
 
 ## About
