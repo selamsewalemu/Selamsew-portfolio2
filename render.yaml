@@ -13,7 +13,7 @@ services:
       - key: MONGO_URI
         sync: false
       - key: EMAIL_TO
-        value: selamsewalemu1@gmail.com
+        value: selamsewdmu@gmail.com
 
   # 2. Frontend React & Vite Static Site
   - type: web
